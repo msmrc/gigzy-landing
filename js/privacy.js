@@ -326,7 +326,7 @@ form.addEventListener('submit', async (e) => {
 
     submit_button.disabled = true;
 
-    await fetch('https://api.gigzy.net/landing', {
+    await fetch('https://api-dev.gigzy.net/landing', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
