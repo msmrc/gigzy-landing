@@ -1,0 +1,17 @@
+ol li {
+  list-style-type: normal;
+  margin-bottom: 10px;
+}
+
+#he_docks,
+#eng_docks {
+  display: none;
+}
+
+#he_docks {
+  direction: rtl;
+}
+
+#he_docks > ul.list_disc-style > li {
+  margin: 0 30px 10px 0px;
+}

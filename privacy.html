@@ -1,0 +1,1850 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/icons/favicon-16x16.png"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/docs.css" />
+    <link rel="stylesheet" href="./css/privacy.css" />
+
+    <title>Gigzy</title>
+  </head>
+  <body>
+    <div class="wrapper flex flex_column">
+      <header class="header">
+        <div class="burger">
+          <picture
+            ><source
+              srcset="img/icons/icons.svg#burger-close"
+              type="image/webp" />
+            <img
+              class="icon icon-burger icon-burger-close"
+              src="img/icons/logo.png"
+              alt="Menu Gigzy"
+          /></picture>
+          <picture
+            ><source
+              srcset="img/icons/icons.svg#burger-open"
+              type="image/webp" />
+            <img
+              class="icon icon-burger icon-burger-open"
+              src="img/icons/icons.svg#burger-open"
+              alt="Menu Gigzy"
+          /></picture>
+        </div>
+        <div
+          class="flex-il-adaptive header__container container flex flex_justify-between flex_align-center"
+        >
+          <div class="logo flex gap-12 flex_align-center">
+            <a href="https://gigzy.net/">
+              <picture
+                ><source srcset="img/icons/icons.svg#logo" type="image/webp" />
+                <img
+                  class="icon icon-logo"
+                  src="img/icons/logo.png"
+                  alt="Gigzy logotype"
+              /></picture>
+            </a>
+            <a href="">
+              <h1 class="text c-primary bold">Gigzy</h1>
+            </a>
+          </div>
+          <div
+            class="flex-il-adaptive header__lang flex flex_align-center gap-4 lang-toggler_mobile"
+            onclick="toggleLang('open')"
+          >
+            <div class="header__lang-list-wrapper" id="list-wrapper_mobile">
+              <ul class="header__lang-list">
+                <li data-value="en" class="text text-1 c-primary capse">eng</li>
+                <li data-value="il" class="text text-1 c-primary capse">he</li>
+              </ul>
+            </div>
+            <span
+              class="text text-1 c-primary capse"
+              data-translate="header_lang"
+            >
+              eng
+            </span>
+            <picture
+              ><source srcset="img/icons/icons.svg#eng" type="image/webp" />
+              <img
+                class="icon icon-flag"
+                data-translate-icon="en"
+                src="img/icons/icons.svg#eng"
+                alt="Gigzy english language"
+            /></picture>
+            <picture
+              ><source srcset="img/icons/icons.svg#il" type="image/webp" />
+              <img
+                class="icon icon-flag"
+                data-translate-icon="il"
+                src="img/icons/icons.svg#il"
+                alt="Gigzy israel language"
+            /></picture>
+          </div>
+          <div class="flex-il-adaptive header__actions flex gap-40">
+            <button class="button primary xs" onclick="toggleModal('open')">
+              <span class="button-link" data-translate="header_login"></span>
+              <picture
+                ><source
+                  srcset="img/icons/icons.svg#profile"
+                  type="image/webp" />
+                <img
+                  class="icon icon-profile"
+                  src="img/icons/icons.svg#profile"
+                  alt="Gigzy login"
+              /></picture>
+            </button>
+            <div
+              class="flex-il-adaptive header__lang flex flex_align-center gap-4 lang-toggler"
+            >
+              <div class="header__lang-list-wrapper" id="list-wrapper">
+                <ul class="header__lang-list">
+                  <li data-value="en" class="text text-1 c-primary capse">
+                    eng
+                  </li>
+                  <li data-value="il" class="text text-1 c-primary capse">
+                    he
+                  </li>
+                </ul>
+              </div>
+              <span
+                class="text text-1 c-primary capse"
+                data-translate="header_lang"
+              >
+                eng
+              </span>
+              <picture
+                ><source srcset="img/icons/icons.svg#eng" type="image/webp" />
+                <img
+                  class="icon icon-flag"
+                  data-translate-icon="en"
+                  src="img/icons/icons.svg#eng"
+                  alt="Gigzy english language"
+              /></picture>
+              <picture
+                ><source srcset="img/icons/icons.svg#il" type="image/webp" />
+                <img
+                  class="icon icon-flag"
+                  data-translate-icon="il"
+                  src="img/icons/icons.svg#il"
+                  alt="Gigzy israel language"
+              /></picture>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main container">
+        <div class="docs flex flex_column" id="eng_docks">
+          <h3 class="docs__title">PRIVACY NOTICE FOR CALIFORNIA RESIDENTS</h3>
+
+          <p class="docs__p text-2">
+            This PRIVACY NOTICE FOR CALIFORNIA RESIDENTS supplements the
+            information contained in the privacy policy of Gigzy Ltd. (“Gigzy”
+            or “we”) to be found at the following link:
+            <a href="https://gigzy.net/privacy">https://gigzy.net/privacy</a>
+            (“Privacy Policy”) and applies solely to visitors, users, and others
+            who reside in the State of California (“consumers” or “you”) in
+            connection with the use of our Services (as defined in Gigzy’s Terms
+            of Use found at
+            <a href="https://gigzy.net/policy">https://gigzy.net/policy</a> ).
+            We adopt this notice to comply with the California Consumer Privacy
+            Act of 2018 (“CCPA”) and the California Privacy Rights Act (“CPRA”)
+            and other California privacy laws in effect or as may take effect
+            from time to time. Any terms defined in the CCPA or the CPRA have
+            the same meaning when used in this notice.
+          </p>
+
+          <ol class="with-counters">
+            <li>
+              <span class="docs__p text-2">Information we Collect</span>
+              <p class="docs__p text-2">
+                We collect information that identifies, relates to, describes,
+                references, is reasonably capable of being associated with, or
+                could reasonably be linked, directly or indirectly, with a
+                particular consumer or household (“Personal Information”). In
+                particular, we have collected the following categories of
+                personal information from consumers within the last twelve (12)
+                months:
+              </p>
+              <table class="table">
+                <tr class="table__row">
+                  <th class="table__head">Category</th>
+                  <th class="table__head">Examples</th>
+                  <th class="table__head">Collected</th>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">A. Identifiers</td>
+                  <td class="table__data">
+                    A real name, postal address, unique personal identifier,
+                    online identifier, Internet Protocol address, email address,
+                    account name, Social Security number, driver's license
+                    number, passport number, or other similar identifiers
+                  </td>
+                  <td class="table__data">YES</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">
+                    B. Personal information categories listed in the California
+                    Customer Records statute (Cal. Civ. Code § 1798.80(e))
+                  </td>
+                  <td class="table__data">
+                    A name, signature, Social Security number, physical
+                    characteristics or description, address, telephone number,
+                    passport number, driver's license or state identification
+                    card number, insurance policy number, education, employment,
+                    employment history, bank account number, credit card number,
+                    debit card number, or any other financial information,
+                    medical information, or health insurance information. Some
+                    personal information included in this category may overlap
+                    with other categories.
+                  </td>
+                  <td class="table__data">YES</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">
+                    C. Protected classification characteristics under California
+                    or federal law
+                  </td>
+                  <td class="table__data">
+                    Age (40 years or older), race, color, ancestry, national
+                    origin, citizenship, religion or creed, marital status,
+                    medical condition, physical or mental disability, sex
+                    (including gender, gender identity, gender expression,
+                    pregnancy or childbirth and related medical conditions),
+                    sexual orientation, veteran or military status, genetic
+                    information (including familial genetic information).
+                  </td>
+                  <td class="table__data">NO</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">D. Commercial information</td>
+                  <td class="table__data">
+                    Records of personal property, products or services
+                    purchased, obtained, or considered, or other purchasing or
+                    consuming histories or tendencies.
+                  </td>
+                  <td class="table__data">YES</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">E. Biometric information</td>
+                  <td class="table__data">
+                    Genetic, physiological, behavioral, and biological
+                    characteristics, or activity patterns used to extract a
+                    template or other identifier or identifying information,
+                    such as, fingerprints, faceprints, and voiceprints, iris or
+                    retina scans, keystroke, gait, or other physical patterns,
+                    and sleep, health, or exercise data.
+                  </td>
+                  <td class="table__data">NO</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">
+                    F. Internet or other similar network activity
+                  </td>
+                  <td class="table__data">
+                    Browsing history, search history, information on a
+                    consumer's interaction with a website, application, or
+                    advertisement.
+                  </td>
+                  <td class="table__data">YES</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">G. Geolocation data</td>
+                  <td class="table__data">Physical location or movements.</td>
+                  <td class="table__data">YES</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">H. Sensory data</td>
+                  <td class="table__data">
+                    Audio, electronic, visual, thermal, olfactory, or similar
+                    information.
+                  </td>
+                  <td class="table__data">YES</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">
+                    I. Professional or employment-related information
+                  </td>
+                  <td class="table__data">
+                    Current or past job history or performance evaluations.
+                  </td>
+                  <td class="table__data">YES</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">
+                    J. Non-public education information (per the Family
+                    Educational Rights and Privacy Act (20 U.S.C. Section 1232g,
+                    34 C.F.R. Part 99)).
+                  </td>
+                  <td class="table__data">
+                    J. Non-public education information (per the Family
+                    Educational Rights and Privacy Act (20 U.S.C. Section 1232g,
+                    34 C.F.R. Part 99)). Education records directly related to a
+                    student maintained by an educational institution or party
+                    acting on its behalf, such as grades, transcripts, class
+                    lists, student schedules, student identification codes,
+                    student financial information, or student disciplinary
+                    records. NO
+                  </td>
+                  <td class="table__data">NO</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">
+                    K. Inferences drawn from other personal information.
+                  </td>
+                  <td class="table__data">
+                    Profile reflecting a person's preferences, characteristics,
+                    psychological trends, predispositions, behavior, attitudes,
+                    intelligence, abilities, and aptitudes.
+                  </td>
+                  <td class="table__data">NO</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">
+                    L. Sensitive Personal Information under the CPRA
+                  </td>
+                  <td class="table__data">
+                    Social security, driver's license, state identification card
+                    or passport number. account log-in, financial account, debit
+                    card or credit number combined with any required security or
+                    access code, password or credentials allowing access to an
+                    account. racial or ethnic origin, religious or philosophical
+                    beliefs or union membership. The contents of a consumer’s
+                    physical mail, email and text messages, unless the business
+                    is the intended recipient of the communication. Precise
+                    geolocation. Genetic data. Biometric information processed
+                    for the purpose of uniquely identifying a consumer. Personal
+                    information collected and analyzed concerning a consumer’s
+                    health. Personal information collected and analyzed
+                    concerning a consumer’s sex life or sexual orientation.
+                  </td>
+                  <td class="table__data">NO</td>
+                </tr>
+              </table>
+              <ul class="list_disc-style">
+                <span class="docs__p text-2"
+                  >We obtain the categories of personal information listed above
+                  from the following categories of sources:</span
+                >
+                <li>
+                  Directly from our clients or their agents. For example, from
+                  information our clients provide to us related to the Services
+                  for which they engage us.
+                </li>
+                <li>
+                  Directly from you. For example, through information we ask
+                  from you when you subscribe and engage our Services.
+                </li>
+                <li>
+                  Directly and indirectly from you when using our Services. For
+                  example, usage details collected automatically in the course
+                  of your interaction with our platform.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="docs__p text-2">Use of Personal Information</span>
+              <p class="docs__p text-2">
+                We may use or disclose the personal information we collect, sell
+                or share, for one or more of the following business purposes:
+              </p>
+              <ul class="list_disc-style">
+                <li>
+                  To fulfil or meet the reason for which the information is
+                  provided. For example, if you share your name and contact
+                  information to request a price quote or ask a question about
+                  our products or services, we will use that personal
+                  information to respond to your inquiry. If you provide your
+                  personal information to purchase a product or service, we will
+                  use that information to process your payment and facilitate
+                  delivery. We may also save your information to facilitate new
+                  product orders or process returns.
+                </li>
+                <li>
+                  To provide you with email alerts and other notices concerning
+                  our Services.
+                </li>
+                <li>To improve our Services to you.</li>
+                <li>
+                  To provide, support, personalize, and develop our products,
+                  and services.
+                </li>
+                <li>
+                  To create, maintain, customize, and secure your account with
+                  us.
+                </li>
+                <li>
+                  To help maintain the safety, security, and integrity of our
+                  products and services, databases and other technology assets,
+                  and business.
+                </li>
+                <li>
+                  To provide you with support and to respond to your inquiries,
+                  including to investigate and address your concerns and monitor
+                  and improve our responses.
+                </li>
+                <li>
+                  For testing, research, analysis and product development.
+                </li>
+                <li>
+                  As necessary or appropriate to protect the rights, property or
+                  safety of us, our clients or others.
+                </li>
+                <li>
+                  To respond to law enforcement requests and as required by
+                  applicable law, court order, or governmental regulations.
+                </li>
+                <li>
+                  As described to you when collecting your personal information
+                  or as otherwise set forth in the CCPA.
+                </li>
+                <li>
+                  To evaluate or conduct a merger, divestiture, restructuring,
+                  reorganization, dissolution, or other sale or transfer of some
+                  or all of our assets, whether as a going concern or as part of
+                  bankruptcy, liquidation, or similar proceeding, in which
+                  personal information held by us is among the assets
+                  transferred.
+                </li>
+                <p class="docs__p text-2">
+                  We will not collect additional categories of personal
+                  information or use the personal information we collected for
+                  materially different, unrelated, or incompatible purposes
+                  without providing you notice.
+                </p>
+              </ul>
+            </li>
+            <li>
+              <span class="docs__p text-2">Sharing Personal Information</span>
+              <p class="docs__p text-2">
+                We may disclose your personal information to a third party for a
+                business purpose. When we disclose personal information for a
+                business purpose, we enter a contract that describes the purpose
+                and requires the recipient to both keep that personal
+                information confidential and not use it for any purpose except
+                performing the contract.
+              </p>
+              <p class="docs__p text-2">
+                We share your personal information with the following categories
+                of third parties:
+              </p>
+              <p class="docs__p text-2">
+                Please note, the CPRA amends the definition of “Third Party”, to
+                be read as follows (amendments to the CCPA are provided in
+                <i>italic</i> :
+              </p>
+              <p class="docs__p text-2">
+                “Third party” means a person who is not any of the following:
+              </p>
+              <p class="docs__p text-2">
+                (1) The business
+                <i> with whom the consumer intentionally interacts and</i> that
+                collects personal information from
+                <i
+                  >the consumer as part of the consumer’s current interaction
+                  with the business</i
+                >
+                under this title.
+              </p>
+              <p class="docs__p text-2">
+                <i>(2) A service provider to the business; or</i>
+              </p>
+              <p class="docs__p text-2"><i>(3) A contractor.</i></p>
+              <ul class="list_disc-style">
+                <li>Subsidiaries and affiliates</li>
+                <li>
+                  Our clients or their agents for which you have engaged in a
+                  business contract.
+                </li>
+                <li>
+                  Our clients or their agents for which you have engaged in a
+                  business contract.
+                </li>
+                <li>Service providers and contractors.</li>
+                <li>
+                  Third parties to whom you or your agents authorize us to
+                  disclose your personal information in connection with our
+                  Services
+                </li>
+                <li>Data aggregators</li>
+                <li>
+                  <i>
+                    If you share PI with a third party for cross-contextual
+                    behavioral advertising, it must be mentioned.</i
+                  >
+                </li>
+              </ul>
+              <p class="docs__p text-2">
+                <i>Cross-context</i> behavioral advertising” means the targeting
+                of advertising to a consumer based on the consumer’s personal
+                information obtained from the consumer’s activity across
+                businesses, distinctly- branded websites, applications, or
+                services, other than the business, distinctly-branded website,
+                application, or service with which the consumer intentionally
+                interacts.
+              </p>
+              <p class="docs__p text-2">
+                In the preceding twelve (12) months, we have disclosed the
+                following categories of personal information for a business
+                purpose:
+              </p>
+              <ul class="list_disc-style">
+                <li>Identifiers</li>
+                <li>
+                  Personal information categories listed in the California
+                  Customer Records statute (Cal. Civ. Code § 1798.80(e))
+                </li>
+                <li>Commercial information</li>
+                <li>Internet or other similar network activity</li>
+              </ul>
+              <p class="docs__p text-2">
+                In the preceding twelve (12) months, we have not sold any
+                personal information.
+              </p>
+              <p class="docs__p text-2">
+                While we do not sell personal information in exchange for any
+                monetary or other valuable consideration, we do share personal
+                information for other benefits that could be deemed a “sale,” as
+                defined by the CCPA (Cal. Civ. Code 1798.140(t)(1)). This
+                includes sharing personal information with advertising networks,
+                website analytics companies, and event sponsors.
+              </p>
+            </li>
+            <li>
+              <span class="docs__p text-2">Your Rights and Choices</span>
+              <p class="docs__p text-2">
+                The CCPA and CPRA provide consumers (California residents) with
+                specific rights regarding their personal information. This
+                section describes your CCPA and CPRA rights and explains how to
+                exercise those rights.
+              </p>
+              <p class="docs__p text-2">
+                <i
+                  >Access to Specific Information and Data Portability Rights</i
+                >
+              </p>
+              <p class="docs__p text-2">
+                You have the right to request that we disclose certain
+                information to you about our collection and use of your personal
+                information over the past 12 months. Once we receive and confirm
+                your verifiable consumer request, we will disclose to you the
+                following, if applicable:
+              </p>
+              <ul class="list_disc-style">
+                <li>
+                  The categories of personal information we collected about you.
+                </li>
+                <li>
+                  The categories of sources for the personal information we
+                  collected about you.
+                </li>
+                <li>
+                  Our business or commercial purpose for collecting that
+                  personal information.
+                </li>
+                <li>
+                  The categories of third parties with whom we share that
+                  personal information.
+                </li>
+                <li>
+                  The specific pieces of personal information we collected about
+                  you (also called a data portability request).
+                </li>
+                <li>
+                  If we sold or disclosed your personal information for a
+                  business purpose, two separate lists disclosing: (a) sales,
+                  identifying the personal information categories that each
+                  category of recipient purchased; and (b) disclosures for a
+                  business purpose, identifying the personal information
+                  categories that each category of recipient obtained.
+                </li>
+              </ul>
+              <p class="docs__p text-2">
+                <i>Correction of Inaccurate Personal Information Rights</i>
+              </p>
+              <p class="docs__p text-2">
+                You have the right to request that we correct inaccurate
+                personal information about you, taking into account the nature
+                of the personal information and the purposes of the processing
+                of the personal information. Once we receive and confirm your
+                verifiable consumer request, we will use commercially reasonable
+                efforts to correct your personal information as directed by you
+                (and direct our service providers to correct it as well).
+              </p>
+              <p class="docs__p text-2">
+                <i>Deletion Request Rights</i>
+              </p>
+            </li>
+            <p class="docs__p text-2">
+              You have the right to request that we delete any of your personal
+              information we collected from you and retained, subject to certain
+              exceptions. Once we receive and confirm your verifiable consumer
+              request, we will delete (and direct our service providers to
+              delete) your personal information from our records, unless an
+              exception applies.
+            </p>
+            <p class="docs__p text-2">
+              We may deny your deletion request if retaining the information is
+              necessary for us or our service providers to:
+            </p>
+            <ul>
+              <li>
+                Complete the transaction for which we collected the personal
+                information, fulfill the terms of a written warranty or product
+                recall conducted in accordance with federal law, provide a good
+                or service that you requested, take actions reasonably
+                anticipated within the context of our ongoing business
+                relationship with you, or otherwise perform our contract with
+                you.
+              </li>
+              <li>
+                Detect security incidents, protect against malicious, deceptive,
+                fraudulent, or illegal activity, or prosecute those responsible
+                for such activities.
+              </li>
+              <li>
+                Debug products to identify and repair errors that impair
+                existing intended functionality.
+              </li>
+              <li>
+                Exercise free speech, ensure the right of another consumer to
+                exercise their free speech rights, or exercise another right
+                provided for by law.
+              </li>
+              <li>
+                Comply with the California Electronic Communications Privacy Act
+                (Cal. Penal Code § 1546 seq.).
+              </li>
+              <li>
+                Engage in public or peer-reviewed scientific, historical, or
+                statistical research in the public interest that adheres to all
+                other applicable ethics and privacy laws, when the information’s
+                deletion may likely render impossible or seriously impair the
+                research’s achievement, if you previously provided informed
+                consent.
+              </li>
+              <li>
+                Enable solely internal uses that are reasonably aligned with
+                consumer expectations based on your relationship with us.
+              </li>
+              <li>Comply with a legal obligation.</li>
+              <li>
+                Make other internal and lawful uses of that information that are
+                compatible with the context in which you provided it.
+              </li>
+            </ul>
+            <p class="docs__p text-2">
+              <i
+                >Exercising Access, Data Portability, Correction and Deletion
+                Rights</i
+              >
+            </p>
+            <p class="docs__p text-2">
+              To exercise the access, data portability, correction of inaccurate
+              personal information and deletion rights described above, please
+              submit a verifiable consumer request to us by either: (a) sending
+              an e-mail to us at
+              <a href="mailto:help@gigzy.net">help@gigzy.net</a>; or (b) sending
+              a letter to us at [Please insert postal address] or (c) calling us
+              at [Please insert toll free phone number].
+            </p>
+            <p class="docs__p text-2">
+              Only you or a person registered with the California Secretary of
+              State that you authorize to act on your behalf, may make a
+              verifiable consumer request related to your personal information.
+              You may also make a verifiable consumer request on behalf of your
+              minor child.
+            </p>
+            <p class="docs__p text-2">
+              You may only make a verifiable consumer request for access or data
+              portability twice within a 12-month period. The verifiable
+              consumer request must:
+            </p>
+            <ul class="list_disc-style">
+              <li>
+                Provide sufficient information that allows us to reasonably
+                verify you are the person about whom we collected personal
+                information or an authorized representative.
+              </li>
+              <li>
+                Describe your request with sufficient detail that allows us to
+                properly understand, evaluate, and respond to it.
+              </li>
+            </ul>
+            <li>
+              <span class="docs__p text-2">Response Timing and Format</span>
+              <p class="docs__p text-2">
+                We endeavor to respond to a verifiable consumer request within
+                45 days of its receipt. If we require more time (up to 90 days),
+                we will inform you of the reason and extension period in
+                writing. If you have an account with us, we will deliver our
+                written response to the registered email associated with the
+                account. If you do not have an account with us, we will deliver
+                our written response by mail or electronically, at your option.
+                Any disclosures we provide will only cover the 12-month period
+                preceding the verifiable consumer request’s receipt. The
+                response we provide will also explain the reasons we cannot
+                comply with a request, if applicable. For data portability
+                requests, we will select a format to provide your personal
+                information that is readily useable and should allow you to
+                transmit the information from one entity to another entity
+                without hindrance.
+              </p>
+              <p class="docs__p text-2">
+                We do not charge a fee to process or respond to your verifiable
+                consumer request unless it is excessive, repetitive, or
+                manifestly unfounded. If we determine that the request warrants
+                a fee, we will tell you why we made that decision and provide
+                you with a cost estimate before completing your request.
+              </p>
+            </li>
+            <li>
+              <span class="docs__p text-2"
+                >Personal information Sales Opt-Out and Opt-In Rights</span
+              >
+              <p class="docs__p text-2">
+                You have the right to direct us to not sell or share your
+                personal information at any time (the “right to opt-out”). We do
+                not sell or share the personal information of consumers we
+                actually know are less than 16 years of age, unless we receive
+                affirmative authorization (the “right to opt-in”) from either
+                the consumer who is between 13 and 16 years of age, or the
+                parent or guardian of a consumer who is between 13 and 16 years
+                of age. Consumers who opt-in to personal information sales may
+                opt-out of future sales or shares at any time. To exercise the
+                right to opt-out, you (or your authorized representative) may
+                submit a request to us by visiting the following link our
+                webpage or sending us a message:
+                <a href="mailto:help@gigzy.net">help@gigzy.net</a> . Under the
+                CPRA the link should be titled: "Do not Sell or Share My
+                Personal Information"
+              </p>
+              <p class="docs__p text-2">
+                Once you make an opt-out request, we will wait at least twelve
+                (12) months before asking you to reauthorize personal
+                information sales. However, you may change your mind and opt
+                back in to personal information sales at any time by visiting
+                our website and sending us a message. We will only use personal
+                information provided in an opt-out request to review and comply
+                with the request.
+              </p>
+            </li>
+            <li>
+              <span class="docs__p text-2"
+                >Limitation of use and disclosure of sensitive personal
+                information</span
+              >
+              <p class="docs__p text-2">
+                Yoh have the right to direct us to limit our use of your
+                sensitive personal information (except for sensitive personal
+                information that is collected or processed without the purpose
+                of inferring characteristics about you; which shall be treated
+                as personal information) to the necessary required to perform
+                the services or provide the goods reasonably expected by an
+                average consumer who requests such goods or services.
+              </p>
+              <p class="docs__p text-2">
+                To exercise the right to limit the use of sensitive PI, you (or
+                your authorized representative) may submit a request to us by
+                visiting the following link our webpage or sending us a message:
+                help@gigzy.net.
+                <i>
+                  Link should be titled: “Limit the Use of My Sensitive Personal
+                  Information</i
+                >
+              </p>
+              <p class="docs__p text-2">
+                Once we receive a direction from you not to use or disclose your
+                sensitive personal information, we will wait at least twelve
+                (12) months before asking you to reauthorize use or disclosure
+                of your sensitive personal information. However, you may change
+                your mind and opt back in at any time by visiting our website
+                and sending us a message.
+              </p>
+            </li>
+            <li>
+              <span class="docs__p text-2">Non-Discrimination</span>
+              <p class="docs__p text-2">
+                We will not discriminate against you for exercising any of your
+                CCPA or CPRA rights. Unless permitted by the CCPA or CPRA, we
+                will not do any of the following in connection with the exercise
+                of your CCPA or CPRA rights:
+              </p>
+              <ul class="list_disc-style">
+                <li>Deny you use of our Services.</li>
+                <li>
+                  Charge you different prices or rates for goods or services,
+                  including through granting discounts or other benefits, or
+                  imposing penalties.
+                </li>
+                <li>
+                  Provide you a different level or quality of goods or services.
+                </li>
+                <li>
+                  Suggest that you may receive a different price or rate for
+                  goods or services or a different level or quality of goods or
+                  services.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="docs__p text-2"
+                >We will not be prohibited however, from offering loyalty,
+                rewards, premium features, discounts, or club card programs
+                consistent with this title.“Do Not Track” Disclosures
+              </span>
+              <p class="docs__p text-2">
+                We are required to indicate whether we honour “Do Not Track”
+                settings in your browser concerning targeted advertising. We
+                adhere to the standards set out in this Privacy Notice and do
+                not monitor or respond to Do Not Track browser requests.
+              </p>
+            </li>
+            <li>
+              <span class="docs__p text-2">Changes to Our Privacy Notice</span>
+              <p class="docs__p text-2">
+                We reserve the right to amend this Privacy Notice at our
+                discretion and at any time. The date this Privacy Notice was
+                last updated is identified at the bottom of this page. You are
+                responsible for periodically visiting our website and this
+                Privacy Notice to check for any changes. Your continued use of
+                our Services following the posting of changes constitutes your
+                acceptance of such changes.
+              </p>
+            </li>
+            <li>
+              <span class="docs__p text-2">Contact Information</span>
+              <p class="docs__p text-2">
+                If you have any questions or comments about this Privacy Notice,
+                our Privacy Policy, the ways in which we collect and use your
+                personal information, your choices and rights regarding such
+                use, or wish to exercise your rights under California law, you
+                may contact us via email at
+                <a href="mailto:help@gigzy.net">help@gigzy.net</a>.
+              </p>
+            </li>
+          </ol>
+          <p class="docs__p text-2"><i>Updated 11 February, 2023 </i></p>
+        </div>
+
+        <div class="docs flex flex_column" id="he_docks">
+          <h3 class="docs__title">הודעה לתושבי קליפורניה בדבר פרטיות</h3>
+
+          <p class="docs__p text-2">
+            הודעה זו לתושבי קליפורניה בדבר פרטיות משמשת כתוספת למידע המופיע
+            במדיניות הפרטיות של גיגזי בע"מ ("גיגזי" או "אנחנו"), שאליה ניתן לגשת
+            באתר שכתובתו:
+            <a href="https://gigzy.net/privacy">https://gigzy.net/privacy</a>
+            ("מדיניות הפרטיות"), והיא חלה רק על מבקרים, משתמשים ואחרים המתגוררים
+            במדינת קליפורניה ("צרכנים" או "אתם") בקשר עם השימוש בשירותים שלנו
+            (כאמור בתנאי השימוש של גיגזי המופיעים באתר שכתובתו:
+            <a href="https://gigzy.net/policy">https://gigzy.net/policy</a>).
+            אנו אימצנו את תוכן ההודעה על מנת לעמוד בדרישות "חוק הפרטיות הצרכנית
+            של קליפורניה משנת 2018" [California Consumer Privacy Act of 2018]
+            ("CCPA" ו"חוק זכויות הפרטיות של קליפורניה" [ California Privacy
+            Rights Act (“CPRA”)] ודיני פרטיות אחרים בקליפורניה החלים כעת או אשר
+            יחולו מעת לעת. למונחים המופיעים ב-CCPA או ב-CPRA תהא משמעות זהה בכל
+            מקרה שבו הם מופיעים בהודעה זו.
+          </p>
+
+          <ol class="with-counters">
+            <li>
+              <span class="docs__p text-2">המידע הנאסף על-ידנו</span>
+              <p class="docs__p text-2">
+                אנו אוספים מידע המסוגל לזהות צרכן או משק בית מסוימים ("פרטים
+                אישיים"), או הנוגע להם, המתאר אותם, המזכיר אותם, או שניתן לקשר
+                אותו אליהם באופן סביר, בין אם במישרין ובין אם בעקיפין. בפרט, אנו
+                אספנו מצרכנים את סוגי הפרטים האישיים הבאים במהלך שנים-עשר (12)
+                החודשים האחרונים:
+              </p>
+              <table class="table">
+                <tr class="table__row">
+                  <th class="table__head">קטגוריה</th>
+                  <th class="table__head">דוגמאות</th>
+                  <th class="table__head">איסוף</th>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">א. "מזהים"</td>
+                  <td class="table__data">
+                    שם אמיתי, כתובת למשלוח דואר, מזהה אישי ייחודי, מזהה מקוון,
+                    כתובת IP, כתובת דוא"ל, שם חשבון, מספר ביטוח לאומי (SSN),מספר
+                    רישיון רכב, מספר דרכון או פרטים מזהים דומים אחרים
+                  </td>
+                  <td class="table__data">כן</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">
+                    ב. סוגי פרטים אישיים המפורטים ב"חוק רישומי לקוח בקליפורניה"
+                    [California Customer Records statute - Cal. Civ. Code §
+                    1798.80(e
+                  </td>
+                  <td class="table__data">
+                    שם, חתימה, מספר ביטוח לאומי (SSN), מאפיינים או תיאור פיזיים,
+                    כתובת, מספר טלפון, מספר דרכון, רישיון נהיגה או מס' כרטיס
+                    ת.ז., מס' פוליסת ביטוח, השכלה, נתונים תעסוקתיים, היסטוריה
+                    תעסוקתית, מספר חשבון בנק, מס' כרטיס אשראי, מס' כרטיס חיוב או
+                    כל מידע פיננסי אחר, מידע רפואי או מידע בנושא ביטוח רפואי.
+                    עשויה להיות חפיפה בין הנתונים האישיים הכלולים בקטגוריה זו
+                    לבין קטגוריות אחרות.
+                  </td>
+                  <td class="table__data">כן</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">
+                    ג. מאפייני סיווג מוגנים (Protected Classification
+                    Characteristics) על פי הדין בקליפורניה או הדין הפדראלי
+                  </td>
+                  <td class="table__data">
+                    גיל (40 שנים או יותר), גזע, צבע עור, מוצא, לאום, אזרחות, דת
+                    או אמונה אישית, מצב משפחתי, מצב רפואי, נכות גופנית או נפשית,
+                    מין (לרבות מגדר, זהות מגדרית, ביטוי מגדרי, הריון או לידה
+                    ומצבים רפואיים הקשורים להם), נטייה מינית, מעמד של יוצא צבא
+                    או שירות צבאי, מידע גנטי (לרבות מידע גנטי משפחתי).
+                  </td>
+                  <td class="table__data">לא</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">ד. מידע מסחרי</td>
+                  <td class="table__data">
+                    רישומים בנושא רכוש אישי, מוצרים ושירותים שנרכשו, התקבלו או
+                    נבחנו, או פרטים היסטוריים אחרים בדבר רכישות, צריכה או מגמות
+                    למיניהן.
+                  </td>
+                  <td class="table__data">כן</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">ה. מידע ביומטרי</td>
+                  <td class="table__data">
+                    מאפיינים גנטיים, פיזיולוגיים, התנהגותיים וביולוגיים, דפוסי
+                    פעילות המשמשים לזיהוי תבניות, ופרטים מזהים אחרים, כגון:
+                    טביעות אצבע, תווי פנים, קול, סריקות של הרשתית או הקשתית,
+                    רישום הקשות (keystroke), סגנון הליכה (gait) או מאפיינים
+                    פיזיים אחרים, וכן נתונים אודות הרגלי שינה, נתונים בריאותיים
+                    או פרטים בדבר פעילות גופנית.
+                  </td>
+                  <td class="table__data">לא</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">
+                    ו. פעילות באינטרנט או פעילות דומה ברשתות
+                  </td>
+                  <td class="table__data">
+                    היסטוריית גלישה, היסטוריית חיפוש, פרטים אודות האינטראקציה
+                    בין הצרכן לאתר האינטרנט, ליישום או למודעת פרסומת.
+                  </td>
+                  <td class="table__data">כן</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">
+                    ז. נתונים גיאוגרפיים (geolocation)
+                  </td>
+                  <td class="table__data">מיקום פיזי או תנועות פיזיות.</td>
+                  <td class="table__data">כן</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">ח. נתוני חישה</td>
+                  <td class="table__data">
+                    נתוני שמע, נתונים אלקטרוניים, נתונים ויזואליים, תרמיים,
+                    נתונים של חוש הריח או נתונים דומים אחרים.
+                  </td>
+                  <td class="table__data">כן</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">
+                    ט. מידע מקצועי או פרטים תעסוקתיים.
+                  </td>
+                  <td class="table__data">
+                    נתונים היסטוריים תעסוקתיים (ביחס לתעסוקה בעבר ובהווה)
+                    והערכות ביצועים.
+                  </td>
+                  <td class="table__data">כן</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">
+                    י. נתוני השכלה שאינם זמינים לציבור (בהמשך ל"חוק הפרטיות
+                    והזכויות החינוכיות למשפחות") [Family Educational Rights and
+                    Privacy Act (20 U.S.C. Section 1232g, 34 C.F.R. Part 99)).].
+                  </td>
+                  <td class="table__data">
+                    רישומים בדבר השכלה הקשורים במישרין לתלמיד כלשהו המוחזקים ע"י
+                    מוסד הלימוד או מי מטעמו, כגון ציונים, תמלילים, רשימות כיתה,
+                    תוכניות לימוד, קודי זיהוי לתלמידים, פרטים כספיים של תלמידים,
+                    או רישומים משמעתיים.
+                  </td>
+                  <td class="table__data">לא</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">
+                    יא. נתונים שהוסקו מפרטים אישיים אחרים.
+                  </td>
+                  <td class="table__data">
+                    פרופיל המשקף את ההעדפות, המאפיינים, המגמות הפסיכולוגיות,
+                    הנטיות, ההתנהגות, הגישות, האינטליגנציה, היכולות והכישורים של
+                    אדם כלשהו.
+                  </td>
+                  <td class="table__data">לא</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">
+                    יב. פרטים אישיים רגישים (בהמשך ל-CPRA).
+                  </td>
+                  <td class="table__data">
+                    ביטוח לאומי (Social Security), רישיון נהיגה, מס' ת.ז. או
+                    מספר דרכון. פרטי כניסה לחשבון, חשבון כספי, כרטיס חיוב או
+                    מספר כרטיס אשראי, בשילוב עם כל קוד אבטחה או גישה, סיסמאות או
+                    פרטי התחברות המאפשרים גישה לחשבון כלשהו. מוצא אתני, אמונות
+                    דתיות או פילוסופיות או חברות באיגודים. התוכן הקיים בדואר
+                    הפיזי של הצרכן, הודעות דוא"ל ומסרונים, אלא אם כן בית העסק
+                    הוא הנמען שלו נועדה התכתובת. מיקום גיאוגרפי מדויק. נתונים
+                    גנטיים. נתונים ביומטריים שעובדו לצורך זיהוי ייחודי לצרכן.
+                    פרטיים אישיים שנאספו ונותחו בדבר בריאות הצרכן. פרטיים אישיים
+                    שנאספו ונותחו בדבר חיי המין או הנטייה המינית של צרכן כלשהו.
+                  </td>
+                  <td class="table__data">לא</td>
+                </tr>
+              </table>
+              <ul class="list_disc-style">
+                <span class="docs__p text-2"
+                  >אנו משיגים את סוגי הפרטים האישיים המפורטים לעיל מן המקורות
+                  הבאים:
+                </span>
+                <li>
+                  ישירות מן הלקוחות שלנו ומנציגיהם. לדוגמה, באמצעות מידע
+                  שלקוחותינו מעבירים לנו הקשור לשירותים שבגינם הם התקשרו מולנו.
+                </li>
+                <li>
+                  ישירות מכם. לדוגמה, דרך המידע שאנו נבקש מכם במעמד הרשמתכם
+                  לשירותים שלנו
+                </li>
+                <li>
+                  דרככם – במישרין ובעקיפין – במסגרת השימוש בשירותים שלנו.
+                  לדוגמה, פרטי שימוש שנאספו באופן אוטומטי במסגרת האינטראקציה
+                  שלכם מול הפלטפורמה שלנו.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="docs__p text-2">שימוש בפרטים אישיים</span>
+              <p class="docs__p text-2">
+                אנו עשויים להשתמש בפרטים האישיים או לגלות את הפרטים האישיים
+                שאותם אנו אוספים, מוכרים או משתפים לשם אחת או יותר מן המטרות
+                העסקיות הבאות:
+              </p>
+              <ul class="list_disc-style">
+                <li>
+                  למימוש המטרה שלשמה נאסף המידע הנדון. לדוגמה, אם שיתפתם את שמכם
+                  ואת פרטי ההתקשרות שלכם על מנת לבקש הצעת מחיר או לשאול שאלות
+                  לגבי המוצרים או השירותים שלנו, אנו נשתמש בפרטים אישיים אלו על
+                  מנת להשיב לפנייתכם. אם העברתם את הפרטים האישיים שלכם לצורך
+                  רכישת מוצר או שירות כלשהו, אנו נשתמש בפרטים אלו על מנת לטפל
+                  בתשלום שלכם ולדאוג למסירת המוצר או למתן השירות. כמו כן, אנו
+                  עשויים לשמור את הפרטים שלכם על מנת לבצע הזמנות מוצר חדשות או
+                  לטפל בהחזרות.
+                </li>
+                <li>
+                  על מנת לספק לכם התראות בדוא"ל והודעות נוספות בדבר השירותים
+                  שלנו.
+                </li>
+                <li>על מנת לשפר את השירותים הניתנים לכם על-ידנו.</li>
+                <li>
+                  לספק את המוצרים והשירותים שלנו, לתמוך בהם, להתאימם אישית ללקוח
+                  ולפתחם.
+                </li>
+                <li>על מנת ליצור, להתאים-אישית ולאבטח את החשבון שלכם אצלנו.</li>
+                <li>
+                  על מנת לסייע בשמירה על הבטיחות, האבטחה והשלמות של המוצרים
+                  והשירותים שלנו, של מאגרי המידע והעסק שלנו, ונכסים טכנולוגיים
+                  אחרים.
+                </li>
+                <li>
+                  על מנת לספק לכם תמיכה ולהשיב לפניותיכם, לרבות בחינת הנושאים
+                  המועלים על-ידכם ומתן התייחסות, וכן לצורכי מעקב ולשיפור המענה
+                  הניתן על-ידנו.
+                </li>
+                <li>לצורכי בדיקות, מחקר, ניתוח ופיתוח מוצר.</li>
+                <li>
+                  ככל שיידרש או לפי הצורך: על מנת להגן על הזכויות, הרכוש
+                  והבטיחות שלנו, של לקוחותינו או של אחרים.
+                </li>
+                <li>
+                  להשיב לפניות המגיעות מרשויות האכיפה ככל שיידרש על פי כל דין,
+                  מכוח צו שיפוטי, או מכוח רגולציה ממשלתית.
+                </li>
+                <li>
+                  כפי שנמסר לכם במעמד איסוף הפרטים האישיים שלכם, או כפי שנקבע
+                  ב-CCPA.
+                </li>
+                <li>
+                  לצורך בחינה או ביצוע של פעולת מיזוג, פילוג חברה (divestiture),
+                  ארגון מחדש, חיסול, מכירה או העברה אחרת של כל הנכסים שלנו או
+                  חלק הימנם, בין אם במסגרת עסק חי ובין אם במסגרת פשיטת רגל,
+                  פירוק או הליך דומה, שבמסגרתו הפרטים האישיים המוחזקים על-ידנו
+                  מהווים חלק מן הנכסים המועברים.
+                </li>
+                <p class="docs__p text-2">
+                  אנו לא נאסוף סוגי פרטים אישיים נוספים או נשתמש בפרטים אישיים
+                  שנאספו על-ידנו לטובת מטרות שונות באופן מהותי, מטרות
+                  בלתי-קשורות, או מטרות בלתי-מתאימות מבלי שנמסור לכם הודעה
+                  בנושא.
+                </p>
+              </ul>
+            </li>
+            <li>
+              <span class="docs__p text-2">שיתוף פרטים אישיים</span>
+              <p class="docs__p text-2">
+                אנו עשויים לגלות את הפרטים האישיים שלכם לידי צד שלישי לטובת
+                מטרות עסקיות. בגילוי הפרטים האישיים שלכם למטרה עסקית, אנו נתקשר
+                בחוזה המתאר את אותה מטרה והדורש ממקבל המידע לשמור על סודיות
+                הפרטים האישיים, וכן לא להשתמש בהם לאף מטרה אחרת מלבד ביצוע
+                החוזה.
+              </p>
+              <p class="docs__p text-2">
+                אנו נשתף את הצדדים השלישיים הבאים בפרטים האישיים שלכם:
+              </p>
+              <p class="docs__p text-2">
+                לתשומת לבכם: ה-CPRA כלל תיקון להגדרת המונח "צד שלישי", כדלקמן
+                (תיקונים ל-CCPA מופיעים בכתב
+                <i>נטוי</i> :
+              </p>
+              <p class="docs__p text-2">
+                "צד שלישי" - משמע מי שאינו אחד מן הבאים:
+              </p>
+              <p class="docs__p text-2">
+                <i
+                  >(1) העסק שמולו קיים הצרכן אינטראקציה במכוון ואשר אוסף את
+                  הפרטים האישיים מן הצרכן במסגרת האינטראקציה הנוכחית של הצרכן
+                  מול העסק תחת כותרת זו.</i
+                >
+              </p>
+              <p class="docs__p text-2">
+                <i>(2) ספק שירות של העסק;</i>
+              </p>
+              <p class="docs__p text-2"><i>(3) קבלן.</i></p>
+              <ul class="list_disc-style">
+                <li>חברות בנות וחברות מסונפות (affiliates)</li>
+                <li>הלקוחות שלנו או נציגיהם שמטעמם התקשרתם בחוזה עסקי.</li>
+                <li>ספקי שירות וקבלנים.</li>
+                <li>
+                  צדדים שלישיים שלהם אתם או נציגיכם אישרתם לנו לגלות את הפרטים
+                  האישיים שלכם בקשר עם השירותים שלנו.
+                </li>
+                <li>נתונים מקושרים (Date aggregators)</li>
+                <li>
+                  <i>
+                    אם שיתפתם צד שלישי כלשהו במידע אישי לצורך פרסום התנהגותי
+                    רב-הקשרי (cross-contextual behavior advertising), יש לציין
+                    זאת.
+                  </i>
+                </li>
+              </ul>
+              <p class="docs__p text-2">
+                "פרסום התנהגותי רב-הקשרי" משמעו מיקוד הודעת פרסום לצרכן על סמך
+                פרטיו האישיים שמקורם בפעילות הלקוח בבתי עסק שונים ובאתרי
+                אינטרנט, יישומים או שירותים בעלי מותג מובחן, ושאינם העסק, אתרי
+                האינטרנט, האפליקציות או השירות בעלי המותג המובחן שמולם הצרכן
+                מנהל אינטראקציה מכוונת.
+              </p>
+              <p class="docs__p text-2">
+                במהלך שנים-עשר (12) החודשים הקודמים, אנו גילינו את קטגוריות
+                הפרטים האישיים הבאים למטרות עסקיות:
+              </p>
+              <ul class="list_disc-style">
+                <li>o מזהים</li>
+                <li>
+                  o קטגוריות של פרטים אישיים המפורטים ב"חוק רישומי לקוח
+                  בקליפורניה" [California Customer Records statute - Cal. Civ.
+                  Code § 1798.80(e))
+                </li>
+                <li>o מידע מסחרי</li>
+                <li>o פעילות באינטרנט או פעילות דומה ברשתות</li>
+              </ul>
+              <p class="docs__p text-2">
+                במהלך שנים-עשר (12) החודשים הקודמים, אנו לא מכרנו אף פרטים
+                אישיים.
+              </p>
+              <p class="docs__p text-2">
+                בעוד שאיננו מוכרים פרטים אישיים בתמורה לתשלום כספי או בתמורה לכל
+                תגמול אחר, אנו משתפים פרטים אישיים לצורך קבלת הטבות אחרות שניתן
+                לראות בהן בתור "מכירה" כפי שמוגדר ב- CCPA (Cal. Civ. Code
+                1798.140(t)(1)) .הדבר כולל שיתוף של פרטים אישיים עם רשתות פרסום,
+                חברות לניתוח נתונים אנליטיים באתרי אינטרנט ונותני חסות לאירועים.
+              </p>
+            </li>
+            <li>
+              <span class="docs__p text-2">הזכויות והבחירות שלכם</span>
+              <p class="docs__p text-2">
+                הוראות ה-CCPA ו-CPRA מעניקות לצרכנים (תושבי קליפורניה) זכויות
+                פרטניות בדבר המידע האישי שלהם. סעיף זה מתאר את הזכויות המוענקות
+                לך מכוח ה-CCPA וה-CPRA ומסביר לך כיצד תוכל לממש את הזכויות הללו.
+              </p>
+              <p class="docs__p text-2">
+                <i>גישה למידע ספציפי וזכויות ניוד נתונים</i>
+              </p>
+              <p class="docs__p text-2">
+                הנכם רשאים לבקש מאיתנו פרטים מסוימים בדבר איסוף הנתונים האישיים
+                שלכם והשימוש שנעשה בהם על-ידנו במהלך שנים-עשר החודשים האחרונים.
+                לאחר שנקבל ונאשר את בקשתכם, אנו נגלה לכם את הפרטים הבאים, לפי
+                העניין:
+              </p>
+              <ul class="list_disc-style">
+                <li>סוגי הפרטים האישיים שאספנו אודותיכם.</li>
+                <li>סוגי המקורות שמהם אספנו פרטים אישיים אודותיכם.</li>
+                <li>המטרות העסקיות או המסחריות שלשמן נאספו הפרטים האישיים.</li>
+                <li>סוגי הצדדים השלישיים שעמם שיתפנו את הפרטים האישיים.</li>
+                <li>
+                  חלקים מסוימים של פרטים אישיים שאספנו אודותיכם (בקשות מסוג זה
+                  מכונות בשם "בקשות ניוד נתונים" - data portability requests).
+                </li>
+                <li>
+                  ככל שמכרנו או גילינו את הפרטים האישיים שלכם למטרה עסקית כלשהי,
+                  אנו נספק לכם שתי רשימות נפרדות: (א) רשימת מכירות המזהה את סוגי
+                  הפרטים האישיים שלכם שאותן רכש כל סוג של מקבל מידע; (ב) גילויים
+                  למטרות עסקיות, תוך זיהוי סוגי הפרטים האישיים שהועברו לכל סוג
+                  של מקבל נתונים.
+                </li>
+              </ul>
+              <p class="docs__p text-2">
+                <i>הזכות לתיקון פרטים אישיים שנפלו בהם אי-דיוקים</i>
+              </p>
+              <p class="docs__p text-2">
+                שמורה לכם הזכות לבקש מאיתנו לתקן פרטים אישיים אודותיכם שבהם
+                שנפלו אי-דיוקים, תוך התייחסות לטיבם של הפרטים האישיים ולמטרות
+                שלשמן התבצע עיבוד לנתונים הללו. לאחר שנקבל ונאשר את בקשתכם, אנו
+                נפעיל מאמצים מסחריים סבירים על מנת לתקן את הפרטים האישיים שלכם
+                בהתאם להוראות שתעבירו אלינו (ואנו נורה לספקי השירות שלנו לפעול
+                לתיקון הפרטים).
+              </p>
+              <p class="docs__p text-2">
+                <i>זכויות לבקשת מחיקה</i>
+              </p>
+              <p class="docs__p text-2">
+                שמורה לכם הזכות לבקש מאיתנו למחוק כל פרט אישי שאספנו מכם ושנשמר
+                אצלנו, וזאת בכפוף לחריגים מסוימים. לאחר שנקבל ונאשר את בקשתכם,
+                אנו נמחק את הפרטים האישיים שלכם מהרשומות שלנו (ואנו נורה לספקי
+                השירות שלנו למחוק את הפרטים הללו), למעט בהתקיים חריגים מסוימים.
+              </p>
+              <p class="docs__p text-2">
+                ייתכן שנדחה את בקשת המחיקה שלכם ככל ששמירת הנתונים תידרש
+                מבחינתנו או מבחינת ספקי השירות שלנו לצורך:
+              </p>
+              <ul>
+                <li>
+                  השלמת העסקה שבגינה אספנו את הפרטים האישיים, מילוי התנאים
+                  המפורטים בכתב אחריות או ביצוע תהליך קריאה לתיקון ["ריקול"
+                  (Recall)] למוצר בהתאם להוראות הדין הפדראלי, אספקת סחורה או
+                  שירותים שביקשתם, פעולות שאותן ניתן לצפות באופן סביר בהקשר של
+                  מערכת היחסים הקיימת מולכם, או לשם ביצוע החוזה מולכם.
+                </li>
+                <li>
+                  זיהוי אירועי אבטחה, הגנה מפני פעילות זדונית, הונאתית או
+                  בלתי-חוקית, או הגשת תביעה נגד הנושאים באחריות לפעילויות אלו.
+                </li>
+                <li>
+                  ביצוע תיקון שגיאות (debugging) למוצרים לשם זיהוי ותיקון שגיאות
+                  הפוגעות בפונקציות המיועדות של מוצרים אלו.
+                </li>
+                <li>
+                  מימוש חופש הביטוי, הבטחת זכויותיהם של צרכנים אחרים לחופש
+                  ביטוי, או מימוש זכויות אחרות הקבועות על פי כל דין.
+                </li>
+                <li>
+                  לשם העמידה בהוראות חוק התקשורת האלקטרונית של קליפורניה
+                  [California Electronic Communications Privacy Act (Cal. Penal
+                  Code § 1546 seq.).
+                </li>
+                <li>
+                  לצורך השתתפות במחקר ציבורי, מחקר מדעי המבוסס על שיפוט עמיתים
+                  (peer review), מחקר היסטורי או מחקר סטטיסטי לטובת עניין
+                  ציבורי, וזאת בהתאם לכל דיני האתיקה והפרטיות הרלוונטיים, במקרים
+                  שבהם מחיקת הפרטים צפויה לפגוע באופן משמעותי במחקר או להפוך
+                  אותו לבלתי-אפשרי, ככל שהענקתם בעבר את הסכמתכם מדעת להשתתפות
+                  במחקר.
+                </li>
+                <li>
+                  לאפשר שימושים פנימיים בלבד העולים בקנה אחד ובמידת הסביר עם
+                  ציפיות הצרכנים, וזאת על סמך מערכת היחסים שלכם מולנו.
+                </li>
+                <li>לשם העמידה בדרישות החוק.</li>
+                <li>
+                  לצורך שימושים פנימיים או חוקיים אחרים באותו מידע המתאימים
+                  להקשר שבו העברתם אלינו את הנתונים.
+                </li>
+              </ul>
+              <p class="docs__p text-2">
+                <i>מימוש זכויות גישה, ניוד נתונים, תיקון ומחיקה</i>
+              </p>
+              <p class="docs__p text-2">
+                על מנת להפעיל את זכויות הגישה, הזכות לניוד הנתונים, הזכות לתיקון
+                פרטים אישיים בלתי-מדויקים והזכות למחיקה המתוארות לעיל, אנא הגישו
+                לנו בקשת צרכן בת-אימות (verifiable consumer request) באחת מן
+                הדרכים הבאות: (א) משלוח דוא"ל לכתובת:
+                <a href="mailto:help@gigzy.net">help@gigzy.net</a>; (ב) משלוח
+                מכתב אלינו לכתובת: [נא לציין כתובת למשלוח דואר ]; (ג) יצירת קשר
+                טלפוני במספר: נא לציין מספר טלפון חינמי].
+              </p>
+              <p class="docs__p text-2">
+                רק אתם או אדם הרשום מול מזכיר המדינה של קליפורניה [California
+                Secretary of State] שאותו הסמכתם לפעול מטעמכם רשאים להגיש בקשת
+                צרכן הקשורה לפרטים האישיים שלכם. כמו כן, באפשרותכם להגיש בקשת
+                צרכן מטעם ילדיכם הקטינים.
+              </p>
+              <p class="docs__p text-2">
+                באפשרותכם להגיש בקשת צרכן לגישה או לניוד נתונים פעמיים בלבד במשך
+                כל תקופה בת 12 חודשים. על בקשת הצרכן:
+              </p>
+              <ul class="list_disc-style">
+                <li>
+                  לספק פרטים מספקים שיאפשרו לנו לוודא באופן סביר, כי אתם אלו
+                  שאספנו אודותיהם את הפרטים האישיים, או שהנכם נציגיהם המורשים.
+                </li>
+                <li>
+                  לתאר את בקשתכם ברמת פירוט מספקת, אשר תאפשר לנו להבין ולהעריך
+                  את הבקשה ולהשיב לה כיאות.
+                </li>
+                <p class="docs__p text-2">
+                  אנו לא נוכל להשיב לבקשתכם או לספק לכם פרטים אישיים ככל שלא
+                  יעלה בידינו לאמת את זהותכם או את סמכותכם להגיש את הבקשה ולאשר
+                  את הפרטים האישיים הנוגעים לכם. הגשת הבקשה לא תדרוש מכם ליצור
+                  אצלנו חשבון. אנו נשתמש בפרטים אישיים שסופקו במסגרת בקשת צרכן
+                  רק כדי לאמת את זהות המבקש או את סמכותו להגיש את הבקשה.
+                </p>
+              </ul>
+            </li>
+
+            <li>
+              <span class="docs__p text-2">זמני תגובה ופורמט תגובה</span>
+              <p class="docs__p text-2">
+                אנו משתדלים להשיב לבקשות צרכן תוך 45 יום ממועד קבלתן. ככל שנידרש
+                לזמן נוסף (עד 90 יום), אנו נודיע לכם בכתב בדבר הסיבות לכך ובדבר
+                תקופת ההארכה. אם אתם מחזיקים בחשבון אצלנו, אנו נעביר את תגובתנו
+                בכתב לכתובת הדוא"ל הרשומה שקושרה לחשבון. אם אינכם מחזיקים בחשבון
+                אצלנו, אנו נעביר את תגובתנו בכתב דרך הדואר או באמצעים אלקטרוניים
+                – בהתאם לבחירתכם. כל גילוי שנעביר יכסה רק את שנים-עשר החודשים
+                הקודמים לקבלת הבקשה. התגובה שנעביר אליכם תסביר גם את הסיבות לכך
+                שלא נוכל להיענות לבקשה, לפי העניין. בהתייחס לבקשות ניוד נתונים,
+                אנו נבחר פורמט להעברת הפרטים האישיים שלכם שניתן להשתמש בו בצורה
+                נוחה, ואשר יאפשר לכם להעביר את הפרטים מישות אחת לישות אחרת ללא
+                הפרעות.
+              </p>
+              <p class="docs__p text-2">
+                אנו לא נגבה תשלום בגין עיבוד בקשת הצרכן שלכם או בגין המענה
+                שיינתן לה, אלא אם כן מדובר בבקשה מופרזת, בבקשה המכילה מספר רב של
+                חזרות, או בבקשה בלתי-מבוססת בעליל. ככל שנקבע כי הבקשה כרוכה
+                בתשלום, אנו נפרט בפניכם את הסיבות לקביעה זו – לרבות אומדן עלויות
+                – וזאת לפני שנשלים את הטיפול בבקשתכם.
+              </p>
+            </li>
+            <li>
+              <span class="docs__p text-2"
+                >ביטול הצטרפות (Opt-Out) ביחס למכירת פרטים אישיים וזכויות "הסכמת
+                הצטרפות" (Opt-In).</span
+              >
+              <p class="docs__p text-2">
+                שמורה לכם הזכות להורות לנו שלא למכור או לשתף את הפרטים האישיים
+                שלכם בכל עת ("הזכות לביטול הצטרפות"). אנו לא נמכור או נשתף את
+                הפרטים האישיים של צרכנים שאנחנו יודעים בפועל כי טרם מלאו להם 16
+                שנים, אלא אם כן קיבלנו אישור לכך ("הזכות להסכמת הצטרפות" - right
+                to opt-in) מהצרכן (שגילו בין 13-16 שנים), או מההורה או
+                האפוטרופוס של צרכן שגילו בין 13-16 שנים. צרכנים הבוחרים להסכים
+                להצטרפות (לבצע Opt-in) רשאים בכל עת לבטל את ההסכמה להצטרפות
+                (לבצע opt-out) ביחס למכירות עתידיות או לשיתוף נתונים עתידי.
+                למימוש הזכות לביטול הצטרפות, אתם (או הנציג המורשה שלכם) רשאים
+                להגיש לנו בקשה דרך הקישור הבא באתר האינטרנט שלנו או לשלוח אלינו
+                הודעה בכתובת:
+                <a href="mailto:help@gigzy.net">help@gigzy.net</a>. על פי
+                ה-CPRA, הכותרת של הקישור תכיל את הכיתוב הבא: "אל תמכרו או תשתפו
+                את הפרטים האישיים שלי" [Do not Sell or Share My Personal
+                Information]
+              </p>
+              <p class="docs__p text-2">
+                לאחר שהגשתם בקשה לביטול הצטרפות, אנו נמתין לפחות שנים-עשר (12)
+                חודשים לפני שנבקש מכם לאשר מחדש כל מכירה של פרטים אישיים. עם
+                זאת, באפשרותכם לשנות את דעתכם ולהחיל מחדש את הסכמתכם למכירת
+                פרטים אישיים בכל עת, וזאת בביקור באתר האינטרנט שלנו ושליחת הודעה
+                אלינו. אנו נשתמש בפרטים אישיים שסופקו במסגרת הבקשה לביטול
+                הצטרפות רק כדי לבחון את הבקשה ולהיענות לה.
+              </p>
+            </li>
+            <li>
+              <span class="docs__p text-2"
+                >מגבלות על שימוש וגילוי פרטים אישיים בעלי אופי רגיש</span
+              >
+              <p class="docs__p text-2">
+                שמורה לכם הזכות להורות לנו להגביל את השימוש שלנו בפרטים אישיים
+                רגישים שלכם (להוציא פרטים אישיים רגישים שנאספו או שטופלו שלא לשם
+                הסקת מאפיינים אודותיכם – פרטים אלו יטופלו כאילו היו פרטים
+                אישיים) לצורך מתן שירותים או אספקת מוצרים שאותם סביר שיצפה הצרכן
+                הממוצע המבקש מוצרים או שירותים כגון אלו.
+              </p>
+              <p class="docs__p text-2">
+                למימוש הזכות להגבלת השימוש בפרטים אישיים רגישים, אתם (או הנציג
+                המורשה שלכם) רשאים להגיש לנו בקשה דרך הקישור הבא באתר האינטרנט
+                שלנו או לשלוח אלינו הודעה בכתובת:
+                <a href="mailto:help@gigzy.net">help@gigzy.net</a>. הכותרת של
+                הקישור תכיל את הכיתוב הבא: "אנא הגבילו את השימוש בפרטים האישיים
+                הרגישים שלי"
+                <i>[Limit the Use of My Sensitive Personal Information]</i>
+              </p>
+              <p class="docs__p text-2">
+                מרגע שנקבל מכם הנחיה שלא להשתמש בפרטים האישיים הרגישים שלכם או
+                לגלותם, אנו נמתין לפחות שנים-עשר (12) חודשים לפני שנבקש מכם לאשר
+                מחדש את השימוש או הגילוי של הפרטים האישיים הרגישים שלכם. עם זאת,
+                באפשרותכם לשנות את דעתכם בנושא בכל עת במסגרת ביקור באתר האינטרנט
+                שלנו ושליחת הודעה.
+              </p>
+            </li>
+            <li>
+              <span class="docs__p text-2">איסור על הפליה</span>
+              <p class="docs__p text-2">
+                אנו לא נפלה נגדכם לרעה ככל שתבחרו לממש את זכויותיכם על פי הוראות
+                ה-CCPA או ה-CPRA. אלא אם כן הדבר מותר ע"פ הוראות ה-CCPA או
+                ה-CPRA, אנו לא נבצע אף אחת מן הפעולות הבאות בקשר עם מימוש
+                זכויותיכם על פי ה-CCPA או ה-CPRA:
+              </p>
+              <ul class="list_disc-style">
+                <li>אנו לא נמנע מכם את השימוש בשירותים שלנו.</li>
+                <li>
+                  אנו לא נגבה מכם מחירים או תעריפים שונים בגין מוצרים ושירותים,
+                  לרבות במסגרת הנחות או הטבות אחרות, ואנו לא נטיל עליכם "קנסות".
+                </li>
+                <li>אנו לא נספק לכם מוצרים או שירותים ברמה או באיכות שונות.</li>
+                <li>
+                  אנו לא נרמוז שאתם עלולים לקבל מאיתנו מחירים או תעריפים שונים
+                  בגין מוצרים או שירותים מסוימים, או שאתם עלולים לקבל שירותים או
+                  מוצרים ברמה או באיכות שונות.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="docs__p text-2"
+                >עם זאת, אנו נהיה רשאים להציע תוכניות נאמנות, פרסים, תוכניות
+                פרמיום, הנחות או כרטיסי מועדון בהתאם לקבוע בהוראות אלה.
+              </span>
+              <p class="docs__p text-2">
+                גילויים מסוג "נא לא לבצע מעקב" (Do Not Track)
+              </p>
+              <p class="docs__p text-2">
+                אנו נדרשים לציין האם אנו מכבדים את הגדרות הדפדפן שלכם ככל
+                שהפעלתם בדפדפן את מצב "נא לא לבצע מעקב" (Do Not Track) בכל הנוגע
+                לפרסום ממוקד. אנו פועלים לפי הסטנדרטים המפורטים בהודעת פרטיות זו
+                ואנו איננו עורכים מעקב על בקשות דפדפן מסוג זה או מגיבים להן.
+              </p>
+            </li>
+            <li>
+              <span class="docs__p text-2">שינויים בהודעת הפרטיות שלנו</span>
+              <p class="docs__p text-2">
+                אנו שומרים לעצמנו את הזכות לתקן את הודעת הפרטיות לפי שיקול דעתנו
+                ובכל עת. המועד שבו עודכנה הודעת הפרטיות בפעם האחרונה מפורט
+                בתחתית העמוד. באחריותכם לבקר מדי פעם באתר האינטרנט שלנו ולעיין
+                בהודעת הפרטיות על מנת לבדוק האם חלו שינויים כלשהם. המשך השימוש
+                שלכם בשירותים שלנו לאחר פרסום השינויים מהווה את הסכמתכם לשינויים
+                אלו.
+              </p>
+            </li>
+            <li>
+              <span class="docs__p text-2">פרטי התקשרות </span>
+              <p class="docs__p text-2">
+                בכל שאלה או הערה בדבר הודעת פרטיות זו, מדיניות הפרטיות שלנו,
+                הדרכים שבהן אנו אוספים או משתמשים בפרטים האישיים שלכם, הבחירות
+                והזכויות שלכם ביחס לשימוש כאמור, או רצונכם לממש זכויות אלו על פי
+                הוראות הדין החלות במדינת קליפורניה, באפשרותכם ליצור עמנו קשר
+                בדוא"ל בכתובת:
+                <a href="mailto:help@gigzy.net">help@gigzy.net</a>.
+              </p>
+            </li>
+          </ol>
+          <p class="docs__p text-2"><i>עודכן בתאריך: February 11, 2023 </i></p>
+        </div>
+      </main>
+      <footer class="footer">
+        <div
+          class="footer__container container flex flex_justify-between flex_wrap"
+        >
+          <div class="footer__content gap-18 flex flex_column">
+            <div class="footer__columns gap-12 flex">
+              <div class="footer__column">
+                <p class="text text-1 semibold c-primary">Terms</p>
+                <div class="terms-column">
+                  <a
+                    href="policy.html"
+                    target="_blank"
+                    class="footer__text text c-primary"
+                    style="text-decoration: underline"
+                    >Policy</a
+                  >
+                  <a
+                    href="privacy.html"
+                    target="_blank"
+                    class="footer__text text c-primary"
+                    style="text-decoration: underline"
+                    >Privacy</a
+                  >
+                  <a
+                    href="cookies.html"
+                    target="_blank"
+                    class="footer__text text c-primary"
+                    style="text-decoration: underline"
+                    >Cookies</a
+                  >
+                </div>
+              </div>
+              <div class="footer__column">
+                <a
+                  href="mailto:support@gigzy.net"
+                  class="text text-1 semibold c-primary email-link"
+                  >support@gigzy.net</a
+                >
+                <p class="footer__text text c-primary">
+                  Contact us, if you have an question!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__download-buttons flex flex_column gap-10">
+            <a
+              href="https://apps.apple.com/ru/app/gigzy/id6443645741"
+              target="_blank"
+            >
+              <picture
+                ><source srcset="img/app-store.webp" type="image/webp" />
+                <img
+                  class="footer__download-button"
+                  src="img/app-store.png"
+                  alt="Gigzy in Apple Store "
+              /></picture>
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.gigzy.gigzyApp"
+              target="_blank"
+            >
+              <picture
+                ><source srcset="img/google-play.webp" type="image/webp" />
+                <img
+                  class="footer__download-button"
+                  src="img/google-play.png"
+                  alt="Gigzy in Google Play "
+              /></picture>
+            </a>
+          </div>
+        </div>
+      </footer>
+      <div class="modal flex flex_center">
+        <div class="modal__scroll">
+          <div class="modal__content">
+            <div class="close-wrapper" onclick="toggleModal()">
+              <picture
+                ><source
+                  srcset="img/icons/icons.svg#close-gray"
+                  type="image/webp" />
+                <img
+                  class="close"
+                  src="img/icons/icons.svg#close-gray"
+                  alt="close icon"
+              /></picture>
+            </div>
+            <form class="mdform flex flex_column">
+              <div class="flex flex_column gap-28">
+                <h1 class="p30 text-center" data-translate="modal_title"></h1>
+                <div class="flex flex_column gap-16">
+                  <div class="column-adaptive flex gap-16">
+                    <div class="field">
+                      <input
+                        class="input text text-1 c-primary"
+                        id="firstName"
+                        name="firstName"
+                        type="text"
+                      />
+                      <label for="firstName">
+                        <span class="caption caption-1 c-tertiary"
+                          ><span data-translate="form_name">Name</span>
+                          <span class="c-red-hover">*</span></span
+                        >
+                      </label>
+                    </div>
+                    <div class="field">
+                      <input
+                        class="input text text-1 c-primary"
+                        id="secondName"
+                        name="secondName"
+                        type="text"
+                      />
+                      <label for="secondName">
+                        <span class="caption caption-1 c-tertiary"
+                          ><span data-translate="form_surname">Surname</span>
+                          <span class="c-red-hover">*</span></span
+                        >
+                      </label>
+                    </div>
+                  </div>
+                  <div class="column-adaptive flex gap-16">
+                    <div class="field">
+                      <input
+                        class="input text text-1 c-primary"
+                        id="telephone"
+                        name="telephone"
+                        type="text"
+                      />
+                      <label for="telephone">
+                        <span class="caption caption-1 c-tertiary"
+                          ><span data-translate="form_phone">Phone</span>
+                          <span class="c-red-hover">*</span></span
+                        >
+                      </label>
+                      <div
+                        id="telephone-error"
+                        class="error-text is-hidden"
+                        data-translate="form_error_phone"
+                      >
+                        Please, input only numbers
+                      </div>
+                    </div>
+                    <div class="field">
+                      <input
+                        class="input text text-1 c-primary"
+                        id="email"
+                        name="email"
+                        type="email"
+                      />
+                      <label for="email">
+                        <span class="caption caption-1 c-tertiary"
+                          ><span data-translate="form_email">Email</span>
+                          <span class="c-red-hover">*</span></span
+                        >
+                      </label>
+                      <div
+                        id="email-error"
+                        class="error-text is-hidden"
+                        data-translate="form_error_email"
+                      >
+                        Please, input your Email
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column-adaptive flex gap-16">
+                    <div class="flex flex_grow flex_column gap-16">
+                      <p>
+                        <span
+                          class="text text-1 c-primary"
+                          data-translate="form_age"
+                          >Age</span
+                        >
+                        *
+                      </p>
+                      <div class="rdbts flex-il-adaptive flex gap-32 flex_wrap">
+                        <div class="form_radio">
+                          <input
+                            id="radio-1"
+                            type="radio"
+                            name="age"
+                            value="18-25"
+                          />
+                          <label for="radio-1">18-25</label>
+                        </div>
+                        <div class="form_radio">
+                          <input
+                            id="radio-2"
+                            type="radio"
+                            name="age"
+                            value="25-35"
+                          />
+                          <label for="radio-2">25-35</label>
+                        </div>
+                        <div class="form_radio">
+                          <input
+                            id="radio-3"
+                            type="radio"
+                            name="age"
+                            value="35-45"
+                          />
+                          <label for="radio-3">35-45</label>
+                        </div>
+                        <div class="form_radio">
+                          <input
+                            id="radio-4"
+                            type="radio"
+                            name="age"
+                            value="45+"
+                          />
+                          <label for="radio-4">45+</label>
+                        </div>
+                      </div>
+                      <div
+                        id="formAge-error"
+                        class="error-text is-hidden"
+                        data-translate="form_error_age"
+                      >
+                        Please, select your Age
+                      </div>
+                    </div>
+                    <div class="flex flex_grow flex_column gap-16">
+                      <p>
+                        <span
+                          class="text text-1 c-primary"
+                          data-translate="form_weekly_gigz"
+                          >How Many Weekly Gigz</span
+                        >
+                        *
+                      </p>
+                      <div class="rdbts flex-il-adaptive flex gap-32 flex_wrap">
+                        <div class="form_radio">
+                          <input
+                            id="radio-5"
+                            type="radio"
+                            name="weeklyContent"
+                            value="1-2"
+                          />
+                          <label for="radio-5">1-2</label>
+                        </div>
+                        <div class="form_radio">
+                          <input
+                            id="radio-6"
+                            type="radio"
+                            name="weeklyContent"
+                            value="3-4"
+                          />
+                          <label for="radio-6">3-4</label>
+                        </div>
+                        <div class="form_radio">
+                          <input
+                            id="radio-7"
+                            type="radio"
+                            name="weeklyContent"
+                            value="+5"
+                          />
+                          <label for="radio-7">+5</label>
+                        </div>
+                      </div>
+                      <div
+                        id="form_weeklyContent-error"
+                        class="error-text is-hidden"
+                        data-translate="form_error_weekly_gigz"
+                      >
+                        Please, select how many weekly Gigz do you want
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex_grow flex_column gap-16">
+                    <p>
+                      <span
+                        class="text text-1 c-primary"
+                        data-translate="form_self_employed"
+                        >Are you willing to be self employed?</span
+                      >
+                      *
+                    </p>
+                    <div class="rdbts flex-il-adaptive flex gap-32">
+                      <div class="form_radio">
+                        <input
+                          id="radio-8"
+                          type="radio"
+                          name="selfEmployed"
+                          value="Yes"
+                        />
+                        <label for="radio-8" data-translate="form_yes"
+                          >Yes</label
+                        >
+                      </div>
+                      <div class="form_radio">
+                        <input
+                          id="radio-9"
+                          type="radio"
+                          name="selfEmployed"
+                          value="No"
+                        />
+                        <label for="radio-9" data-translate="form_no">No</label>
+                      </div>
+                    </div>
+                    <div
+                      id="form_selfEmployed-error"
+                      class="error-text is-hidden"
+                      data-translate="form_error_self_employed"
+                    >
+                      Please, select it
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="form__button mw mt-46 button primary xl"
+                type="submit"
+              >
+                <span class="button-link c-white" data-translate="form_submit"
+                  >Submit form</span
+                >
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="successModal flex flex_center modal">
+        <div class="modal__scroll">
+          <div class="modal__content">
+            <div class="close-wrapper" onclick="toggleSuccessModal()">
+              <picture
+                ><source
+                  srcset="img/icons/icons.svg#close-gray"
+                  type="image/webp" />
+                <img
+                  class="close"
+                  src="img/icons/icons.svg#close-gray"
+                  alt="close icon"
+              /></picture>
+            </div>
+            <div class="flex flex_column">
+              <div class="flex flex_column gap-28">
+                <h1
+                  class="p30 text-center"
+                  data-translate="modal_success_title"
+                >
+                  Success
+                </h1>
+                <div class="flex flex_column gap-16">
+                  <p data-translate="modal_success_message">
+                    Thank you, we will contact you and notify you about the
+                    launch of the application
+                  </p>
+                </div>
+              </div>
+              <button
+                class="form__button mw mt-46 button primary xl"
+                type="button"
+                id="successCloseButton"
+              >
+                <span
+                  class="button-link c-white"
+                  data-translate="modal_success_ok"
+                  >Ok</span
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://rawgit.com/RobinHerbots/Inputmask/5.0.3/dist/inputmask.min.js"></script>
+    <script src="js/sha256.min.js"></script>
+    <script src="./js/privacy.js"></script>
+  </body>
+</html>

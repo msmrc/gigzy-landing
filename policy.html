@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/icons/favicon-16x16.png"
+    />
+
+    <link rel="stylesheet" href="./css/docs.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/policy.css" />
+    <title>Gigzy</title>
+  </head>
+  <body>
+    <div class="wrapper flex flex_column">
+      <header class="header">
+        <div class="burger">
+          <picture
+            ><source
+              srcset="img/icons/icons.svg#burger-close"
+              type="image/webp" />
+            <img
+              class="icon icon-burger icon-burger-close"
+              src="img/icons/logo.png"
+              alt="Menu Gigzy"
+          /></picture>
+          <picture
+            ><source
+              srcset="img/icons/icons.svg#burger-open"
+              type="image/webp" />
+            <img
+              class="icon icon-burger icon-burger-open"
+              src="img/icons/icons.svg#burger-open"
+              alt="Menu Gigzy"
+          /></picture>
+        </div>
+        <div
+          class="flex-il-adaptive header__container container flex flex_justify-between flex_align-center"
+        >
+          <div class="logo flex gap-12 flex_align-center">
+            <a href="https://gigzy.net/">
+              <picture
+                ><source
+                  srcset="img/icons/icons.svg#logo"
+                  type="image/webp" />
+                <img
+                  class="icon icon-logo"
+                  src="img/icons/logo.png"
+                  alt="Gigzy logotype"
+              /></picture>
+            </a>
+            <a href="">
+              <h1 class="text c-primary bold">Gigzy</h1>
+            </a>
+          </div>
+          <div
+            class="flex-il-adaptive header__lang flex flex_align-center gap-4 lang-toggler_mobile"
+            onclick="toggleLang('open')"
+          >
+            <div class="header__lang-list-wrapper" id="list-wrapper_mobile">
+              <ul class="header__lang-list">
+                <li data-value="en" class="text text-1 c-primary capse">eng</li>
+                <li data-value="il" class="text text-1 c-primary capse">he</li>
+              </ul>
+            </div>
+            <span
+              class="text text-1 c-primary capse"
+              data-translate="header_lang"
+            >
+              eng
+            </span>
+            <picture
+              ><source
+                srcset="img/icons/icons.svg#eng"
+                type="image/webp" />
+              <img
+                class="icon icon-flag"
+                data-translate-icon="en"
+                src="img/icons/icons.svg#eng"
+                alt="Gigzy english language"
+            /></picture>
+            <picture
+              ><source
+                srcset="img/icons/icons.svg#il"
+                type="image/webp" />
+              <img
+                class="icon icon-flag"
+                data-translate-icon="il"
+                src="img/icons/icons.svg#il"
+                alt="Gigzy israel language"
+            /></picture>
+          </div>
+          <div class="flex-il-adaptive header__actions flex gap-40">
+            <button class="button primary xs" onclick="toggleModal('open')">
+              <span class="button-link" data-translate="header_login"></span>
+              <picture
+                ><source
+                  srcset="img/icons/icons.svg#profile"
+                  type="image/webp" />
+                <img
+                  class="icon icon-profile"
+                  src="img/icons/icons.svg#profile"
+                  alt="Gigzy login"
+              /></picture>
+            </button>
+            <div
+              class="flex-il-adaptive header__lang flex flex_align-center gap-4 lang-toggler"
+            >
+              <div class="header__lang-list-wrapper" id="list-wrapper">
+                <ul class="header__lang-list">
+                  <li data-value="en" class="text text-1 c-primary capse">
+                    eng
+                  </li>
+                  <li data-value="il" class="text text-1 c-primary capse">
+                    he
+                  </li>
+                </ul>
+              </div>
+              <span
+                class="text text-1 c-primary capse"
+                data-translate="header_lang"
+              >
+                eng
+              </span>
+              <picture
+                ><source
+                  srcset="img/icons/icons.svg#eng"
+                  type="image/webp" />
+                <img
+                  class="icon icon-flag"
+                  data-translate-icon="en"
+                  src="img/icons/icons.svg#eng"
+                  alt="Gigzy english language"
+              /></picture>
+              <picture
+                ><source
+                  srcset="img/icons/icons.svg#il"
+                  type="image/webp" />
+                <img
+                  class="icon icon-flag"
+                  data-translate-icon="il"
+                  src="img/icons/icons.svg#il"
+                  alt="Gigzy israel language"
+              /></picture>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main container">
+        <div class="docs flex flex_column" id="eng_docks">
+          <h3 class="docs__title">Privacy Policy</h3>
+          <p class="docs__p text-2">
+            At Gigzy, its subsidiaries (if any) or affiliated companies (“Gigzy”
+            or “We”), we recognize that privacy is important. This privacy
+            policy (“Privacy Policy”) applies to the access to Gigzy’s website
+            (the “Website”) or Gigzy’s Mobile Application (the “App”) and the
+            use of the services available through the Website (collectively, the
+            “Services”).
+          </p>
+          <p class="docs__p text-2">
+            'Personally Identifiable Information' (“PII”) is information that
+            can be used on its own or with other information to identify,
+            contact, or locate a single person, or to identify an individual in
+            context. When you, the user (the “User”) uses the Services, your PII
+            will be processed subject to the terms of this Privacy Policy.
+            Please read our Privacy Policy carefully to get a clear
+            understanding of how We organize, collect, use, protect or otherwise
+            handle your PII in accordance with our Website.
+          </p>
+          <p class="docs__p text-2">
+            You are not legally required to provide PII, however in order to
+            enable you to access and use the Services We require that you
+            provide PII pursuant to this Privacy Policy. By using the Services
+            you consent to this Privacy Policy, inclusive of the terms described
+            herein.
+          </p>
+          <p class="docs__p text-2">
+            If you have any questions about this Privacy Policy, please feel
+            free to contact us at: help@gigzy.net.
+          </p>
+          <p class="docs__p text-2">
+            You hereby acknowledge, agree and explicitly consent of your own
+            free will and although not necessarily required to do so under law,
+            that your PII, will be stored, processed, used, held and managed by
+            Gigzy and/or on our behalf, inter alia, by magnetic or optical means
+            that are designated for digital processing or in other forms of
+            database(s) in accordance with applicable law.
+          </p>
+
+          <ol class="docs__list">
+            <li>
+              <span class="docs__subtitle">Information and How We Use It</span>
+              <p>
+                The Website or the App may collect, process and use the data
+                which includes PII, the legal basis of which is your consent,
+                which you give when you use the Services. Types of PII that may
+                be used include the following, without limitation;
+              </p>
+
+              <ol>
+                <li class="docs__p text-2">
+                  We may process data about your use of our Website and Services
+                  (“User Data”). User Data may include your IP address,
+                  location, type of browser and version, operating system,
+                  referral source, visit length, page views and website
+                  navigation paths, as well as information about the frequency
+                  and timing of your use of the Services. We may use cookies as
+                  a source of User Data (as further detailed under our Cookies
+                  Policy at https://gigzy.net/cookies (“Cookies Policy”)).User
+                  Data may be processed in the manner set forth in this Privacy
+                  Policy for the purposes of analyzing the use of the Website
+                  and Services, operating our Website, improving and customizing
+                  the Services, ensuring the security of our Services,
+                  maintaining back-ups of our databases and communicating with
+                  you.
+                </li>
+                <li class="docs__p text-2">
+                  When registering on our Website you may be asked to enter your
+                  full name, email address, telephone number, bank details,
+                  Photocopy of your I.D. Card, Business registration number and
+                  certificate, tax file number or other details (“Entered
+                  Data”). You are the source of such data, and such data may be
+                  processed for the purposes of operating the Website, providing
+                  the Services, ensuring the security of the Website and
+                  Services, maintaining back-ups of our databases and
+                  communicating with you. In addition, you may have the option
+                  to upload photo content to Gigzy’s platform. Such content may
+                  be used and/or processed by Gigzy or any party on its behalf,
+                  as part of the Services. Should you choose to upload any
+                  content and/or create content to be used on Gigzy’s platform,
+                  you agree that such content may be viewed and/or used by Gigzy
+                  or any party on its behalf to provide the Services.
+                </li>
+                <li class="docs__p text-2">
+                  We may process information that you provide to use for the
+                  purpose of subscribing to our email notifications
+                  (“Notification Data”) provided that you have specifically
+                  consented to receive the same. The Notification Data may be
+                  processed for the purposes of sending you relevant
+                  Notification Data.
+                </li>
+                <li class="docs__p text-2">
+                  We may process information that you provide to use for the
+                  purpose of subscribing to our email notifications
+                  (“Notification Data”) provided that you have specifically
+                  consented to receive the same. The Notification Data may be
+                  processed for the purposes of sending you relevant
+                  Notification Data.
+                </li>
+                <li class="docs__p text-2">
+                  We may collect and retain metadata and statistical information
+                  concerning the use of the Services which are not subject to
+                  the deletion procedures in this Privacy Policy and may be
+                  retained by us for no more than required to conduct its
+                  business. Some data may be retained also on our third-party
+                  service providers’ servers in accordance with their retention
+                  policies. You will not be identifiable from this retained
+                  metadata or statistical information.
+                </li>
+                <li class="docs__p text-2">
+                  We may process any of the types of data described in this
+                  Section 1 if We are required to do so by court-order, any
+                  legal obligation to which We are subject, or when necessary,
+                  for the establishment, exercise or defense of legal claims.
+                  The legal basis for this processing is our legitimate
+                  interests, namely of Gigzy’s legal rights, your legal rights
+                  and the legal rights of others.
+                </li>
+                <li class="docs__p text-2">
+                  Please do not supply any other person's PII to us without the
+                  specific and explicit consent of all parties, including the
+                  owner of such PII.
+                </li>
+              </ol>
+            </li>
+            <li>
+              <span class="docs__subtitle">Providing Your PII to Others</span>
+              <ol>
+                <li class="docs__p text-2">
+                  We may disclose PII to any member of our group of companies,
+                  including subsidiaries (if any), holding companies and all of
+                  their respective subsidiaries (if any), insofar as reasonably
+                  necessary for the purposes set out in this Privacy Policy.
+                </li>
+                <li class="docs__p text-2">
+                  We may disclose your PII to professional advisers insofar as
+                  reasonably necessary for the purposes of obtaining and
+                  maintaining insurance coverage, managing risks, obtaining
+                  professional advice and managing legal disputes.
+                </li>
+                <li class="docs__p text-2">
+                  We may disclose your PII to third-party service providers,
+                  vendors and subcontractors reasonably necessary to provide the
+                  Services. Such third-party provider’s vendors and
+                  subcontractors will only use the PII to the extent necessary
+                  to allow them to perform the services they provide to Gigzy.
+                </li>
+                <li class="docs__p text-2">
+                  We will only disclose your PII to third parties who provide
+                  sufficient guarantees that they implement appropriate
+                  technical and organizational measures in such a manner that
+                  their processing of your PII will meet the requirements of
+                  Data Protection Regulation (as defined below) and ensure the
+                  protection of your rights and with whom We have written
+                  contracts that conform to our legal obligations under Data
+                  Protection Regulation.
+                </li>
+              </ol>
+            </li>
+            <li>
+              <span class="docs__subtitle"
+                >International Transfers of Your PII
+              </span>
+              <ol>
+                <li class="docs__p text-2">
+                  In this Section 3, We provide information about the
+                  circumstances in which your PII may be transferred to
+                  countries worldwide including inside and outside the European
+                  Economic Area (“EEA”).
+                </li>
+                <li class="docs__p text-2">
+                  We have facilities in Israel. “Adequacy decisions” of the
+                  European Commission have been made with respect to the data
+                  protection laws of Israel
+                </li>
+                <li class="docs__p text-2">
+                  Transfers to countries will be protected by appropriate
+                  safeguards, namely the provisions of applicable law which
+                  relate to the protection of individuals with regards to the
+                  Processing of Personal Data to which a party may be subject
+                  including, without limitation, the Israeli Protection of
+                  Privacy Law, 5741-1981, the General Data Protection Regulation
+                  (EU) 2016/679, the Data Protection Act 2018, the Regulation of
+                  Investigatory Powers Act 2000, the Telecommunications (Lawful
+                  Business Practice) (Interception of Communications) Regulation
+                  2000, the Electronic Communications Data Protection Directive
+                  2002/58/EC, the Privacy and Electronic Communications (EC
+                  Directive) Regulations 2003 and, where applicable, the
+                  guidance and code of practice issued by the Information
+                  Commissioner’s Office from time to time, directions of any
+                  competent regulatory authority, relevant regulatory guidance
+                  and codes of practice (collectively “Data Protection
+                  Regulation”) or to the extent transfers will cross borders to
+                  outside the EEA, such transfer shall be carried out in
+                  accordance with standard contractual clauses annexed to the EU
+                  Commission Decision 2010/87/EU of 5 February 2010 for the
+                  Transfer of Personal Data to Processors established in Third
+                  Countries under the Directive and pursuant to the Implementing
+                  Decision 914/2021/EU on standard contractual clauses for the
+                  transfer of personal data to third countries pursuant
+                  Regulation (EU) 679/2016 adopted by the European Commission on
+                  4 June 2021 (the “Model Clauses”).
+                </li>
+                <li class="docs__p text-2">
+                  The hosting facilities for our Website are situated within the
+                  EEA.
+                </li>
+                <li class="docs__p text-2">
+                  You acknowledge that PII submitted by you for transmission
+                  through the Services may be transmitted around the world via
+                  the internet for the purpose of performing the Services and
+                  subject to the terms of this Privacy Policy and your agreement
+                  with us to purchase the Services.
+                </li>
+              </ol>
+            </li>
+            <li>
+              <span class="docs__subtitle">Retaining and Deleting PII </span>
+              <ol>
+                <li class="docs__p text-2">
+                  This Section 4 sets out our data retention policies and
+                  procedures, which are designed to help ensure that We comply
+                  with our legal obligations in relation to the retention and
+                  deletion of PII.
+                </li>
+                <li class="docs__p text-2">
+                  We will retain and delete your PII as follows:
+                </li>
+                <li class="docs__p text-2">
+                  PII will be retained for the duration of the Services up to a
+                  period of seven years following the end of the Services after
+                  which period it will be deleted from our systems, unless
+                  otherwise required under applicable law
+                </li>
+                <li class="docs__p text-2">
+                  Notwithstanding the other provisions of this Privacy Policy,
+                  We may retain your PII where such retention is necessary for
+                  compliance with a legal obligation to which We are subject, or
+                  in order to protect your vital interests or the vital
+                  interests of another natural person.
+                </li>
+              </ol>
+            </li>
+            <li>
+              <span class="docs__subtitle">Your Rights </span>
+              <ol>
+                <li class="docs__p text-2">
+                  In this Section 5, We have done our best to summarize the
+                  rights that you may have under applicable data protection law.
+                  These are complex, and not all of the details have been
+                  included herein. In light of this, you should read the
+                  relevant laws and guidance from the regulatory authorities for
+                  a full explanation of these rights.
+                </li>
+                <li class="docs__p text-2">
+                  Your principal rights under Data Protection Regulation are all
+                  or some of the following:
+                  <ul class="list-letter-type">
+                    <li>the right to access;</li>
+                    <li>the right to rectification;</li>
+                    <li>the right to erasure;</li>
+                    <li>the right to restrict processing;</li>
+                    <li>the right to restrict processing;</li>
+                    <li>the right to data portability;</li>
+                    <li>the right to data portability;</li>
+                    <li>the right to withdraw consent.</li>
+                  </ul>
+                </li>
+                <li class="docs__p text-2">
+                  You have the right to confirmation as to whether or not We
+                  process your PII and, where We do, access to the PII, together
+                  with certain additional information. That additional
+                  information includes details of the purposes of the
+                  processing, the categories of PII concerned and the recipients
+                  of the PII. Providing the rights and freedoms of others are
+                  not affected, and as requested or approved by you, We will
+                  supply to you a copy of your PII. The first copy will be
+                  provided free of charge, but additional copies may be subject
+                  to a reasonable fee. You can request to access your PII by
+                  requesting an e-mail summary from: help@gigzy.net.
+                </li>
+                <li class="docs__p text-2">
+                  You have the right to have any inaccurate PII about you
+                  rectified and, taking into account the purposes of the
+                  processing, to have any incomplete PII about you completed.
+                </li>
+                <li class="docs__p text-2">
+                  In some circumstances you have the right to the erasure of
+                  your PII, by providing adequate evidence attesting to your
+                  identity, without undue delay. Those circumstances include:
+                  the PII is no longer necessary in relation to the purposes for
+                  which they were collected or otherwise processed; you withdraw
+                  consent to consent-based processing; and the PII have been
+                  unlawfully processed. There are certain general exclusions of
+                  the right to erasure. Those general exclusions include where
+                  processing is necessary: for compliance with a legal
+                  obligation; or for the establishment, exercise or defense of
+                  legal claims.
+                </li>
+                <li class="docs__p text-2">
+                  In some circumstances you have the right to the erasure of
+                  your PII, by providing adequate evidence attesting to your
+                  identity, without undue delay. Those circumstances include:
+                  the PII is no longer necessary in relation to the purposes for
+                  which they were collected or otherwise processed; you withdraw
+                  consent to consent-based processing; and the PII have been
+                  unlawfully processed. There are certain general exclusions of
+                  the right to erasure. Those general exclusions include where
+                  processing is necessary: for compliance with a legal
+                  obligation; or for the establishment, exercise or defense of
+                  legal claims.
+                </li>
+                <li class="docs__p text-2">
+                  You might have the right to object to our processing of your
+                  PII on grounds relating to your particular situation (to the
+                  extent applicable under applicable Data Protection
+                  Regulation). If you make such an objection, We will cease to
+                  process the PII unless We can demonstrate compelling
+                  legitimate grounds for the processing which override your
+                  interests, rights and freedoms, or the processing is for the
+                  establishment, exercise or defense of legal claims.
+                </li>
+                <li class="docs__p text-2">
+                  To the extent that the legal basis for our processing of your
+                  PII is consent, and such processing is carried out by
+                  automated means, you have the right to receive your PII from
+                  us in a structured, commonly used and machine-readable format.
+                  However, this right does not apply where it would adversely
+                  affect the rights and freedoms of others.
+                </li>
+                <li class="docs__p text-2">
+                  If you consider that our processing of your PII infringes Data
+                  Protection Regulation, you have a legal right to file a
+                  complaint with a supervisory authority responsible for data
+                  protection.
+                </li>
+                <li class="docs__p text-2">
+                  To the extent that the legal basis for our processing of your
+                  PII is consent you have the right to withdraw that consent at
+                  any time. Withdrawal will not affect the lawfulness of
+                  processing before the withdrawal.
+                </li>
+                <li class="docs__p text-2">
+                  To the extent that the legal basis for our processing of your
+                  PII is consent you have the right to withdraw that consent at
+                  any time. Withdrawal will not affect the lawfulness of
+                  processing before the withdrawal.
+                </li>
+              </ol>
+            </li>
+            <li>
+              <span class="docs__subtitle">Opt-in</span>
+              <ol>
+                <li class="docs__p text-2">
+                  When you provide us with PII for a secondary reason, like
+                  marketing or other secondary reasons which We will convey to
+                  you from time to time if applicable, We will ask for your
+                  consent. After you opt-in, you may withdraw your consent at
+                  any time, by contacting us at help@gigzy.net.
+                </li>
+              </ol>
+            </li>
+            <li>
+              <span class="docs__subtitle">Information Sequrity</span>
+              <ol>
+                <li class="docs__p text-2">
+                  We follow generally accepted industry standards to protect
+                  against unauthorized access to or unauthorized use,
+                  alteration, disclosure or destruction of PII. However, no
+                  method of transmission over the Internet, or method of
+                  electronic storage, is 100% secure. Therefore, while We strive
+                  to use commercially acceptable means to protect PII, We cannot
+                  guarantee its absolute security.
+                </li>
+                <li class="docs__p text-2">
+                  The PII is contained behind secured networks and is only
+                  accessible by a limited number of persons who have special
+                  access rights to such systems, and are required by contract to
+                  keep the information confidential.
+                </li>
+                <li class="docs__p text-2">
+                  We implement a variety of security measures to maintain the
+                  safety of the PII.
+                </li>
+              </ol>
+            </li>
+            <li>
+              <span class="docs__subtitle"
+                >California Consumer Privacy Act (CCPA)</span
+              >
+              <ol>
+                <li class="docs__p text-2">
+                  California residents have specific rights under the California
+                  Consumer Privacy Act (“CCPA”). For more information and to
+                  exercise your rights, please see the Privacy Notice for
+                  California Residents at the following link:
+                  https://gigzy.net/privacy.
+                </li>
+              </ol>
+            </li>
+            <li>
+              <span class="docs__subtitle"
+                >California Online Privacy Protection Act</span
+              >
+              <ol>
+                <li class="docs__p text-2">
+                  According to CalOPPA, We agree to the following:
+                  <ul>
+                    <li>Users can visit Gigzy's Website anonymously.</li>
+                    <li>
+                      Once this Privacy Policy is created, We will add a link to
+                      it on our home page or as a minimum, on the first
+                      significant page after entering our Website.
+                    </li>
+                    <li>
+                      Our Privacy Policy link includes the word 'Privacy' and
+                      can easily be found on the page specified above.
+                    </li>
+                  </ul>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <span class="docs__subtitle">Tracking</span>
+              <p>
+                To the extent legally permitted We may allow third-party
+                behavioral tracking.
+              </p>
+            </li>
+            <li>
+              <span class="docs__subtitle"
+                >COPPA (Children Online Privacy Protection Act)</span
+              >
+              <ol>
+                <li class="docs__p text-2">
+                  When it comes to the collection of PII from children under the
+                  age of 13 years old, the Children's Online Privacy Protection
+                  Act (COPPA) puts parents in control. The Federal Trade
+                  Commission, United States' consumer protection agency,
+                  enforces the COPPA Rule, which spells out what operators of
+                  websites and online services must do to protect children's
+                  privacy and safety online.
+                </li>
+                <li class="docs__p text-2">
+                  We do not market to children under the age of 13 years old,
+                  and 13 year old are prohibited from using this Website without
+                  proper consents from guardians.
+                </li>
+              </ol>
+            </li>
+            <li>
+              <span class="docs__subtitle">Fair Information Practices</span>
+              <ol>
+                <li class="docs__p text-2">
+                  In order to be in line with Fair Information Practices We will
+                  take the following responsive action, should a data breach
+                  occur:
+                  <ol>
+                    <li class="docs__p text-2">
+                      We will notify you within the time required by applicable
+                      law, but no later than three business days from becoming
+                      aware of any such breach.
+                    </li>
+                    <li class="docs__p text-2">
+                      We also agree to the Individual Redress Principle which
+                      requires that individuals have the right to legally pursue
+                      enforceable rights against data collectors and processors
+                      who fail to adhere to the law. This principle requires not
+                      only those individuals have enforceable rights against
+                      data users, but also that individuals have recourse to
+                      courts or government agencies to investigate and/or
+                      prosecute non-compliance by data processors.
+                    </li>
+                  </ol>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <span class="docs__subtitle">CAN SPAM Act</span>
+              <ol>
+                <li class="docs__p text-2">
+                  The CAN-SPAM Act is a law that sets the rules for commercial
+                  email, establishes requirements for commercial messages, gives
+                  recipients the right to have emails stopped from being sent to
+                  them, and spells out tough penalties for violations.
+                </li>
+                <li class="docs__p text-2">
+                  13.2. We collect your email address in order to:
+                  <ol>
+                    <li class="docs__p text-2">
+                      Send information, respond to inquiries, and/or other
+                      requests or questions
+                    </li>
+                    <li class="docs__p text-2">
+                      Send you additional information related to the Services.
+                    </li>
+                    <li class="docs__p text-2">
+                      Market to our mailing list or continue to send emails to
+                      our clients after the original engagement has occurred.
+                    </li>
+                  </ol>
+                  <li class="docs__p text-2">
+                    To be in accordance with CANSPAM, We agree to the following:
+                    <ul>
+                      <li>Not use false or misleading subjects or email addresses.</li>
+                      <li>Identify the message as an advertisement in some reasonable way.</li>
+                      <li>Include the physical address of our business or site headquarters.</li>
+                      <li>Monitor third-party email marketing services for compliance, if one is used.</li>
+                      <li>Honor opt-out/unsubscribe requests quickly.</li>
+                      <li>Allow users to unsubscribe by using the link at the bottom of each email.</li>
+                    </ul>
+                  </li>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <span class="docs__subtitle">Third-party Direct Collectors</span>
+              <ol>
+                <li class="docs__p text-2">In general, the third-party providers used by us will only collect, use and disclose your information to the extent necessary to allow them to perform the Services they provide to us. However, certain third-party service providers, have their own privacy policies in respect to the information we are required to provide to them for your related transactions. </li>
+                <li class="docs__p text-2">In addition, we have third party providers that collect information through the use of cookies or other tracking tools. For more information about such cookies, please refer to our Cookies Policy, available here: gigzy.net/cookies.</li>
+                <li class="docs__p text-2">Once you leave our Website or are redirected to a third-party app or website or application, you are no longer governed by this Privacy Policy or our Terms of Service.</li>
+                <li class="docs__p text-2">In addition, we have third party providers that collect information through the use of cookies or other tracking tools. For more information about such cookies, please refer to our Cookies Policy, available here: gigzy.net/cookies.</li>
+              </ol>
+            </li>
+          <li>
+            <span class="docs__subtitle">Third-party Links</span>
+            <p>Occasionally, at our discretion, We may include or offer third-party services on our Website. These third-party sites have separate and independent privacy policies. We therefore have no responsibility or liability for the content and activities of these linked sites. Nonetheless, We seek to protect the integrity of our site and welcome any feedback about these sites.</p>
+          </li>
+          <li>
+            <span class="docs__subtitle">Age of Consent</span>
+            <p>By using our Website, you represent that you are at least the age of majority in your state, province or country of residence, or that you are the age of majority in your state, province or country of residence and you have given us your consent to allow any of your minor dependents to use this site.</p>
+          </li>
+          <li>
+            <span class="docs__subtitle">Law and Jurisdiction</span>
+            <ol>
+              <li class="docs__p text-2">The law that applies to activity on the Website and the Privacy Policy is the law of the State of Israel alone.</li>
+              <li class="docs__p text-2">Exclusive jurisdiction to hear any dispute regarding the Website and/or the Privacy Policy and anything deriving thereunder is conferred to the competent court in the district of Tel Aviv-Jaffa, Israel.</li>
+            </ol>
+          </li>
+          <li>
+            <span class="docs__subtitle">Changes to the Privacy Policy </span>
+            <ol>
+              <li class="docs__p text-2">We reserve the right to modify this Privacy Policy at any time, so please review it frequently. Changes and clarifications will take effect immediately upon their posting on the Website. In the event of a material change, We shall notify you via email or by means of a prominent notice on the Website.</li>
+              <li class="docs__p text-2">If We are acquired or merged with another company, your information may be transferred to the new owners so that We may continue to provide our Services to you. </li>
+            </ol>
+          </li>
+          <li>
+            <span class="docs__subtitle">Contacting Us</span>
+            <p>If there are any questions regarding this Privacy Policy, you may contact us by using the information below: help@gigzy.net.</p>
+          </li>
+          </ol>
+          <li><span class="docs__subtitle">Last updated: 11 February, 2023</span></li>
+        </div>
+
+        <div class="docs flex flex_column" id="he_docks">
+          <h3 class="docs__title">מדיניות פרטיות</h3>
+          <p class="docs__p text-2">
+            חברת גיגזי, חברות הבת שלה ושותפיה ("גיגזי" או "אנחנו") מכירות בחשיבות הרבה של פרטיותכם. מדיניות פרטיות זו ("מדיניות הפרטיות") חלה על הגישה המתבצעת לאתר האינטרנט של גיגזי ("אתר האינטרנט") או האפליקציה לנייד של גיגזי ("האפליקציה") והשימוש בשירותים הזמינים דרך אתר האינטרנט (יחדיו, "השירותים"). 
+          </p>
+          <p class="docs__p text-2">
+            "פרטים אישיים מזהים" הינם פרטים שניתן להשתמש בהם – לבדם או בשילוב עם פרטים אחרים – על מנת לזהות, ליצור קשר או לאתר אדם כלשהו, או לזהות אדם כלשהו בהקשר מסוים. בכל פעם שאתם – המשתמשים ("המשתמשים") – עושים שימוש בשירותים שלנו, יתבצע עיבוד של הפרטים האישיים המזהים שלכם בכפוף להוראות של מדיניות פרטיות זו. אנא קראו את מדיניות הפרטיות שלנו בעיון על מנת להבין את האופן שבו אנו מארגנים, אוספים, משתמשים, מגנים או מטפלים בפרטים האישיים המזהים שלכם בהתאם למפורט באתר האינטרנט שלנו.
+          </p>
+          <p class="docs__p text-2">
+            אין דרישה בחוק המחייבת אתכם לספק לנו פרטים אישיים מזהים, אך על מנת לאפשר לכם לגשת לשירותים שלנו ולהשתמש בהם, אנו נדרוש מכם לספק פרטים אישיים מזהים בהתאם לקבוע במדיניות פרטיות זו. השימוש בשירותים מהווה הסכמה מצדכם לאמור במדיניות פרטיות זו, לרבות התנאים המפורטים במסמך זה.
+          </p>
+          <p class="docs__p text-2">
+            בכל שאלה בנושא מדיניות הפרטיות, באפשרותכם ליצור עמנו קשר בדוא"ל שכתובתו help@gigzy.net.
+          </p>
+          <p class="docs__p text-2">
+            הנכם מאשרים ומסכימים בזאת ובמפורש – מרצונכם החופשי ואף על פי שאינכם נדרשים לעשות זאת על פי כל דין – לכך שגיגזי ו/או מי מטעמה יאחסנו, יעבדו, ישתמשו, יחזיקו וינהלו את הפרטים האישיים המזהים שלכם, וזאת, בין היתר, באמצעים מגנטיים או אופטיים המיועדים לעיבוד דיגיטלי או במסגרת סוגים אחרים של מאגרי נתונים, בהתאם לכל דין חל. 
+          </p>
+
+          <ol class="docs__list">
+            <li>
+              <span class="docs__subtitle">פרטי מידע וכיצד נשתמש בהם</span>
+              <p>
+                אתר האינטרנט או האפליקציה עשויים לאסוף, לעבד ולהשתמש בנתונים הכוללים פרטים אישיים מזהים, הבסיס החוקי של פעולות אלו הינו הסכמתכם – שאותה אתם תעניקו לנו בעת השימוש בשירותים. לפניכם רשימה של סוגי פרטים אישיים מזהים שייתכן שייעשה בהם שימוש (הרשימה אינה ממצה): 
+              </p>
+
+              <ol>
+                <li class="docs__p text-2">
+                  	אנו עשויים לעבד נתונים אודות השימוש שלכם באתר האינטרנט ובשירותים שלנו ("נתוני משתמש") "נתוני המשתמש" עשויים לכלול את כתובת ה-IP שלכם, את המיקום שלכם, את סוג וגרסת הדפדפן שלכם, מערכת ההפעלה שלכם, המקור שהפנה אתכם, אורך הביקור שלכם, מספר צפיות בעמוד ונתיבי הניווט באתר האינטרנט, וכן מידע אודות התדירות והתזמון של השימוש שלכם בשירותים. אנו עשויים להשתמש בעוגיות כמקור לנתוני משתמש  (ר' פירוט נוסף במדיניות העוגיות שלנו בכתובת:https://gigzy.net/cookies ("מדיניות העוגיות"). נתוני משתמש אפשר שיעובדו באופן המפורט במדיניות פרטיות זו למטרות ניתוח השימוש באתר האינטרנט ובשירותים, תפעול אתר האינטרנט, שיפור והתאמת השירותים, אבטחת השירותים שלנו, ניהול גיבויים למאגרי הנתונים שלנו ולצורך התקשורת מולכם.
+                </li>
+                <li class="docs__p text-2">
+                  בעת הרישום לאתר האינטרנט שלנו, ייתכן שתתבקשו להזין את שמכם המלא, את כתובת הדוא"ל שלכם, את מספר הטלפון שלכם, את פרטי הבנק שלכם, צילום של תעודת הזהות שלכם, מספר הרישום העסקי ותעודת הרישום העסקי שלכם, מספר תיק במס הכנסה ופרטים נוספים ("נתונים שהוזנו"). אתם המקור של הנתונים הללו, ויתכן שיתבצע עיבוד לנתונים אלו לצורך הפעלת אתר האינטרנט, מתן השירותים, אבטחת אתר האינטרנט והשירותים, ניהול גיבויים של מאגרי הנתונים שלנו והתקשורת מולכם. בנוסף, ייתכן שתינתן לכם האפשרות להעלות תמונות לפלטפורמה של גיגזי. ייתכן שגיגזי או מי מטעמה ישתמשו ו/או יעבדו את התכנים הללו במסגרת השירותים. ככל שתבחרו להעלות תכנים כלשהו ו/או לייצר תכנים כלשהו שבהם ייעשה שימוש בפלטפורמה של גיגזי, אתם מסכימים לכך שגיגזי או מי מטעמה יוכלו לצפות בתכנים אלו ו/או להשתמש בהם   לצורך מתן השירותים. 
+                </li>
+                <li class="docs__p text-2">
+                  אנו עשויים לעבד את המידע שתעבירו לנו לצורך הרשמה לקבלת התראות במייל ("נתוני התראות"), וזאת בתנאי שהסכמתם במפורש לקבלתן. ייתכן שיתבצע עיבוד לנתוני ההתראות על מנת שנוכל לשלוח לכם נתוני התראות רלוונטיים.
+                </li>
+                <li class="docs__p text-2">
+                  ייתכן שנעבד נתונים הכלולים בכל תכתובת או הקשורים לכל תכתובת שתשלחו אלינו ("נתוני התכתבות") – למשל, בזמן ההרשמה לעלון המידע (ניוזלטר) שלנו או במסגרת תגובות לסקר. נתוני התכתבות עשויים לכלול תכני התכתבות ו/או מטה-נתונים (metadata) הקשורים להתכתבות כאמור. ייתכן שיתבצע עיבוד לנתוני התכתבות  לצורך התקשורת מולכם ולצורכי שמירת תיעוד. 
+                </li>
+                <li class="docs__p text-2">
+                	ייתכן שנאסוף ונשמור מטה-נתונים ונתונים סטטיסטיים בדבר שימוש בשירותים שאינם כפופים להליכי מחיקה במסגרת מדיניות פרטיות זו, ואנו נשמור עליהם רק במידה הנדרשת לניהול עסקינו. כמו כן, ייתכן שיישמרו נתונים מסוימים על גבי השרתים של ספקי השירות השלישיים שלנו בהתאם למדיניות שמירת הנתונים שלהם. לא ניתן יהיה לזהות אתכם באמצעות מטה-נתונים או נתונים סטטיסטיים אלו.
+                </li>
+                <li class="docs__p text-2">
+                  ייתכן שאנו נעבד את סוגי הנתונים המפורטים בסעיף 1 ככל שנידרש לעשות זאת בהמשך לצו בית משפט, בהמשך לכל חובה חוקית שלה אנו כפופים, או לפי הצורך לשם הגשת תביעות משפטיות או ההתגוננות מפניהן. האינטרסים הלגיטימיים שלנו מהווים את הבסיס החוקי לעיבוד הנתונים האמור (דהיינו, הזכויות החוקיות של גיגזי, הזכויות החוקיות שלכם והזכויות החוקיות של אחרים). 
+                </li>
+                <li class="docs__p text-2">
+                  אנא הימנעו מלהעביר לנו פרטים אישיים מזהים של אדם אחר בהיעדר הסכמה מפורשת וברורה מטעם כל הצדדים המעורבים בדבר, לרבות הבעלים של פרטים אישיים מזהים אלו.
+                </li>
+              </ol>
+            </li>
+            <li>
+              <span class="docs__subtitle">העברת הפרטים האישיים המזהים שלכם לאחרים</span>
+              <ol>
+                <li class="docs__p text-2">
+                  ייתכן שאנו נגלה פרטים אישיים מזהים לכל אחת מחברות הקבוצה שלנו, לרבות חברות בת (ככל שתהיינה), חברות החזקות וחברות הבת שלהן (ככל שתהיינה), ככל שהדבר יידרש באופן סביר לשם המטרות המפורטות במדיניות פרטיות זו.
+                </li>
+                <li class="docs__p text-2">
+                  אנו עשויים לגלות את הפרטים האישיים המזהים שלכם ליועצים מקצועיים ככל שיידרש באופן סביר לשם קבלת כיסוי ביטוחי, ניהול סיכונים, קבלת ייעוץ מקצועי וניהול סכסוכים משפטיים.
+                </li>
+                <li class="docs__p text-2">
+                  אנו עשויים לגלות את הפרטים האישיים המזהים שלכם לספקי שירות שלישיים ולקבלני-משנה ככל שהדבר יידרש באופן סביר לשם מתן השירותים. ספקי שירותים שלישיים וקבלני-משנה אלו ישתמשו בפרטים האישיים המזהים רק ככל שהדבר יידרש על מנת לאפשר להם לבצע את השירותים שהם מספקים ל גיגזי. 
+                </li>
+                <li class="docs__p text-2">
+                 אנו נגלה את הפרטים האישיים המזהים שלכם רק לצדדים שלישיים המספקים ערובות מספקות לכך שהם נוקטים בצעדים טכניים וארגוניים הולמים, באופן שמבטיח כי עיבוד הפרטים האישיים המזהים שלכם יעמוד בדרישות "תקנות הגנת הנתונים" [Data Protection Regulation] (כמוגדר להלן) ובאופן המבטיח את ההגנה על הזכויות שלכם – ושמולם התקשרנו בחוזים בכתב הממלאים אחר חובותינו המשפטיות על פי תקנות הגנת הנתונים.
+                </li>
+              </ol>
+            </li>
+            <li>
+              <span class="docs__subtitle"
+                >העברות בינלאומיות של הפרטים האישיים המזהים שלכם 
+              </span>
+              <ol>
+                <li class="docs__p text-2">
+                  בסעיף 3 זה, אנו מספקים מידע אודות הנסיבות שבהן הפרטים האישיים המזהים שלכם עשויים לעבור למדינות שונות בעולם, לרבות בתוך האזור הכלכלי האירופי ומחוצה לו.
+                </li>
+                <li class="docs__p text-2">
+                 לחברתנו קיימים מתקנים בישראל. "החלטות הולמות" (Adequacy Decisions) של הנציבות האירופית התקבלו ביחס לדיני הגנת המידע בישראל. 
+                </li>
+                <li class="docs__p text-2">
+                  על העברות נתונים למדינות אחרות חלות הגנות מתאימות מכוח הוראות דין ותקנות שונות הנוגעות להגנה על יחידים בהקשר של עיבוד נתונים אישיים – שלו מי מהצדדים עשוי להיות כפוף – לרבות, ללא הגבלה, חוק הגנת הפרטיות הישראלי, תשמ"א-1981, תקנת הגנת הנתונים הכללית [General Data Protection Regulation (EU) 2016/679], חוק הגנת הנתונים משנת 2018 [Data Protection Act 2018], חוק האסדרה לסמכויות חקירה משנת 2000 [Regulation of Investigatory Powers Act], תקנת הבזק (פרקטיקות עסקיות חוקיות) (יירוט נתוני תקשורת) משנת 2000 [Telecommunications (Lawful Business Practice) (Interception of Communications) Regulation 2000], דירקטיבת הגנת נתוני התקשורת [Electronic Communications Data Protection Directive 2002/58/EC], תקנות הפרטיות והתקשורת האלקטרונית (הנציבות האירופית) משנת 2003 [Privacy and Electronic Communications (EC Directive) Regulations 2003] וכן ההנחיות וקוד ההתנהגות המפורסמות ע"י משרד הנציב (Commissioner's Office) מעת לעת, הנחיות הרשויות המאסדרות המוסמכות, הנחיות רגולטוריות רלוונטיות וקודי התנהגות רלוונטיים (יחדיו: "תקנות הגנת הנתונים"), או ככל שהעברות אלו הן העברות החוצות את גבולות האזור הכלכלי האירופי, ההעברות תתבצענה בהתאם לסעיפים חוזיים סטנדרטיים המופיעים בהחלטת הנציבות האירופית מס' 2010/87/EU מיום 5.2.2010 להעברת נתונים אישיים למעבדי נתונים היושבים במדינות שלישיות על פי הדירקטיבה [Transfer of Personal Data to Processors established in Third Countries], ובהמשך להחלטה המיישמת (Implementing Decision) מס' 914/2021/EU בדבר סעיפים חוזיים סטנדרטיים לטובת העברת נתונים אישיים למדינות שלישיות, בהמשך לתקנה מס' 679/2016 שאומצה ע"י הנציבות האירופית ביום 4.6.2021 ("הסעיפים לדוגמה"). 
+                </li>
+                <li class="docs__p text-2">
+                  המתקנים המשמשים לאירוח אתר האינטרנט שלנו ממוקמים באזור הכלכלי האירופי.  
+                </li>
+                <li class="docs__p text-2">
+                  הנכם מאשרים כי הפרטים האישיים המזהים שנשלחו על-ידכם במסגרת השירותים שלנו עשויים לעבור דרך האינטרנט במדינות שונות ברחבי העולם לשם ביצוע השירותים, ובכפוף לתנאיהם של מדיניות פרטיות זו וההסכם שנכרת בינינו לרכישת השירותים.  
+                </li>
+              </ol>
+            </li>
+            <li>
+              <span class="docs__subtitle">שמירת מידע מזהה אישי ומחיקתו</span>
+              <ol>
+                <li class="docs__p text-2">
+                  סעיף 4 זה מפרט את הנהלים ואת המדיניות שלנו בדבר שמירת נתונים, הנועדים להבטיח את עמידתנו בחובותינו המשפטיות בכל הנוגע לשמירת פרטים אישיים מזהים ולמחיקתם. 
+                </li>
+                <li class="docs__p text-2">
+                  אנו נשמור על הפרטים האישיים המזהים שלכם ונמחק אותם כדלקמן:
+                </li>
+                <li class="docs__p text-2">
+                  הפרטים האישיים המזהים יישמרו במהלך תקופת השירות למשך עד שבע שנים מתום מתן השירותים, ולאחר תקופה זו נתונים אלו יימחקו מן המערכות שלנו, אלא אם כן יידרש אחרת על פי כל דין.
+                </li>
+                <li class="docs__p text-2">
+                  על אף האמור ביתר הוראותיה של מדיניות פרטיות זו, ייתכן שנמשיך להחזיק בפרטים האישיים המזהים שלכם ככל ששמירת נתונים אלו הינה הכרחית לשם עמידה בחובה משפטית כלשהי שתחול עלינו, או לצורך ההגנה על האינטרסים החיוניים שלכם או של אישיות טבעית אחרת.
+                </li>
+              </ol>
+            </li>
+            <li>
+              <span class="docs__subtitle">הזכויות שלכם</span>
+              <ol>
+                <li class="docs__p text-2">
+                  בסעיף 5 זה עשינו כמיטב יכולתנו על מנת לסכם את הזכויות הקיימות לכם על פי הוראות דיני הגנת המידע הרלוונטיים. דינים אלו כרוכים במורכבות רבה, ופרטים מסוימים בהם אינם כלולים במסמך זה. לאור האמור, מומלץ לעיין בדינים הרלוונטיים ובהנחיות המגיעות מן הרשויות הרגולטוריות לקבלת הסבר מלא בדבר זכויות אלו.
+                </li>
+                <li class="docs__p text-2">
+                  זכויותיכם העיקריות על פי תקנות הגנת הנתונים כוללות בין היתר את הזכויות הבאות:
+                  <ul class="list-letter-type">
+                    <li>זכות גישה; </li>
+                    <li>זכות תיקון; </li>
+                    <li>זכות מחיקה; </li>
+                    <li>זכות להגביל עיבוד נתונים; </li>
+                    <li>זכות להתנגד לעיבוד נתונים; </li>
+                    <li>זכות לניוד נתונים; </li>
+                    <li>זכות להגיש תלונה לרשות מפקחת; </li>
+                    <li>הזכות לבטל את הסכמתכם. </li>
+                  </ul>
+                </li>
+                <li class="docs__p text-2">
+                  שמורה לכם הזכות לוודא האם אנו מבצעים או לא מבצעים עיבוד לפרטים אישיים מזהים שלכם, ובמקרים שבהם אנו עושים זאת, שמורה לכם הזכות לגשת לפרטים האישיים המזהים ביחד עם פרטים נוספים. פרטים נוספים אלו כוללים פרטים אודות מטרות עיבוד הנתונים, סוגי הפרטים האישיים המזהים וזהות מקבליהם. בהנחה שלא נפגעות הזכויות והחירויות של אנשים אחרים, ובהתאם לבקשתכם או לאישורכם, אנו נעביר לכם עותק מן הפרטים האישיים המזהים שלכם. העותק הראשון יועבר לכם ללא עלות, אך עותקים נוספים עלולים להיות כרוכים בתשלום סכום סביר. באפשרותכם לבקש גישה לפרטים האישיים המזהים שלכם באמצעות הגשת בקשה בדוא"ל שכתובתו: help@gigzy.net.
+                </li>
+                <li class="docs__p text-2">
+                  שמורה לכם הזכות לגרום לתיקון כל פרטים אישיים מזהים שנפלו בהם אי-דיוקים. כמו כן, ובהתחשב במטרות שלשמן התבצע עיבוד הנתונים, שמורה לכם הזכות לגרום להשלמת כל חוסר בפרטים האישיים המזהים שלכם.
+                </li>
+                <li class="docs__p text-2">
+                  בנסיבות מסוימות, תישמר לכם הזכות לגרום למחיקת הפרטים האישיים המזהים שלכם תוך מתן אסמכתאות מספקות לאישור הזהות שלכם, וזאת מבלי שייגרם כל עיכוב בלתי-סביר. נסיבות אלו כוללות את התרחישים הבאים: הפרטים האישיים המזהים אינם נדרשים עוד ביחס למטרה שלשמה הם נאספו או עובדו; משכתם את הסכמתכם לעיבוד נתונים מבוסס-הסכמה; הפרטים האישיים המזהים עובדו בניגוד לדין. לזכות המחיקה קיימים חריגים כלליים מסוימים, חריגים אלו כוללים מקרים שבהם קיים צורך בעיבוד נתונים בשל הדרישה לעמוד בחובה משפטית, או בשל פתיחה בתביעה משפטית או התגוננות מפניה.
+                </li>
+                <li class="docs__p text-2">
+                  בנסיבות מסוימות, ייתכן שתישמר לכם הזכות להגביל את עיבוד הפרטים האישיים המזהים שלכם. נסיבות אלו כוללות (ככל שתחולנה על פי תקנות הגנת הנתונים הרלוונטיות): ערערתם על רמת הדיוק של הפרטים האישיים המזהים; העיבוד התבצע בניגוד לדין, אך אתם מתנגדים לביצוע מחיקה; אנו איננו זקוקים עוד לפרטים האישיים המזהים למטרות עיבוד הנתונים שלנו, אך אתם נדרשים לפרטים האישיים המזהים לצורך הגשת תביעה משפטית או ההתגוננות מפניה; התנגדתם לביצוע עיבוד נתונים, ולהתנגדות זו מתבצע תהליך אימות. במקרים שבהם עיבוד הנתונים הוגבל מטעמים אלו, ייתכן שנמשיך לאחסן את הפרטים האישיים המזהים שלכם. עם זאת, אנחנו נבצע עיבוד לנתונים אלו רק במקרים הבאים: בכפוף להסכמתכם; לצורך הגשת תביעה משפטית או ההתגוננות מפניה; לשם ההגנה על הזכויות של אישיות טבעית או משפטית אחרת; לשם השמירה על אינטרסים ציבוריים חשובים.
+                </li>
+                <li class="docs__p text-2">
+                  ייתכן שתישמר לכם הזכות להתנגד לעיבוד  הפרטים האישיים המזהים שלכם על-ידנו מטעמים הנוגעים למצבכם הפרטני (בהתאם לתקנות הגנת הנתונים הרלוונטיות). אם הגשתם התנגדות כאמור, אנו נפסיק לעבד את הפרטים האישיים המזהים שלכם, אלא אם כן נוכל להציג טעמים לגיטימיים ומשכנעים להמשך עיבוד הנתונים, אשר בכוחם לגבור על האינטרסים, הזכויות והחירויות שלכם, או כאשר העיבוד נועד לצורך הגשת תביעה משפטית או ההתגוננות מפניה.
+                </li>
+                <li class="docs__p text-2">
+                  ככל שהבסיס החוקי לעיבוד הפרטים האישיים המזהים שלכם הינו הסכמתכם, וכאשר עיבוד נתונים זה התבצע באמצעים אוטומטיים, שמורה לכם הזכות לקבל את הפרטים האישיים המזהים שלכם מאיתנו בפורמט מובנה ונפוץ שניתן לקרוא אותו באמצעים אוטומטיים. עם זאת, זכות זו לא תחול במקרים שבהם הדבר ישפיע לרעה על הזכויות ועל החירויות של אחרים.
+                </li>
+                <li class="docs__p text-2">
+                  אם עיבוד הפרטים האישיים המזהים שלכם מהווה לשיטתכם הפרה של תקנות הגנת הנתונים, שמורה לכם הזכות החוקית להגיש תלונה לרשות המפקחת האחראית להגנת מידע. 
+                </li>
+                <li class="docs__p text-2">
+                  ככל שהבסיס החוקי לעיבוד הפרטים האישיים המזהים שלכם הינו הסכמתכם, שמורה לכם הזכות למשוך הסכמה זו בכל עת. משיכת ההסכמה לא תשפיע על חוקיות עיבוד הנתונים שהתבצע לפני המשיכה.
+                </li>
+                <li class="docs__p text-2">
+                  הנכם רשאים לממש את כל זכויותיכם ביחס לפרטים האישיים המזהים שלכם בכפוף למתן הודעה בכתב לידינו, בנוסף לשיטות האחרות המפורטות בסעיף 5 זה.
+                </li>
+              </ol>
+            </li>
+            <li>
+              <span class="docs__subtitle">הסכמת הצטרפות (Opt-in) </span>
+              <ol>
+                <li class="docs__p text-2">
+                  ככל שהעברתם לנו פרטים אישיים מזהים מסיבות משניות, כגון למטרות שיווק או מסיבות משניות אחרות שנפרט בפניכם מעת לעת לפי העניין, אנו נבקש את הסכמתכם. לאחר שתבצעו את הצטרפותכם, אתם תהיו רשאים למשוך את הסכמתכם בכל עת תוך יצירת קשר עמנו בכתובת:  help@gigzy.net.
+                </li>
+              </ol>
+            </li>
+            <li>
+              <span class="docs__subtitle">אבטחת מידע</span>
+              <ol>
+                <li class="docs__p text-2">
+                  אני פועלים בהתאם לנוהג הקיים בתעשייה במטרה להגן על המשתמשים מפני כל גישה, שימוש, שינוי, גילוי או השמדה בלתי-מורשים של פרטים אישיים מזהים. עם זאת, אין שום דרך להעביר נתונים דרך האינטרנט או בכל אמצעי אחסון אלקטרוניים שניתן לראות בהם כבטוחים באופן מוחלט. משכך, בעוד שאנו שואפים להפעיל אמצעים מקובלים מבחינה מסחרית לצורך ההגנה על פרטים אישיים מזהים, איננו יכולים לערוב לאבטחתם המוחלטת.
+                </li>
+                <li class="docs__p text-2">
+                 הפרטים האישיים המזהים מאוחסנים ברשתות מאובטחות והגישה אליהם מוגבלת למספר מצומצם של בני אדם המחזיקים בזכויות גישה מיוחדות למערכות אלו, ואנשים אלו נדרשים לשמור על סודיות המידע על פי הוראות חוזיות מחייבות .
+                </li>
+                <li class="docs__p text-2">
+                אנו מיישמים מגוון אמצעי אבטחה שמטרתם לשמור ולהגן על פרטים אישיים מזהים.
+                </li>
+              </ol>
+            </li>
+            <li>
+              <span class="docs__subtitle"
+                >חוק פרטיות הצרכן של קליפורניה [California Consumer Privacy Act (CCPA)]</span
+              >
+              <ol>
+                <li class="docs__p text-2">
+                  לתושבי קליפורניה קיימות זכויות מסוימות על פי חוק פרטיות הצרכן של קליפורניה [California Consumer Privacy Act (CCPA)]. לקבלת מידע נוסף בדבר זכויותיכם ואודות מימוש זכויות אלו, אנא עיינו במסמך שכותרתו "הודעת פרטיות לתושבי קליפורניה" [Privacy Notice for California Residents] בקישור הבא: https://gigzy.net/privacy. 
+                </li>
+              </ol>
+            </li>
+            <li>
+              <span class="docs__subtitle"
+                >החוק להגנת הפרטיות המקוונת בקליפורניה [California Online Privacy Protection Act]</span
+              >
+              <ol>
+                <li class="docs__p text-2">
+                 על פי החוק להגנת הפרטיות המקוונת בקליפורניה [CalOPPA], אנו מסכימים כדלקמן:
+                  <ul>
+                    <li>המשתמשים רשאים לבקר באתר האינטרנט של גיגזי בעילום שם.</li>
+                    <li>
+                      לאחר יצירת מדיניות הפרטיות שלנו, אנו נוסיף קישור למדיניות בדף הבית שלנו או למצער בעמוד המשמעותי הראשון שיופיע לאחר הכניסה לאתר האינטרנט שלנו.
+                    </li>
+                    <li>
+                     הקישור למדיניות הפרטיות שלנו יכלול את המילה "פרטיות", וניתן יהיה למצוא אותו בקלות בעמוד המתואר לעיל.
+                    </li>
+                  </ul>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <span class="docs__subtitle">מעקב</span>
+              <p>
+                ככל שהדבר יותר על פי חוק, אנו עשויים לאפשר ביצוע מעקב התנהגותי ע"י צדדים שלישיים.  
+              </p>
+            </li>
+            <li>
+              <span class="docs__subtitle"
+                >החוק להגנת הפרטיות המקוונת לילדים בקליפורניה [COPPA (Children Online Privacy Protection Act)]</span
+              >
+              <ol>
+                <li class="docs__p text-2">
+                בכל הנוגע לאיסוף פרטים אישיים מזהים של ילדים מתחת לגיל 13, החוק להגנת הפרטיות המקוונת לילדים בקליפורניה מעניק להורים שליטה מלאה. ועדת הסחר הפדראלית (Federal Trade Commission), סוכנות הגנת הצרכן של ארצות הברית, אחראית לאכיפת "כלל COPPA" [COPPA Rule], המפרט מה מפעילי אתרים ושירותים מקוונים נדרשים לעשות על מנת להגן על הפרטיות והבטיחות של ילדים באינטרנט.
+                </li>
+                <li class="docs__p text-2">
+                  אנו לא משווקים לילדים מתחת לגיל 13, וילדים בגילאי 13 אינם רשאים להשתמש באתר האינטרנט ללא הסכמה מתאימה מצד האפוטרופוסים של ילדים אלו.
+                </li>
+              </ol>
+            </li>
+            <li>
+              <span class="docs__subtitle">התנהלות הוגנת בתחום המידע</span>
+              <ol>
+                <li class="docs__p text-2">
+                  12.1.	על מנת לעמוד בדרישות "פרקטיקות המידע ההוגנות" [Fair Information Practices], אנו ננקוט בפעולות הבאות בכל מקרה של פרצת נתונים:
+                  <ol>
+                    <li class="docs__p text-2">
+                      אנו נודיע לכם תוך פרק הזמן הקבוע בחוק – אך לא יאוחר משלושה ימי עסקים מן המועד שבו נודע לנו בדבר כל פרצה כאמור. 
+                    </li>
+                    <li class="docs__p text-2">
+                     כמו כן, אנו מסכימים ל"עיקרון התיקון האינדבידואלי" (Individual Redress Principle). על פי עיקרון זה, ליחידים שמורה הזכות לפעול למימוש זכויות אכיפות כנגד אוספי ומעבדי נתונים שאינם עומדים בדרישות החוק. על פי עיקרון זה, לאותם יחידים קיימות זכויות אכיפות נגד משתמשים בנתונים, ושמורה להם הזכות לפנות לבתי משפט או לרשויות הממשל לשם פתיחה בחקירה ו/או בהליכים משפטיים נגד מעבדי נתונים שלא עמדו בדרישות החוק.
+                    </li>
+                  </ol>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <span class="docs__subtitle">חוק "CAN SPAM"</span>
+              <ol>
+                <li class="docs__p text-2">
+                 חוק "CAN SPAM" מפרט שורה של כללים בדבר הודעות דוא"ל מסחריות, קובע דרישות החלות על הודעות מסחריות, מעניק למקבלים את הזכות להפסיק לקבל הודעות דוא"ל, וכולל עונשים מחמירים בגין הפרות מסוג זה.
+                </li>
+                <li class="docs__p text-2">
+                  אנו נאסוף את כתובת הדוא"ל שלכם על מנת:
+                  <ol>
+                    <li class="docs__p text-2">
+                     לשלוח מידע, להשיב לפניות ו/או בקשות או שאלות
+                    </li>
+                    <li class="docs__p text-2">
+                     לשלוח לכם מידע נוסף הנוגע לשירותים.</li>
+                    <li class="docs__p text-2">
+                      לשווק מוצרים ושירותים לרשימת הדיוור שלנו או להמשיך לשלוח הודעות דוא"ל ללקוחותינו לאחר ההתקשרות המקורית.
+                    </li>
+                  </ol>
+                  <li class="docs__p text-2">
+                    על מנת לעמוד בהוראותיו של חוק CAN SPAM, אנו מסכימים כדלקמן:
+                    <ul>
+                      <li>אנו לא נשתמש בנושאים או בכתובות דוא"ל כוזבים או מטעים.</li>
+                      <li>אנו נשתמש באמצעים סבירים על מנת לתייג את ההודעות כהודעות פרסומת.</li>
+                      <li>אנו נכלול את הכתובת הפיזית של בית העסק או המטה שלנו.</li>
+                      <li>אנו נעקוב אחר שירותי השיווק בדוא"ל המבוצעים ע"י צדדים שלישיים בכל הנוגע לעמידתם בדרישות – ככל שייעשה בהם שימוש.</li>
+                      <li>אנו נכבד במהרה בקשות ביטול הצטרפות / הרשמה.</li>
+                      <li>אנו נאפשר למשתמשים לבטל את הרשמתם באמצעות קישור שיופיע בתחתית הודעת הדוא"ל.</li>
+                    </ul>
+                  </li>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <span class="docs__subtitle">אוספי נתונים ישירים [צד ג']</span>
+              <ol>
+                <li class="docs__p text-2">באופן כללי, ספקי השירותים השלישיים שבהם נשתמש יאספו, ישתמשו ויגלו את הפרטים שלכם רק ככל שהדבר יידרש על מנת לאפשר להם לבצע את השירותים שהם מספקים לנו. עם זאת, לספקי שירות שלישיים מסוימים קיימת מדיניות פרטיות משל עצמם ביחס למידע שאנו נדרשים להעביר אליהם ביחס לעסקאות שלכם. </li>
+                <li class="docs__p text-2">בהתייחס לספקים אלו, אנו ממליצים לכם לקרוא את מדיניות הפרטיות שלהם על מנת שתוכלו להבין את האופן שבו הפרטים האישיים המזהים שלכם יטופלו ע"י ספקים אלו. בפרט, אנא זכרו שספקים מסוימים או המתקנים שלהם עשויים להיות ממוקמים בתחום שיפוט שונה משלנו. משכך, אם בחרתם לבצע עסקה הכוללת שירותים המגיעים מספק שירות שלישי, הפרטים שלכם עלולים להיות כפופים לדינים הקיימים בתחום השיפוט שבו ממוקמים ספק השירות או המתקנים שלו. </li>
+                <li class="docs__p text-2">לאחר שתעזבו את אתר האינטרנט שלנו או לאחר שתופנו לאפליקציה או אתר אינטרנט שלישיים, הוראותיה של מדיניות פרטיות זו או תנאי השירות שלנו יחדלו מלחול עליכם.</li>
+                <li class="docs__p text-2">בנוסף, אנו פועלים מול ספקי שירות שלישיים האוספים מידע באמצעות עוגיות או כלי מעקב אחרים. לקבלת מידע נוסף בדבר עוגיות מסוג זה, אנא עיינו במדיניות העוגיות שלנו בקישור: gigzy.net/cookies.</li>
+              </ol>
+            </li>
+          <li>
+            <span class="docs__subtitle">קישורי צד ג' </span>
+            <p>מעת לעת ולפי שיקול דעתנו הבלעדי, ייתכן שנכלול או נציע שירותי צד ג' באתר האינטרנט שלנו. לאתרים שלישיים אלו קיימת מדיניות פרטיות נפרדת ועצמאית משכך, איננו נושאים בכל אחריות לתוכן ולפעילויות הקיימים באתרים אלו. אף על פי כן, אנו מעוניינים לשמור על היושרה המיוחסת לאתרנו, ואנו נקבל בברכה כל משוב שיתקבל בנוגע לאתרים אלו.</p>
+          </li>
+          <li>
+            <span class="docs__subtitle">גיל ההסכמה</span>
+            <p>בשימושכם באתר האינטרנט שלנו, אתם מצהירים כי הנכם בגירים על פי הדין החל במדינת מגוריכם, וכי הענקתם לנו את הסכמתכם לאפשר לכל התלויים הקטינים שלכם להשתמש באתר זה.</p>
+          </li>
+          <li>
+            <span class="docs__subtitle">הדין חל ותחום שיפוט</span>
+            <ol>
+              <li class="docs__p text-2">הדין החל על הפעילות באתר האינטרנט ועל מדיניות הפרטיות הינו הדין הישראלי בלבד.</li>
+              <li class="docs__p text-2">סמכות השיפוט הבלעדית לדון בכל מחלוקת הנוגעת לאתר האינטרנט ו/או למדיניות הפרטיות ובכל דבר הנובע מהם מוקנית לבתי המשפט המוסמכים בתל אביב-יפו, ישראל.</li>
+            </ol>
+          </li>
+          <li>
+            <span class="docs__subtitle">שינויים במדיניות הפרטיות </span>
+            <ol>
+              <li class="docs__p text-2">אנו שומרים לעצמנו את הזכות לשנות את הוראותיה של מדיניות פרטיות זו בכל עת, ומשכך הנכם מתבקשים לקרוא אותה לעיתים תכופות. שינויים והבהרות ייכנסו לתוקף מיד לאחר פרסומם באתר האינטרנט. במקרה של שינוי מהותי, אנו נודיע לכם בדוא"ל או באמצעות הודעה בולטת שתופיע באתר האינטרנט.</li>
+              <li class="docs__p text-2">בכל שאלה בדבר מדיניות פרטיות זו, באפשרותכם ליצור עמנו קשר באמצעות הפרטים הבאים: help@gigzy.net.</li>
+            </ol>
+          </li>
+          <li>
+            <span class="docs__subtitle">יצירת קשר</span>
+            <p>בכל שאלה בדבר מדיניות פרטיות זו, באפשרותכם ליצור עמנו קשר באמצעות הפרטים הבאים: help@gigzy.net.</p>
+          </li>
+          </ol>
+          <li><span class="docs__subtitle">עודכן בתאריך: February 11, 2023</span></li>
+        </div>
+      </main>
+      <footer class="footer">
+        <div
+          class="footer__container container flex flex_justify-between flex_wrap"
+        >
+          <div class="footer__content gap-18 flex flex_column">
+            <div class="footer__columns gap-12 flex">
+              <div class="footer__column">
+                <p class="text text-1 semibold c-primary">Terms</p>
+                <div class="terms-column">
+                  <a
+                    href="policy.html"
+                    target="_blank"
+                    class="footer__text text c-primary"
+                    style="text-decoration: underline"
+                    >Policy</a
+                  >
+                  <a
+                    href="privacy.html"
+                    target="_blank"
+                    class="footer__text text c-primary"
+                    style="text-decoration: underline"
+                    >Privacy</a
+                  >
+                  <a
+                    href="cookies.html"
+                    target="_blank"
+                    class="footer__text text c-primary"
+                    style="text-decoration: underline"
+                    >Cookies</a
+                  >
+                </div>
+              </div>
+              <div class="footer__column">
+                <a
+                  href="mailto:support@gigzy.net"
+                  class="text text-1 semibold c-primary email-link"
+                  >support@gigzy.net</a
+                >
+                <p class="footer__text text c-primary">
+                  Contact us, if you have an question!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__download-buttons flex flex_column gap-10">
+            <a
+              href="https://apps.apple.com/ru/app/gigzy/id6443645741"
+              target="_blank"
+            >
+              <picture
+                ><source srcset="img/app-store.webp" type="image/webp" />
+                <img
+                  class="footer__download-button"
+                  src="img/app-store.png"
+                  alt="Gigzy in Apple Store "
+              /></picture>
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.gigzy.gigzyApp"
+              target="_blank"
+            >
+              <picture
+                ><source srcset="img/google-play.webp" type="image/webp" />
+                <img
+                  class="footer__download-button"
+                  src="img/google-play.png"
+                  alt="Gigzy in Google Play "
+              /></picture>
+            </a>
+          </div>
+        </div>
+      </footer>
+      <div class="modal flex flex_center">
+        <div class="modal__scroll">
+          <div class="modal__content">
+            <div class="close-wrapper" onclick="toggleModal()">
+              <picture
+                ><source
+                  srcset="img/icons/icons.svg#close-gray"
+                  type="image/webp" />
+                <img
+                  class="close"
+                  src="img/icons/icons.svg#close-gray"
+                  alt="close icon"
+              /></picture>
+            </div>
+            <form class="mdform flex flex_column">
+              <div class="flex flex_column gap-28">
+                <h1 class="p30 text-center" data-translate="modal_title"></h1>
+                <div class="flex flex_column gap-16">
+                  <div class="column-adaptive flex gap-16">
+                    <div class="field">
+                      <input
+                        class="input text text-1 c-primary"
+                        id="firstName"
+                        name="firstName"
+                        type="text"
+                      />
+                      <label for="firstName">
+                        <span class="caption caption-1 c-tertiary"
+                          ><span data-translate="form_name">Name</span>
+                          <span class="c-red-hover">*</span></span
+                        >
+                      </label>
+                    </div>
+                    <div class="field">
+                      <input
+                        class="input text text-1 c-primary"
+                        id="secondName"
+                        name="secondName"
+                        type="text"
+                      />
+                      <label for="secondName">
+                        <span class="caption caption-1 c-tertiary"
+                          ><span data-translate="form_surname">Surname</span>
+                          <span class="c-red-hover">*</span></span
+                        >
+                      </label>
+                    </div>
+                  </div>
+                  <div class="column-adaptive flex gap-16">
+                    <div class="field">
+                      <input
+                        class="input text text-1 c-primary"
+                        id="telephone"
+                        name="telephone"
+                        type="text"
+                      />
+                      <label for="telephone">
+                        <span class="caption caption-1 c-tertiary"
+                          ><span data-translate="form_phone">Phone</span>
+                          <span class="c-red-hover">*</span></span
+                        >
+                      </label>
+                      <div
+                        id="telephone-error"
+                        class="error-text is-hidden"
+                        data-translate="form_error_phone"
+                      >
+                        Please, input only numbers
+                      </div>
+                    </div>
+                    <div class="field">
+                      <input
+                        class="input text text-1 c-primary"
+                        id="email"
+                        name="email"
+                        type="email"
+                      />
+                      <label for="email">
+                        <span class="caption caption-1 c-tertiary"
+                          ><span data-translate="form_email">Email</span>
+                          <span class="c-red-hover">*</span></span
+                        >
+                      </label>
+                      <div
+                        id="email-error"
+                        class="error-text is-hidden"
+                        data-translate="form_error_email"
+                      >
+                        Please, input your Email
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column-adaptive flex gap-16">
+                    <div class="flex flex_grow flex_column gap-16">
+                      <p>
+                        <span
+                          class="text text-1 c-primary"
+                          data-translate="form_age"
+                          >Age</span
+                        >
+                        *
+                      </p>
+                      <div class="rdbts flex-il-adaptive flex gap-32 flex_wrap">
+                        <div class="form_radio">
+                          <input
+                            id="radio-1"
+                            type="radio"
+                            name="age"
+                            value="18-25"
+                          />
+                          <label for="radio-1">18-25</label>
+                        </div>
+                        <div class="form_radio">
+                          <input
+                            id="radio-2"
+                            type="radio"
+                            name="age"
+                            value="25-35"
+                          />
+                          <label for="radio-2">25-35</label>
+                        </div>
+                        <div class="form_radio">
+                          <input
+                            id="radio-3"
+                            type="radio"
+                            name="age"
+                            value="35-45"
+                          />
+                          <label for="radio-3">35-45</label>
+                        </div>
+                        <div class="form_radio">
+                          <input
+                            id="radio-4"
+                            type="radio"
+                            name="age"
+                            value="45+"
+                          />
+                          <label for="radio-4">45+</label>
+                        </div>
+                      </div>
+                      <div
+                        id="formAge-error"
+                        class="error-text is-hidden"
+                        data-translate="form_error_age"
+                      >
+                        Please, select your Age
+                      </div>
+                    </div>
+                    <div class="flex flex_grow flex_column gap-16">
+                      <p>
+                        <span
+                          class="text text-1 c-primary"
+                          data-translate="form_weekly_gigz"
+                          >How Many Weekly Gigz</span
+                        >
+                        *
+                      </p>
+                      <div class="rdbts flex-il-adaptive flex gap-32 flex_wrap">
+                        <div class="form_radio">
+                          <input
+                            id="radio-5"
+                            type="radio"
+                            name="weeklyContent"
+                            value="1-2"
+                          />
+                          <label for="radio-5">1-2</label>
+                        </div>
+                        <div class="form_radio">
+                          <input
+                            id="radio-6"
+                            type="radio"
+                            name="weeklyContent"
+                            value="3-4"
+                          />
+                          <label for="radio-6">3-4</label>
+                        </div>
+                        <div class="form_radio">
+                          <input
+                            id="radio-7"
+                            type="radio"
+                            name="weeklyContent"
+                            value="+5"
+                          />
+                          <label for="radio-7">+5</label>
+                        </div>
+                      </div>
+                      <div
+                        id="form_weeklyContent-error"
+                        class="error-text is-hidden"
+                        data-translate="form_error_weekly_gigz"
+                      >
+                        Please, select how many weekly Gigz do you want
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex_grow flex_column gap-16">
+                    <p>
+                      <span
+                        class="text text-1 c-primary"
+                        data-translate="form_self_employed"
+                        >Are you willing to be self employed?</span
+                      >
+                      *
+                    </p>
+                    <div class="rdbts flex-il-adaptive flex gap-32">
+                      <div class="form_radio">
+                        <input
+                          id="radio-8"
+                          type="radio"
+                          name="selfEmployed"
+                          value="Yes"
+                        />
+                        <label for="radio-8" data-translate="form_yes"
+                          >Yes</label
+                        >
+                      </div>
+                      <div class="form_radio">
+                        <input
+                          id="radio-9"
+                          type="radio"
+                          name="selfEmployed"
+                          value="No"
+                        />
+                        <label for="radio-9" data-translate="form_no">No</label>
+                      </div>
+                    </div>
+                    <div
+                      id="form_selfEmployed-error"
+                      class="error-text is-hidden"
+                      data-translate="form_error_self_employed"
+                    >
+                      Please, select it
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="form__button mw mt-46 button primary xl"
+                type="submit"
+              >
+                <span class="button-link c-white" data-translate="form_submit"
+                  >Submit form</span
+                >
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="successModal flex flex_center modal">
+        <div class="modal__scroll">
+          <div class="modal__content">
+            <div class="close-wrapper" onclick="toggleSuccessModal()">
+              <picture
+                ><source
+                  srcset="img/icons/icons.svg#close-gray"
+                  type="image/webp" />
+                <img
+                  class="close"
+                  src="img/icons/icons.svg#close-gray"
+                  alt="close icon"
+              /></picture>
+            </div>
+            <div class="flex flex_column">
+              <div class="flex flex_column gap-28">
+                <h1
+                  class="p30 text-center"
+                  data-translate="modal_success_title"
+                >
+                  Success
+                </h1>
+                <div class="flex flex_column gap-16">
+                  <p data-translate="modal_success_message">
+                    Thank you, we will contact you and notify you about the
+                    launch of the application
+                  </p>
+                </div>
+              </div>
+              <button
+                class="form__button mw mt-46 button primary xl"
+                type="button"
+                id="successCloseButton"
+              >
+                <span
+                  class="button-link c-white"
+                  data-translate="modal_success_ok"
+                  >Ok</span
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://rawgit.com/RobinHerbots/Inputmask/5.0.3/dist/inputmask.min.js"></script>
+    <script src="js/sha256.min.js"></script>
+    <script src="./js/policy.js"></script>
+  </body>
+</html>

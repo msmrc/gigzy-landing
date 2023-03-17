@@ -1,0 +1,62 @@
+/* Nested list */
+ol {
+  list-style-type: none;
+  counter-reset: item;
+  margin: 0;
+  padding: 0;
+}
+
+ol > li {
+  display: table;
+  counter-increment: item;
+  margin-bottom: 0.6em;
+}
+
+ol > li:before {
+  content: counters(item, '.') '. ';
+  display: table-cell;
+  padding-right: 0.6em;
+}
+
+li ol > li {
+  margin: 0;
+}
+
+li ol > li:before {
+  content: counters(item, '.') ' ';
+}
+
+ol li {
+  list-style-type: lower-alpha;
+}
+
+main.main {
+  min-height: 100vh;
+  margin: 121px auto 38px auto;
+}
+
+.docs__title {
+  text-align: center;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.docs__p {
+  margin-bottom: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #ffffff;
+}

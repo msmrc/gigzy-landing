@@ -1,0 +1,16 @@
+ul.list_disc-style > li {
+  list-style-type: disc;
+  margin: 0 0 10px 30px;
+}
+
+.table {
+  margin: 0 0 10px 0;
+}
+
+#he_docks {
+  direction: rtl;
+}
+
+#he_docks > ul.list_disc-style > li {
+  margin: 0 30px 10px 0px;
+}

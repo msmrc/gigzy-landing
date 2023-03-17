@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/icons/favicon-16x16.png"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.css"
+    />
+    <title>Gigzy</title>
+
+    <!-- Facebook -->
+    <meta
+      name="facebook-domain-verification"
+      content="v172t6p6z9mkn9irgc0ol4lf7puuci"
+    />
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "572925031173136");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=572925031173136&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-KWF9L7Z9KV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-KWF9L7Z9KV");
+    </script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+
+      ym(92471249, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/92471249"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
+  </head>
+  <body>
+    <div class="wrapper flex flex_column">
+      <header class="header">
+        <div class="burger">
+          <picture
+            ><source
+              srcset="img/icons/icons.svg#burger-close"
+              type="image/webp" />
+            <img
+              class="icon icon-burger icon-burger-close"
+              src="img/icons/icons.svg#burger-close"
+              alt="Menu Gigzy"
+          /></picture>
+          <picture
+            ><source
+              srcset="img/icons/icons.svg#burger-open"
+              type="image/webp" />
+            <img
+              class="icon icon-burger icon-burger-open"
+              src="img/icons/icons.svg#burger-open"
+              alt="Menu Gigzy"
+          /></picture>
+        </div>
+        <div
+          class="flex-il-adaptive header__container container flex flex_justify-between flex_align-center"
+        >
+          <div class="logo flex gap-12 flex_align-center">
+            <a href="">
+              <picture
+                ><source srcset="img/icons/icons.svg#logo" type="image/webp" />
+                <img
+                  class="icon icon-logo"
+                  src="img/icons/icons.svg#logo"
+                  alt="Gigzy logotype"
+              /></picture>
+            </a>
+            <a href="">
+              <h1 class="text c-primary bold">Gigzy</h1>
+            </a>
+          </div>
+          <div
+            class="flex-il-adaptive header__lang flex flex_align-center gap-4 lang-toggler_mobile"
+            onclick="toggleLang('open')"
+          >
+            <div class="header__lang-list-wrapper" id="list-wrapper_mobile">
+              <ul class="header__lang-list">
+                <li data-value="en" class="text text-1 c-primary capse">eng</li>
+                <li data-value="il" class="text text-1 c-primary capse">he</li>
+              </ul>
+            </div>
+            <span
+              class="text text-1 c-primary capse"
+              data-translate="header_lang"
+            >
+              eng
+            </span>
+            <picture
+              ><source srcset="img/icons/icons.svg#eng" type="image/webp" />
+              <img
+                class="icon icon-flag"
+                data-translate-icon="en"
+                src="img/icons/icons.svg#eng"
+                alt="Gigzy english language"
+            /></picture>
+            <picture
+              ><source srcset="img/icons/icons.svg#il" type="image/webp" />
+              <img
+                class="icon icon-flag"
+                data-translate-icon="il"
+                src="img/icons/icons.svg#il"
+                alt="Gigzy israel language"
+            /></picture>
+          </div>
+          <div class="flex-il-adaptive header__actions flex gap-40">
+            <button class="button primary xs" onclick="toggleModal('open')">
+              <span class="button-link" data-translate="header_login"></span>
+              <picture
+                ><source
+                  srcset="img/icons/icons.svg#profile"
+                  type="image/webp" />
+                <img
+                  class="icon icon-profile"
+                  src="img/icons/icons.svg#profile"
+                  alt="Gigzy login"
+              /></picture>
+            </button>
+            <div
+              class="flex-il-adaptive header__lang flex flex_align-center gap-4 lang-toggler"
+            >
+              <div class="header__lang-list-wrapper" id="list-wrapper">
+                <ul class="header__lang-list">
+                  <li data-value="en" class="text text-1 c-primary capse">
+                    eng
+                  </li>
+                  <li data-value="il" class="text text-1 c-primary capse">
+                    he
+                  </li>
+                </ul>
+              </div>
+              <span
+                class="text text-1 c-primary capse"
+                data-translate="header_lang"
+              >
+                eng
+              </span>
+              <picture
+                ><source srcset="img/icons/icons.svg#eng" type="image/webp" />
+                <img
+                  class="icon icon-flag"
+                  data-translate-icon="en"
+                  src="img/icons/icons.svg#eng"
+                  alt="Gigzy english language"
+              /></picture>
+              <picture
+                ><source srcset="img/icons/icons.svg#il" type="image/webp" />
+                <img
+                  class="icon icon-flag"
+                  data-translate-icon="il"
+                  src="img/icons/icons.svg#il"
+                  alt="Gigzy israel language"
+              /></picture>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="hero">
+          <div
+            class="flex-il-adaptive hero__container container flex gap-20 flex_align-center flex_justify-between"
+          >
+            <div class="hero__offer hero-offer flex flex_column gap-56">
+              <div class="hero-offer__info flex flex_column gap-24">
+                <h2
+                  class="hero-offer__title c-primary bold"
+                  data-translate="hero_title"
+                >
+                  No more trouble finding a job
+                </h2>
+                <p class="text text-1 c-secondary" data-translate="hero_text">
+                  It is enough to register to start receiving offers from
+                  employers
+                </p>
+              </div>
+              <div class="hero-offer__actions flex gap-20 rtl">
+                <button class="button primary s" onclick="toggleModal('open')">
+                  <span class="button-link" data-translate="hero_register"
+                    >Register now</span
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="hero__imgs">
+              <picture
+                ><source srcset="img/hero_desktop.webp" type="image/webp" />
+                <img
+                  class="hero__img hero__img_desktop"
+                  src="img/hero_desktop.png"
+                  alt="Gigzy phones"
+              /></picture>
+              <picture
+                ><source srcset="img/hero_desktop.webp" type="image/webp" />
+                <img
+                  class="hero__img hero__img_tablet"
+                  src="img/hero_desktop.png"
+                  alt="Gigzy phones"
+              /></picture>
+              <picture
+                ><source srcset="img/hero_desktop.webp" type="image/webp" />
+                <img
+                  class="hero__img hero__img_mobile"
+                  src="img/hero_desktop.png"
+                  alt="Gigzy phones"
+              /></picture>
+              <picture
+                ><source srcset="img/hero_desktop.webp" type="image/webp" />
+                <img
+                  class="hero__img hero__img_desktop_il"
+                  src="img/hero_desktop.png"
+                  alt="Gigzy phones"
+              /></picture>
+            </div>
+          </div>
+        </section>
+        <div class="about">
+          <div class="about__container container">
+            <div
+              class="revert-block flex-il-adaptive reverse revert-block_about flex flex_justify-between gap-12"
+            >
+              <div
+                class="revert-block__main-block main-block flex flex_column gap-24"
+              >
+                <div class="main-block__header flex flex_column gap-8">
+                  <!-- <p
+                    class="text text-1 capse c-black"
+                    data-translate="about_subtitle"
+                  >
+                    Lorem ipsum
+                  </p> -->
+                  <h2 class="title h1 c-primary" data-translate="about_title">
+                    What is Gigzy?
+                  </h2>
+                </div>
+                <p class="text text-1 c-secondary" data-translate="about_text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
+                  at pharetra elit auctor senectus mattis. Et at vel facilisi
+                  quis nibh at gravida integer arcu. Sem egestas faucibus aenean
+                  nunc fermentum.
+                </p>
+                <div class="hero-offer__actions flex gap-20 rtl">
+                  <button
+                    class="button primary s"
+                    onclick="toggleModal('open')"
+                  >
+                    <span class="button-link" data-translate="about_button"
+                      >Sign up</span
+                    >
+                  </button>
+                </div>
+              </div>
+              <picture
+                ><source srcset="img/about.webp" type="image/webp" />
+                <img
+                  src="img/about.png"
+                  alt="what is handly"
+                  class="revert-block__img"
+              /></picture>
+            </div>
+          </div>
+        </div>
+        <div class="qualities">
+          <div class="qualities__container container flex">
+            <div class="quality flex flex_column gap-12">
+              <picture
+                ><source srcset="img/icons/icons.svg#fast" type="image/webp" />
+                <img
+                  class="quality__icon icon icon-quality"
+                  src="img/icons/icons.svg#fast"
+                  alt="icon"
+              /></picture>
+              <div class="quality__info flex flex_column gap-6">
+                <h4
+                  class="title h4 semibold c-primary"
+                  data-translate="quality_fast_title"
+                >
+                  Fast
+                </h4>
+                <p
+                  class="text text-2 medium c-secondary"
+                  data-translate="quality_fast_text"
+                >
+                  We can find a job in one day
+                </p>
+              </div>
+            </div>
+            <div class="quality flex flex_column gap-12 flex_justify-between">
+              <picture
+                ><source srcset="img/icons/icons.svg#heart" type="image/webp" />
+                <img
+                  class="quality__icon icon icon-quality"
+                  src="img/icons/icons.svg#heart"
+                  alt="icon"
+              /></picture>
+              <div class="quality__info flex flex_column gap-6">
+                <h4
+                  class="title h4 semibold c-primary"
+                  data-translate="quality_comfortable_title"
+                >
+                  Comfortable
+                </h4>
+                <p
+                  class="text text-2 medium c-secondary"
+                  data-translate="quality_comfortable_text"
+                >
+                  No more traveling for interviews
+                </p>
+              </div>
+            </div>
+            <div class="quality flex flex_column gap-12 flex_justify-between">
+              <picture
+                ><source
+                  srcset="img/icons/icons.svg#geometric"
+                  type="image/webp" />
+                <img
+                  class="quality__icon icon icon-quality"
+                  src="img/icons/icons.svg#geometric"
+                  alt="icon"
+              /></picture>
+              <div class="quality__info flex flex_column gap-6">
+                <h4
+                  class="title h4 semibold c-primary"
+                  data-translate="quality_flexible_title"
+                >
+                  Flexible
+                </h4>
+                <p
+                  class="text text-2 medium c-secondary"
+                  data-translate="quality_flexible_text"
+                >
+                  Suitable for students and job seekers
+                </p>
+              </div>
+            </div>
+            <div class="quality flex flex_column gap-12 flex_justify-between">
+              <picture
+                ><source
+                  srcset="img/icons/icons.svg#circles"
+                  type="image/webp" />
+                <img
+                  class="quality__icon icon icon-quality"
+                  src="img/icons/icons.svg#circles"
+                  alt="icon"
+              /></picture>
+              <div class="quality__info flex flex_column gap-6">
+                <h4
+                  class="title h4 semibold c-primary"
+                  data-translate="quality_suitable_for_everyone_title"
+                >
+                  Suitable for everyone
+                </h4>
+                <p
+                  class="text text-2 medium c-secondary"
+                  data-translate="quality_suitable_for_everyone_text"
+                >
+                  Choose: project or full-time employment
+                </p>
+              </div>
+            </div>
+            <div class="quality flex flex_column gap-12 flex_justify-between">
+              <picture
+                ><source
+                  srcset="img/icons/icons.svg#dollar"
+                  type="image/webp" />
+                <img
+                  class="quality__icon icon icon-quality"
+                  src="img/icons/icons.svg#dollar"
+                  alt="icon"
+              /></picture>
+              <div class="quality__info flex flex_column gap-6">
+                <h4
+                  class="title h4 semibold c-primary"
+                  data-translate="quality_guarantee_title"
+                >
+                  Guarantee
+                </h4>
+                <p
+                  class="text text-2 medium c-secondary"
+                  data-translate="quality_guarantee_text"
+                >
+                  All work will be paid
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="info">
+          <div class="info__container container">
+            <div
+              class="revert-block revert-block_employees flex flex_justify-between gap-12"
+            >
+              <div
+                class="revert-block__main-block main-block flex flex_column gap-24"
+              >
+                <h2 class="title h1 c-primary" data-translate="employees_title">
+                  For employees
+                </h2>
+                <p
+                  class="text text-1 c-secondary"
+                  data-translate="employees_text"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
+                  at pharetra elit auctor senectus mattis. Et at vel facilisi
+                  quis nibh at gravida integer arcu. Sem egestas faucibus aenean
+                  nunc fermentum.
+                </p>
+                <div class="hero-offer__actions flex gap-20 rtl">
+                  <button
+                    class="button primary s"
+                    onclick="toggleModal('open')"
+                  >
+                    <span class="button-link" data-translate="employees_button"
+                      >Get Gigz now!</span
+                    >
+                  </button>
+                </div>
+              </div>
+              <picture
+                ><source srcset="img/employees.webp" type="image/webp" />
+                <img
+                  src="img/employees.png"
+                  alt="employees"
+                  class="revert-block__img"
+              /></picture>
+            </div>
+            <!-- <div
+              class="revert-block reverse revert-block_employers flex flex_justify-between gap-12"
+            >
+              <div
+                class="revert-block__main-block main-block flex flex_column gap-24"
+              >
+                <h2 class="title h1 c-primary" data-translate="employers_title">
+                  For employers
+                </h2>
+                <p
+                  class="text text-1 c-secondary"
+                  data-translate="employers_text"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
+                  at pharetra elit auctor senectus mattis. Et at vel facilisi
+                  quis nibh at gravida integer arcu. Sem egestas faucibus aenean
+                  nunc fermentum.
+                </p>
+              </div>
+              <picture
+                ><source srcset="img/employers.webp" type="image/webp" />
+                <img
+                  src="img/employers.png"
+                  alt="employers"
+                  class="revert-block__img"
+              /></picture>
+            </div> -->
+            <!--        <div class="revert-block revert-block_job-info flex flex_justify-between gap-12">-->
+            <!--            <div class="revert-block__main-block main-block flex flex_column gap-24">-->
+            <!--                <div class="main-block__header flex flex_column gap-8">-->
+            <!--                    <p class="text text-1 capse c-black" data-translate="job_info_subtitle">Lorem ipsum</p>-->
+            <!--                    <h2 class="title h1 c-primary" data-translate="job_info_title">Lorem ipsum dolor sit amet</h2>-->
+            <!--                </div>-->
+            <!--                <p class="text text-1 c-secondary" data-translate="job_info_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam at pharetra elit auctor senectus mattis.-->
+            <!--                    Et at vel facilisi quis nibh at gravida integer arcu.-->
+            <!--                    Sem egestas faucibus aenean nunc fermentum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam at pharetra elit auctor senectus mattis.-->
+            <!--                    Et at vel facilisi quis nibh at gravida integer arcu.-->
+            <!--                    Sem egestas faucibus aenean nunc fermentum.</p>-->
+            <!--            </div>-->
+            <!--            <picture><source srcset="img/mockup.webp" type="image/webp"><img src="img/mockup.png" alt="employers" class="revert-block__img"></picture>-->
+            <!--        </div>-->
+          </div>
+        </section>
+        <section class="faq">
+          <div class="faq__container container flex flex_column gap-40">
+            <div class="tab-header faq-header flex flex_column gap-24">
+              <h1 class="title h1 capse" data-translate="faq">faq</h1>
+              <!-- <div class="flex flex gap-16">
+                <button class="tabulation active">
+                  <span class="text text-2" data-translate="faq_first_tab"
+                    >Employees</span
+                  >
+                </button>
+              </div> -->
+            </div>
+            <div class="tab-container">
+              <div class="tab active flex flex_column gap-16 faq-acs">
+                <div class="ac accordion">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger">
+                      <h2
+                        class="title h2 c-primary regular accordion-title"
+                        data-translate="faq_first_tab_accordion_title_1"
+                      >
+                        It's not free?
+                      </h2>
+                    </button>
+                  </h2>
+                  <div class="ac-panel">
+                    <p
+                      class="text text-2 c-secondary"
+                      data-translate="faq_first_tab_accordion_text_1"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Praesent sapien, id turpis malesuada sit. Purus, nisi at
+                      in arcu id lacus tellus neque. Tempus ut morbi sit eu elit
+                      pellentesque tellus adipiscing. Mollis in in et
+                      pellentesque ipsum adipiscing interdum. Ut dictum
+                      elementum rhoncus, est placerat ultricies. Id in eget eget
+                      id. In molestie iaculis urna habitant gravida feugiat
+                      fringilla. Pretium, lectus ligula proin accumsan tempus,
+                      pharetra pharetra mattis egestas. Sed aliquet libero
+                      mattis non cras. Ultricies curabitur eu purus pellentesque
+                      nulla. Id interdum sed lacus, tellus, feugiat a praesent.
+                      Morbi lacus tincidunt suspendisse eget. Tellus mus
+                      tristique at arcu, dictum a eget eros sed. Faucibus hac
+                      mauris suspendisse pulvinar. Sagittis arcu massa imperdiet
+                      faucibus orci nunc. Sed malesuada in eleifend orci, eget
+                      viverra. Vel sit auctor adipiscing elit quis.
+                    </p>
+                  </div>
+                </div>
+                <div class="ac accordion">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger">
+                      <h2
+                        class="title h2 c-primary regular accordion-title"
+                        data-translate="faq_first_tab_accordion_title_2"
+                      >
+                        How it works?
+                      </h2>
+                    </button>
+                  </h2>
+                  <div class="ac-panel">
+                    <p
+                      class="text text-2 c-secondary"
+                      data-translate="faq_first_tab_accordion_text_2"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+                <div class="ac accordion">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger">
+                      <h2
+                        class="title h2 c-primary regular accordion-title"
+                        data-translate="faq_first_tab_accordion_title_3"
+                      >
+                        To whom is it available?
+                      </h2>
+                    </button>
+                  </h2>
+                  <div class="ac-panel">
+                    <p
+                      class="text text-2 c-secondary"
+                      data-translate="faq_first_tab_accordion_text_3"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+                <div class="ac accordion">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger">
+                      <h2
+                        class="title h2 c-primary regular accordion-title"
+                        data-translate="faq_first_tab_accordion_title_4"
+                      >
+                        What do you wan't from me?
+                      </h2>
+                    </button>
+                  </h2>
+                  <div class="ac-panel">
+                    <p
+                      class="text text-2 c-secondary"
+                      data-translate="faq_first_tab_accordion_text_4"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+                <div class="ac accordion">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger">
+                      <h2
+                        class="title h2 c-primary regular accordion-title"
+                        data-translate="faq_first_tab_accordion_title_5"
+                      >
+                        What job can I get?
+                      </h2>
+                    </button>
+                  </h2>
+                  <div class="ac-panel">
+                    <p
+                      class="text text-2 c-secondary"
+                      data-translate="faq_first_tab_accordion_text_5"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+                <!-- <div class="ac accordion">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger">
+                      <h2
+                        class="title h2 c-primary regular"
+                        data-translate="faq_first_tab_accordion_title_6"
+                      >
+                        How legal is it?
+                      </h2>
+                    </button>
+                  </h2>
+                  <div class="ac-panel">
+                    <p
+                      class="text text-2 c-secondary"
+                      data-translate="faq_first_tab_accordion_text_6"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+                <div class="ac accordion">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger">
+                      <h2
+                        class="title h2 c-primary regular"
+                        data-translate="faq_first_tab_accordion_title_7"
+                      >
+                        What will the tax man say?
+                      </h2>
+                    </button>
+                  </h2>
+                  <div class="ac-panel">
+                    <p
+                      class="text text-2 c-secondary"
+                      data-translate="faq_first_tab_accordion_text_7"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div
+          class="footer__container container flex flex_justify-between flex_wrap"
+        >
+          <div class="footer__content gap-18 flex flex_column">
+            <div class="footer__columns gap-12 flex">
+              <div class="footer__column">
+                <p class="text text-1 semibold c-primary">Terms</p>
+                <div class="terms-column">
+                  <a
+                    href="policy.html"
+                    target="_blank"
+                    class="footer__text text c-primary"
+                    style="text-decoration: underline"
+                    >Policy</a
+                  >
+                  <a
+                    href="privacy.html"
+                    target="_blank"
+                    class="footer__text text c-primary"
+                    style="text-decoration: underline"
+                    >Privacy</a
+                  >
+                  <a
+                    href="cookies.html"
+                    target="_blank"
+                    class="footer__text text c-primary"
+                    style="text-decoration: underline"
+                    >Cookies</a
+                  >
+                </div>
+              </div>
+              <div class="footer__column">
+                <a
+                  href="mailto:support@gigzy.net"
+                  class="text text-1 semibold c-primary email-link"
+                  >support@gigzy.net</a
+                >
+                <p class="footer__text text c-primary">
+                  Contact us, if you have an question!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__download-buttons flex flex_column gap-10">
+            <a
+              href="https://apps.apple.com/ru/app/gigzy/id6443645741"
+              target="_blank"
+            >
+              <picture
+                ><source srcset="img/app-store.webp" type="image/webp" />
+                <img
+                  class="footer__download-button"
+                  src="img/app-store.png"
+                  alt="Gigzy in Apple Store "
+              /></picture>
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.gigzy.gigzyApp"
+              target="_blank"
+            >
+              <picture
+                ><source srcset="img/google-play.webp" type="image/webp" />
+                <img
+                  class="footer__download-button"
+                  src="img/google-play.png"
+                  alt="Gigzy in Google Play "
+              /></picture>
+            </a>
+          </div>
+        </div>
+      </footer>
+      <div class="modal flex flex_center">
+        <div class="modal__scroll">
+          <div class="modal__content">
+            <div class="close-wrapper" onclick="toggleModal()">
+              <picture
+                ><source
+                  srcset="img/icons/icons.svg#close-gray"
+                  type="image/webp" />
+                <img
+                  class="close"
+                  src="img/icons/icons.svg#close-gray"
+                  alt="close icon"
+              /></picture>
+            </div>
+            <form class="mdform flex flex_column">
+              <div class="flex flex_column gap-28">
+                <h1 class="p30 text-center" data-translate="modal_title"></h1>
+                <div class="flex flex_column gap-16">
+                  <div class="column-adaptive flex gap-16">
+                    <div class="field">
+                      <input
+                        class="input text text-1 c-primary"
+                        id="firstName"
+                        name="firstName"
+                        type="text"
+                      />
+                      <label for="firstName">
+                        <span class="caption caption-1 c-tertiary"
+                          ><span data-translate="form_name">Name</span>
+                          <span class="c-red-hover">*</span></span
+                        >
+                      </label>
+                    </div>
+                    <div class="field">
+                      <input
+                        class="input text text-1 c-primary"
+                        id="secondName"
+                        name="secondName"
+                        type="text"
+                      />
+                      <label for="secondName">
+                        <span class="caption caption-1 c-tertiary"
+                          ><span data-translate="form_surname">Surname</span>
+                          <span class="c-red-hover">*</span></span
+                        >
+                      </label>
+                    </div>
+                  </div>
+                  <div class="column-adaptive flex gap-16">
+                    <div class="field">
+                      <input
+                        class="input text text-1 c-primary"
+                        id="telephone"
+                        name="telephone"
+                        type="text"
+                      />
+                      <label for="telephone">
+                        <span class="caption caption-1 c-tertiary"
+                          ><span data-translate="form_phone">Phone</span>
+                          <span class="c-red-hover">*</span></span
+                        >
+                      </label>
+                      <div
+                        id="telephone-error"
+                        class="error-text is-hidden"
+                        data-translate="form_error_phone"
+                      >
+                        Please, input only numbers
+                      </div>
+                    </div>
+                    <div class="field">
+                      <input
+                        class="input text text-1 c-primary"
+                        id="email"
+                        name="email"
+                        type="email"
+                      />
+                      <label for="email">
+                        <span class="caption caption-1 c-tertiary"
+                          ><span data-translate="form_email">Email</span>
+                          <span class="c-red-hover">*</span></span
+                        >
+                      </label>
+                      <div
+                        id="email-error"
+                        class="error-text is-hidden"
+                        data-translate="form_error_email"
+                      >
+                        Please, input your Email
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column-adaptive flex gap-16">
+                    <div class="flex flex_grow flex_column gap-16">
+                      <p>
+                        <span
+                          class="text text-1 c-primary"
+                          data-translate="form_age"
+                          >Age</span
+                        >
+                        *
+                      </p>
+                      <div class="rdbts flex-il-adaptive flex gap-32 flex_wrap">
+                        <div class="form_radio">
+                          <input
+                            id="radio-1"
+                            type="radio"
+                            name="age"
+                            value="18-25"
+                          />
+                          <label for="radio-1">18-25</label>
+                        </div>
+                        <div class="form_radio">
+                          <input
+                            id="radio-2"
+                            type="radio"
+                            name="age"
+                            value="25-35"
+                          />
+                          <label for="radio-2">25-35</label>
+                        </div>
+                        <div class="form_radio">
+                          <input
+                            id="radio-3"
+                            type="radio"
+                            name="age"
+                            value="35-45"
+                          />
+                          <label for="radio-3">35-45</label>
+                        </div>
+                        <div class="form_radio">
+                          <input
+                            id="radio-4"
+                            type="radio"
+                            name="age"
+                            value="45+"
+                          />
+                          <label for="radio-4">45+</label>
+                        </div>
+                      </div>
+                      <div
+                        id="formAge-error"
+                        class="error-text is-hidden"
+                        data-translate="form_error_age"
+                      >
+                        Please, select your Age
+                      </div>
+                    </div>
+                    <div class="flex flex_grow flex_column gap-16">
+                      <p>
+                        <span
+                          class="text text-1 c-primary"
+                          data-translate="form_weekly_gigz"
+                          >How Many Weekly Gigz</span
+                        >
+                        *
+                      </p>
+                      <div class="rdbts flex-il-adaptive flex gap-32 flex_wrap">
+                        <div class="form_radio">
+                          <input
+                            id="radio-5"
+                            type="radio"
+                            name="weeklyContent"
+                            value="1-2"
+                          />
+                          <label for="radio-5">1-2</label>
+                        </div>
+                        <div class="form_radio">
+                          <input
+                            id="radio-6"
+                            type="radio"
+                            name="weeklyContent"
+                            value="3-4"
+                          />
+                          <label for="radio-6">3-4</label>
+                        </div>
+                        <div class="form_radio">
+                          <input
+                            id="radio-7"
+                            type="radio"
+                            name="weeklyContent"
+                            value="+5"
+                          />
+                          <label for="radio-7">+5</label>
+                        </div>
+                      </div>
+                      <div
+                        id="form_weeklyContent-error"
+                        class="error-text is-hidden"
+                        data-translate="form_error_weekly_gigz"
+                      >
+                        Please, select how many weekly Gigz do you want
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex_grow flex_column gap-16">
+                    <p>
+                      <span
+                        class="text text-1 c-primary"
+                        data-translate="form_self_employed"
+                        >Are you willing to be self employed?</span
+                      >
+                      *
+                    </p>
+                    <div class="rdbts flex-il-adaptive flex gap-32">
+                      <div class="form_radio">
+                        <input
+                          id="radio-8"
+                          type="radio"
+                          name="selfEmployed"
+                          value="Yes"
+                        />
+                        <label for="radio-8" data-translate="form_yes"
+                          >Yes</label
+                        >
+                      </div>
+                      <div class="form_radio">
+                        <input
+                          id="radio-9"
+                          type="radio"
+                          name="selfEmployed"
+                          value="No"
+                        />
+                        <label for="radio-9" data-translate="form_no">No</label>
+                      </div>
+                    </div>
+                    <div
+                      id="form_selfEmployed-error"
+                      class="error-text is-hidden"
+                      data-translate="form_error_self_employed"
+                    >
+                      Please, select it
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="form__button mw mt-46 button primary xl"
+                type="submit"
+              >
+                <span class="button-link c-white" data-translate="form_submit"
+                  >Submit form</span
+                >
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="successModal flex flex_center modal">
+        <div class="modal__scroll">
+          <div class="modal__content">
+            <div class="close-wrapper" onclick="toggleSuccessModal()">
+              <picture
+                ><source
+                  srcset="img/icons/icons.svg#close-gray"
+                  type="image/webp" />
+                <img
+                  class="close"
+                  src="img/icons/icons.svg#close-gray"
+                  alt="close icon"
+              /></picture>
+            </div>
+            <div class="flex flex_column">
+              <div class="flex flex_column gap-28">
+                <h1
+                  class="p30 text-center"
+                  data-translate="modal_success_title"
+                >
+                  Success
+                </h1>
+                <div class="flex flex_column gap-16">
+                  <p data-translate="modal_success_message">
+                    Thank you, we will contact you and notify you about the
+                    launch of the application
+                  </p>
+                </div>
+              </div>
+              <button
+                class="form__button mw mt-46 button primary xl"
+                type="button"
+                id="successCloseButton"
+              >
+                <span
+                  class="button-link c-white"
+                  data-translate="modal_success_ok"
+                  >Ok</span
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accept-terms__body" id="terms-modal">
+        <div>
+          <p>
+            <span data-translate="terms_text"
+              >By continuing to use this site, you consent to the processing
+              of</span
+            >
+            <a href="cookies.html" target="_blank">cookies</a>,
+            <a href="privacy.html" target="_blank">privacy </a> and
+            <a href="policy.html" target="_blank"> policy </a>
+          </p>
+        </div>
+        <button class="button primary s" onclick="acceptTerms()">
+          <span class="button-link" data-translate="terms_accept">Accept</span>
+        </button>
+      </div>
+    </div>
+
+    <script src="https://rawgit.com/RobinHerbots/Inputmask/5.0.3/dist/inputmask.min.js"></script>
+    <script src="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.js"></script>
+    <script src="js/sha256.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

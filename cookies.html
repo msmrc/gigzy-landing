@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/icons/favicon-16x16.png"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/docs.css" />
+    <link rel="stylesheet" href="./css/cookies.css" />
+
+    <title>Gigzy</title>
+  </head>
+  <body>
+    <div class="wrapper flex flex_column">
+      <header class="header">
+        <div class="burger">
+          <picture
+            ><source
+              srcset="img/icons/icons.svg#burger-close"
+              type="image/webp" />
+            <img
+              class="icon icon-burger icon-burger-close"
+              src="img/icons/logo.png"
+              alt="Menu Gigzy"
+          /></picture>
+          <picture
+            ><source
+              srcset="img/icons/icons.svg#burger-open"
+              type="image/webp" />
+            <img
+              class="icon icon-burger icon-burger-open"
+              src="img/icons/icons.svg#burger-open"
+              alt="Menu Gigzy"
+          /></picture>
+        </div>
+        <div
+          class="flex-il-adaptive header__container container flex flex_justify-between flex_align-center"
+        >
+          <div class="logo flex gap-12 flex_align-center">
+            <a href="https://gigzy.net/">
+              <picture
+                ><source srcset="img/icons/icons.svg#logo" type="image/webp" />
+                <img
+                  class="icon icon-logo"
+                  src="img/icons/logo.png"
+                  alt="Gigzy logotype"
+              /></picture>
+            </a>
+            <a href="">
+              <h1 class="text c-primary bold">Gigzy</h1>
+            </a>
+          </div>
+          <div
+            class="flex-il-adaptive header__lang flex flex_align-center gap-4 lang-toggler_mobile"
+            onclick="toggleLang('open')"
+          >
+            <div class="header__lang-list-wrapper" id="list-wrapper_mobile">
+              <ul class="header__lang-list">
+                <li data-value="en" class="text text-1 c-primary capse">eng</li>
+                <li data-value="il" class="text text-1 c-primary capse">he</li>
+              </ul>
+            </div>
+            <span
+              class="text text-1 c-primary capse"
+              data-translate="header_lang"
+            >
+              eng
+            </span>
+            <picture
+              ><source srcset="img/icons/icons.svg#eng" type="image/webp" />
+              <img
+                class="icon icon-flag"
+                data-translate-icon="en"
+                src="img/icons/icons.svg#eng"
+                alt="Gigzy english language"
+            /></picture>
+            <picture
+              ><source srcset="img/icons/icons.svg#il" type="image/webp" />
+              <img
+                class="icon icon-flag"
+                data-translate-icon="il"
+                src="img/icons/icons.svg#il"
+                alt="Gigzy israel language"
+            /></picture>
+          </div>
+          <div class="flex-il-adaptive header__actions flex gap-40">
+            <button class="button primary xs" onclick="toggleModal('open')">
+              <span class="button-link" data-translate="header_login"></span>
+              <picture
+                ><source
+                  srcset="img/icons/icons.svg#profile"
+                  type="image/webp" />
+                <img
+                  class="icon icon-profile"
+                  src="img/icons/icons.svg#profile"
+                  alt="Gigzy login"
+              /></picture>
+            </button>
+            <div
+              class="flex-il-adaptive header__lang flex flex_align-center gap-4 lang-toggler"
+            >
+              <div class="header__lang-list-wrapper" id="list-wrapper">
+                <ul class="header__lang-list">
+                  <li data-value="en" class="text text-1 c-primary capse">
+                    eng
+                  </li>
+                  <li data-value="il" class="text text-1 c-primary capse">
+                    he
+                  </li>
+                </ul>
+              </div>
+              <span
+                class="text text-1 c-primary capse"
+                data-translate="header_lang"
+              >
+                eng
+              </span>
+              <picture
+                ><source srcset="img/icons/icons.svg#eng" type="image/webp" />
+                <img
+                  class="icon icon-flag"
+                  data-translate-icon="en"
+                  src="img/icons/icons.svg#eng"
+                  alt="Gigzy english language"
+              /></picture>
+              <picture
+                ><source srcset="img/icons/icons.svg#il" type="image/webp" />
+                <img
+                  class="icon icon-flag"
+                  data-translate-icon="il"
+                  src="img/icons/icons.svg#il"
+                  alt="Gigzy israel language"
+              /></picture>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main container">
+        <div class="docs flex flex_column" id="eng_docks">
+          <h3 class="docs__title">Cookie Notice</h3>
+
+          <ul class="list_disc-style">
+            <span class="docs__p text-2"
+              >This Cookie Notice explains how Gigzy (“Gigzy”, “we”, “us” or
+              “our”) uses cookies and similar technologies in connection
+              with:</span
+            >
+            <li>
+              the Gigzy’s website and any other website that we own or control
+              and to which this Cookie Notice is posted (collectively, the
+              “Sites”); and
+            </li>
+            <li>our mobile applications (“App”).</li>
+          </ul>
+
+          <p class="docs__p text-2">What are cookies?</p>
+          <p class="docs__p text-2">
+            Cookies are small data files that are placed on your computer or
+            mobile device when you visit a website. Cookies serve different
+            purposes, like helping us understand how a site is being used,
+            letting you navigate between pages efficiently, remembering your
+            preferences and generally improving your browsing experience.
+          </p>
+          <p class="docs__p text-2">
+            Our Sites may use both session cookies (which expire once you close
+            your web browser) and persistent cookies (which stay on your
+            computer or mobile device until you delete them).
+          </p>
+          <p class="docs__p text-2">
+            We use two broad categories of cookies: (1) first party cookies,
+            served directly by us, which we use to recognize your computer or
+            mobile device when it revisits our Sites; and (2) third party
+            cookies, which are served by service providers or business partners
+            on our Sites, and can be used by these parties to recognize your
+            computer or mobile device when it visits other websites. Third party
+            cookies can be used for a variety of purposes, including site
+            analytics, advertising and social media features.
+          </p>
+          <p class="docs__p text-2">
+            What types of cookies and similar technologies are used on your
+            Sites and App?
+          </p>
+          <p class="docs__p text-2">
+            On the Sites, we use cookies and other tracking technologies in the
+            following categories described in the table below.
+          </p>
+
+          <table class="table">
+            <tr class="table__row">
+              <th class="table__head">Type</th>
+              <th class="table__head">Description</th>
+              <th class="table__head">
+                Who serves the cookies (link to privacy policy/site)
+              </th>
+              <th class="table__head">How to control them</th>
+            </tr>
+            <tr class="table__row">
+              <td class="table__data">Advertising</td>
+              <td class="table__data">
+                These cookies are used by advertising companies to collect
+                information about how you use our Sites and other websites over
+                time. These companies use this information to show you ads they
+                believe will be relevant to you within our Service and
+                elsewhere, and to measure how the ads perform.
+              </td>
+              <td class="table__data">
+                <a
+                  href="https://policies.google.com/technologies/ads"
+                  target="_blank"
+                  >Google Doubleclick</a
+                >
+                <a
+                  href="https://www.facebook.com/privacy/explanation"
+                  target="_blank"
+                  >Facebook</a
+                >
+                <a href="https://www.outbrain.com/privacy/" target="_blank"
+                  >Outbrain</a
+                >
+              </td>
+              <td class="table__data">
+                You can set preferences for Google Doubleclick cookies
+                <a href="https://adssettings.google.com/" target="_blank"
+                  >here</a
+                >. You can set preferences for Facebook cookies
+                <a href="https://www.facebook.com/about/ads" target="_blank"
+                  >here</a
+                >. See ‘your choices’ below.
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__data">Analytics</td>
+              <td class="table__data">
+                These cookies help us understand how our Service is performing
+                and being used. These cookies may work with web beacons included
+                in emails we send to track which emails are opened and which
+                links are clicked by recipients.
+              </td>
+              <td class="table__data">
+                <a
+                  href="https://policies.google.com/privacy?hl=en"
+                  target="_blank"
+                  >Google Analytics</a
+                >
+                <a href="" target="_blank">LinkedIn Analytics</a>
+                <a href="" target="_blank">New Relic</a>
+              </td>
+              <td class="table__data">
+                You can find out more information about Google Analytics cookies
+                <a
+                  href="https://developers.google.com/analytics/resources/concepts/gaConceptsCookies"
+                  target="_blank"
+                  >here</a
+                >
+                and about how Google protects your data
+                <a
+                  href="http://www.google.com/analytics/learn/privacy.html"
+                  target="_blank"
+                  >here</a
+                >. You can prevent the use of Google Analytics relating to your
+                use of our Sites by downloading and installing a browser plugin
+                available
+                <a
+                  href="http://tools.google.com/dlpage/gaoptout?hl=en-GB"
+                  target="_blank"
+                  >here</a
+                >.
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__data">Essential</td>
+              <td class="table__data">
+                These cookies are necessary to allow the proper technical
+                operation of our Sites.
+              </td>
+              <td class="table__data">
+                <a
+                  href="https://www.adobe.com/privacy/policies/adobe-fonts.html"
+                  target="_blank"
+                  >Adobe Typekit</a
+                >
+                <a href="https://policies.google.com/privacy" target="_blank"
+                  >Google Tag Manager</a
+                >
+                <a
+                  href="https://www.cloudflare.com/privacypolicy/"
+                  target="_blank"
+                  >CloudFlare</a
+                >
+              </td>
+              <td class="table__data">See ‘your choices’ below.</td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__data">Functionality / performance</td>
+              <td class="table__data">
+                These cookies enhance the performance and functionality of our
+                Service.
+              </td>
+              <td class="table__data">N/A</td>
+              <td class="table__data">See ‘your choices’ below.</td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__data">Social</td>
+              <td class="table__data">
+                These cookies may allow you to log into the Sites or App through
+                your social media account or share content in our sites that you
+                find interesting through third party social media providers.
+                These cookies may also be used for advertising purposes.
+              </td>
+              <td class="table__data">
+                <a
+                  href="https://www.facebook.com/privacy/explanation"
+                  target="_blank"
+                  >Facebook Connect
+                </a>
+                <a
+                  href="https://www.linkedin.com/legal/privacy-policy"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </td>
+              <td class="table__data">See ‘your choices’ below.</td>
+            </tr>
+          </table>
+
+          <p class="docs__p text-2">Other technologies</p>
+
+          <p class="docs__p text-2">
+            In addition to cookies, our Sites and emails may use other
+            technologies to collect information. For example, we may use web
+            beacons (which are also known as pixel tags and clear GIFs) on our
+            Sites and in our HTML formatted emails to track the actions of users
+            on our Sites and whether recipients of our marketing emails open or
+            click links within them. Unlike cookies, which are stored on the
+            hard drive of your computer or mobile device by a website, pixel
+            tags are embedded invisibly on webpages or within HTML formatted
+            emails. Pixel tags are used to demonstrate that a webpage was
+            accessed or that certain content was viewed, typically to measure
+            the success of our marketing campaigns or engagement with our emails
+            (e.g., they may tell us whether you have opened an email, and/or
+            forwarded it on to someone else) and to compile statistics about
+            usage of the Sites, so that we can manage our content more
+            effectively.
+          </p>
+
+          <p class="docs__p text-2">
+            Mobile application software development kits (SDKs)
+          </p>
+
+          <p class="docs__p text-2">
+            We may use third-party software development kits (“SDKs”) in our
+            mobile applications. A SDK is third-party computer code that may be
+            used for a variety of purposes, including to provide us with
+            analytics regarding the use of our mobile applications, to integrate
+            with social media, add features or functionality to our app, or to
+            facilitate online advertising. SDKs may enable third parties to
+            collect information directly from our mobile app.
+          </p>
+
+          <p class="docs__p text-2">Your choices</p>
+
+          <ul class="list_disc-style">
+            <span class="docs__p text-2"
+              >Your options for controlling what information cookies and similar
+              technologies collect about you include:</span
+            >
+            <li>
+              Blocking cookies in your browser. Most browsers let you remove or
+              reject cookies. To do this, follow the instructions in your
+              browser settings. Many browsers accept cookies by default until
+              you change your settings. Please note that if you set your browser
+              to disable cookies, the Sites may not work properly. For more
+              information about cookies, including how to see what cookies have
+              been set on your device and how to manage and delete them, visit
+              www.allaboutcookies.org. If you do not accept our cookies, you may
+              experience some inconvenience in your use of our Sites. For
+              example, we may not be able to recognize your computer or mobile
+              device and you may need to log in every time you visit our Sites.
+            </li>
+            <li>
+              Third party opt-out option. You can opt-out of interest-based
+              advertising through some of the third parties listed in the chart
+              above by using the corresponding third party opt-out tool provided
+              in the chart.
+            </li>
+            <li>
+              Industry association opt-outs. You may opt out of receiving
+              interest-based advertising on websites through members of the
+              Network Advertising Initiative by clicking
+              <a
+                href="http://www.networkadvertising.org/choices"
+                target="_blank"
+                >here</a
+              >
+              or the Digital Advertising Alliance by clicking
+              <a href="http://www.aboutads.info/choices" target="_blank">here</a
+              >. You may opt out of receiving targeted advertising in mobile
+              apps through participating members of the Digital Advertising
+              Alliance by installing the AppChoices mobile app, available
+              <a href="https://www.youradchoices.com/appchoices" target="_blank"
+                >here</a
+              >, and selecting the user’s choices. Please note that we also may
+              work with companies that offer their own opt-out mechanisms and
+              may not participate in the opt-out mechanisms linked above.
+            </li>
+            <li>
+              Blocking advertising ID use in your mobile settings. Your mobile
+              device settings may provide functionality to limit use of the
+              advertising ID associated with your mobile device for
+              interest-based advertising purposes.
+            </li>
+          </ul>
+
+          <p class="docs__p text-2">Changes</p>
+          <p class="docs__p text-2">
+            Information about the cookies we use may be updated from time to
+            time, so please check back on a regular basis for any changes.
+          </p>
+          <p class="docs__p text-2">Questions</p>
+          <p class="docs__p text-2">
+            If you have any questions about this Cookie Notice, please contact
+            us by email at <a href="mailto:help@gigzy.net">help@gigzy.net</a>.
+            For more information about how we collect, use and share your
+            information, see our Privacy Policy at
+            <a href="https://gigzy.net/privacy" target="_blank"
+              >https://gigzy.net/privacy</a
+            >.
+          </p>
+        </div>
+
+        <div class="docs flex flex_column" id="he_docks">
+          <h3 class="docs__title">הודעה בנושא עוגיות</h3>
+
+          <ul class="list_disc-style">
+            <span class="docs__p text-2"
+              >הודעה זו בנושא עוגיות תפרט בפניכם את האופן שבו חברת גיגזי
+              ("גיגזי" או "אנחנו") משתמשת בעוגיות ובטכנולוגיות אחרות, וזאת בכל
+              הנוגע לנושאים הבאים:
+            </span>
+            <li>
+              אתר האינטרנט של גיגזי וכל אתר אינטרנט אחר המצוי בבעלותנו או
+              בשליטתנו, ושבו פורסמה הודעה זו בנושא עוגיות (להלן יחדיו:
+              "האתרים");
+            </li>
+            <li>האפליקציות שלנו בנייד ("האפליקציה").</li>
+          </ul>
+
+          <p class="docs__p text-2">מהן עוגיות?</p>
+          <p class="docs__p text-2">
+            "עוגיות" הן קבצי נתונים קטנים המועברים למחשב או למכשיר הנייד שלכם
+            בזמן שאתם גולשים באתרי אינטרנט. לעוגיות יש מטרות שונות: הן מסייעות
+            לנו להבין את אופן השימוש באתר, מאפשרות לכם לנווט ביעילות בין עמודי
+            אינטרנט שונים, זוכרות את ההעדפות שלכם, ומשפרות באופן כללי את חוויית
+            המשתמש שלכם.
+          </p>
+          <p class="docs__p text-2">
+            האתרים שלנו עשויים להשתמש הן בעוגיות זמניות [session cookies]
+            (עוגיות אלו "פוקעות" ברגע שאתם סוגרים את דפדפן האינטרנט) וכן עוגיות
+            "קבועות" (עוגיות אלו נשארות ע"ג המחשב או המכשיר הנייד שלכם עד
+            למחיקתם).
+          </p>
+          <p class="docs__p text-2">
+            אנו משתמשים בשני סוגים עיקריים של עוגיות: (1) עוגיות "צד ראשון"
+            המועברות על-ידנו ישירות, שבהם אנו משתמשים על מנת לזהות את המחשב או
+            המכשיר הנייד שלכם בכל פעם שהם מבקרים שוב באתרים שלנו; (2) עוגיות צד
+            ג', המועברות ע"י ספקי שירות או שותפים עסקיים על גבי האתרים שלנו,
+            ושבהם אותם צדדים שלישיים יכולים להשתמש על מנת לזהות את המחשב או
+            המכשיר הנייד שלכם בכל פעם שהם מבקרים באתרי אינטרנט אחרים. עוגיות צד
+            ג' יכולות לשמש למגוון מטרות, כגון עיבוד נתונים אנליטיים באתרי
+            אינטרנט, פרסום ומדיה חברתית.
+          </p>
+          <p class="docs__p text-2">
+            מהם סוגי העוגיות והטכנולוגיות הדומות בהם נעשה שימוש באתרים
+            ובאפליקציה שלכם?
+          </p>
+          <p class="docs__p text-2">
+            באתרים אלו, אנו משתמשים בעוגיות ובטכנולוגיות מעקב אחרות מן הסוגים
+            המתוארים בטבלה שלפניכם.
+          </p>
+
+          <table class="table">
+            <tr class="table__row">
+              <th class="table__head">סוג</th>
+              <th class="table__head">תיאור</th>
+              <th class="table__head">
+                ספק העוגיות (קישור למדיניות הפרטיות / לאתר)
+              </th>
+              <th class="table__head">אופן השליטה בהם</th>
+            </tr>
+            <tr class="table__row">
+              <td class="table__data">פרסום</td>
+              <td class="table__data">
+                עוגיות אלו משמשות חברות פרסום לאיסוף מידע אודות אופן השימוש שלכם
+                באתרים שלנו ובאתרי אינטרנט אחרים לאורך זמן. חברות אלו משתמשות
+                במידע זה על מנת להציג בפניכם פרסומות הרלוונטיות עבורכם לשיטתם
+                במסגרת השירות שלנו ובמקומות אחרים, ולצורך מדידת הביצועים של
+                פרסומות אלו.
+              </td>
+              <td class="table__data">
+                <a
+                  href="https://policies.google.com/technologies/ads"
+                  target="_blank"
+                  >Google Doubleclick</a
+                >
+                <a
+                  href="https://www.facebook.com/privacy/explanation"
+                  target="_blank"
+                  >Facebook</a
+                >
+                <a href="https://www.outbrain.com/privacy/" target="_blank"
+                  >Outbrain</a
+                >
+              </td>
+              <td class="table__data">
+                כדי להגדיר את
+                <a href="https://adssettings.google.com/" target="_blank"
+                  >כאן </a
+                >לחצו העדפותיכם בעניין העוגיות הקיימות במסגרת שירות Google
+                Doubleclick לחצו
+                <a href="https://www.facebook.com/about/ads" target="_blank"
+                  >כאן </a
+                >ר' "הבחירות שלך" להלן.
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__data">נתונים אנליטיים</td>
+              <td class="table__data">
+                עוגיות אלו מסייעות לנו להבין את רמת הביצועים של השירותים הניתנים
+                על-ידנו ואת אופן השימוש הנעשה בהם. עוגיות אלו עשויות לפעול מול
+                "משואות אינטרנט" (web beacons) הכלולות בהודעות דוא"ל הנשלחות
+                על-ידנו על מנת לזהות את הודעות הדוא"ל שנפתחו על-ידי המקבל ואת
+                הקישורים שעליהם המקבל לחץ לאחר קבלת ההודעה.
+              </td>
+              <td class="table__data">
+                <a
+                  href="https://policies.google.com/privacy?hl=en"
+                  target="_blank"
+                  >Google Analytics</a
+                >
+                <a href="" target="_blank">LinkedIn Analytics</a>
+                <a href="" target="_blank">New Relic</a>
+              </td>
+              <td class="table__data">
+                לקבלת מידע נוסף בדבר העוגיות הקיימות במסגרת Google Analytics,
+                אנא לחצו
+                <a
+                  href="https://developers.google.com/analytics/resources/concepts/gaConceptsCookies"
+                  target="_blank"
+                  >כאן</a
+                >. לקבלת מידע נוסף בדבר האופן שבו גוגל מגנה על הנתונים שלכם, אנא
+                לחצו
+                <a
+                  href="http://www.google.com/analytics/learn/privacy.html"
+                  target="_blank"
+                  >כאן</a
+                >. באפשרותכם למנוע את השימוש ב-Google Analytics בכל הנוגע
+                לשימושכם באתרים למנוע את השימוש ב-Google Analytics בכל הנוגע
+                לשימושכם באתרים שלנו ע"י הורדת תוסף לדפדפן והתקנתו בקישור הבא:
+                לחץ כאן
+                <a
+                  href="http://tools.google.com/dlpage/gaoptout?hl=en-GB"
+                  target="_blank"
+                  >כאן</a
+                >. ר' "הבחירות שלך" להלן.
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__data">עוגיות "חיוניות" (Essential cookies)</td>
+              <td class="table__data">
+                עוגיות אלו נדרשות לצורך התפעול הטכני של האתרים שלנו.
+              </td>
+              <td class="table__data">
+                <a
+                  href="https://www.adobe.com/privacy/policies/adobe-fonts.html"
+                  target="_blank"
+                  >Adobe Typekit</a
+                >
+                <a href="https://policies.google.com/privacy" target="_blank"
+                  >Google Tag Manager</a
+                >
+                <a
+                  href="https://www.cloudflare.com/privacypolicy/"
+                  target="_blank"
+                  >CloudFlare</a
+                >
+              </td>
+              <td class="table__data">ר' "הבחירות שלך" להלן.</td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__data">פונקציונליות / ביצועים</td>
+              <td class="table__data">
+                עוגיות אלו משמשות לשיפור הביצועים והפונקציונליות של השירות שלנו.
+              </td>
+              <td class="table__data">אין</td>
+              <td class="table__data">ר' "הבחירות שלך" להלן.</td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__data">Social</td>
+              <td class="table__data">
+                עוגיות אלו מאפשרות לכם להיכנס לאתרים או לאפליקציה דרך חשבונכם
+                ברשת החברתית, או לשתף תכנים שמעניינים אתכם באתרים שלנו דרך ספקי
+                מדיה חברתית שלישיים. עוגיות אלו עשויות לשמש למטרות פרסום.
+              </td>
+              <td class="table__data">
+                <a
+                  href="https://www.facebook.com/privacy/explanation"
+                  target="_blank"
+                  >Facebook Connect
+                </a>
+                <a
+                  href="https://www.linkedin.com/legal/privacy-policy"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </td>
+              <td class="table__data">ר' "הבחירות שלך" להלן.</td>
+            </tr>
+          </table>
+
+          <p class="docs__p text-2">טכנולוגיות אחרות</p>
+
+          <p class="docs__p text-2">
+            מלבד עוגיות, האתרים והודעות הדוא"ל שלנו עשויים להשתמש בטכנולוגיות
+            אחרות לאיסוף מידע. לדוגמה, ייתכן שנשתמש במשואות אינטרנט (הידועות גם
+            בשם "תגי פיקסלים" ו"גיפים נקיים" (pixel tags/clear GIFs) באתרים
+            ובהודעות הדוא"ל שלנו (המכילות קוד HTML), וזאת לצורך ביצוע מעקב על
+            פעולות המתבצעות ע"י הגולשים באתרים שלנו. כמו כן, אנו משתמשים במשואות
+            אלו כדי לזהות האם מקבלי הודעות השיווק שלנו פתחו או לחצו על הקישורים
+            המופיעים בהן. בשונה מעוגיות – שאותן אתר האינטרנט מאחסן ע"ג הכונן
+            הקשיח במחשבכם או במכשירכם הנייד – תגי פיקסלים משובצים באופן נסתר
+            באתר האינטרנט או במיילים הכוללים קוד HTML. "תגי פיקסל" משמשים כדי
+            להראות שהתבצעה גישה לאתר אינטרנט כלשהו, או שהתבצעה צפייה בתוכן –
+            לרוב כדי למדוד את הצלחת הקמפיינים הפרסומיים שלנו או את מידת ההיענות
+            להודעות הדוא"ל שלנו (לדוגמה, הן יכולות להראות לנו שפתחתם את הודעת
+            הדוא"ל ששלחנו לכם ו/או שהעברתם אותה לאדם אחר), וכן כדי לאסוף נתונים
+            סטטיסטיים אודות השימוש באתרים באופן המאפשר לנו לנהל את התוכן שלנו
+            ביעילות רבה יותר.
+          </p>
+
+          <p class="docs__p text-2">
+            ערכות פיתוח תוכנה (SDKs) – אפליקציות לנייד
+          </p>
+
+          <p class="docs__p text-2">
+            ייתכן שנשתמש בערכות פיתוח תוכנה ("SDKs") של צדדים שלישיים במסגרת
+            האפליקציות שלנו לנייד. "ערכת פיתוח תוכנה" היא למעשה קוד רב-תכליתי
+            המספק לנו נתונים אנליטיים אודות השימוש באפליקציות לנייד שלנו. כמו
+            כן, היא מאפשרת לנו לבצע אינטגרציה מול רשתות חברתיות, להוסיף יכולות
+            מסוימות לאפליקציה שלנו, או לקדם פרסומות באינטרנט. SDKs עשויות לאפשר
+            לצדדים שלישיים לאסוף מידע ישירות מהאפליקציה שלנו לנייד.
+          </p>
+
+          <p class="docs__p text-2">הבחירות שלכם</p>
+
+          <ul class="list_disc-style">
+            <span class="docs__p text-2"
+              >יכולתכם לשלוט במידע הנאסף אודותיכם ע"י עוגיות וטכנולוגיות דומות
+              כוללת את האפשרויות הבאות:</span
+            >
+            <li>
+              חסימת עוגיות בדפדפן שלכם. מרבית הדפדפנים יאפשרו לכם להסיר או לדחות
+              עוגיות. על מנת לבצע פעולה זו, אנא פעלו בהתאם להוראות המופיעות
+              בהגדרות הדפדפן שלכם. דפדפנים רבים מקבלים עוגיות כברירת מחדל (עד
+              לשינוי ההגדרות). לתשומת לבכם: אם שיניתם את הגדרות הדפדפן שלכם כך
+              שהעוגיות בדפדפן אינן זמינות או מושבתות, האתרים עלולים שלא לפעול
+              כנדרש. לקבלת מידע נוסף בנושא עוגיות, לרבות האופן שבו תוכלו לראות
+              אילו עוגיות הוגדרו במכשירכם וכיצד ניתן לנהל ולמחוק אותם, אנא בקרו
+              באתר האינטרנט שכתובתו: www.allaboutcookies.org. אם לא תקבלו את
+              העוגיות שלנו, אתם עלולים לחוות אי-נוחות מסוימת במהלך השימוש שלכם
+              באתרים שלנו. לדוגמה, ייתכן שלא נהיה מסוגלים לזהות את מחשבכם או את
+              מכשירכם הנייד, וייתכן שתידרשו להכניס את שם המשתמש והסיסמה שלכם בכל
+              פעם שתבקרו באתרים שלנו.
+            </li>
+            <li>
+              ביטול הצטרפות (Opt-out) ביחס לצדדים שלישיים באפשרותכם לבטל את
+              האפשרות לקבלת פרסומות המבוססות על תחומי עניין – ביחס לצדדים
+              השלישיים המפורטים בתרשים שלעיל – באמצעות "כלי ביטול ההצטרפות"
+              (opt-out tool) המופיע בתרשים.
+            </li>
+            <li>
+              ביטול השתתפות ביחס לאיגודים מקצועיים באפשרותכם שלא לקבל פרסומות
+              מקוונות באתרי אינטרנט דרך חברים או של
+              <a
+                href="http://www.networkadvertising.org/choices"
+                target="_blank"
+                >לחץ כאן</a
+              >
+              ב"יוזמת הפרסום ברשת" (Network Advertising Initiative) בלחיצה על
+              הקישור הבא:
+              <a href="http://www.aboutads.info/choices" target="_blank"
+                >לחץ כאן</a
+              >התאחדות הפרסום הדיגיטלי" (Digital Advertising Alliance) בלחיצה על
+              הקישור הבא שלא לקבל הודעות פרסום ממוקד באפליקציות לנייד דרך חברים
+              המשתתפים ב"התאחדות הפרסום הדיגיטלי" , וע"י
+              <a href="https://www.youradchoices.com/appchoices" target="_blank"
+                >לחץ כאן</a
+              >(Digital Advertising Alliance)" ע"י התקנת האפליקציה "AppChoices",
+              הזמינה בקישור הבא הגדרת בחירות המשתמש. לתשומת לבכם: אנו עשויים
+              לפעול בשיתוף עם חברות המציעות מנגנוני ביטול הצטרפות (opt-out) משל
+              עצמן, ושאינן משתתפות במנגנוני ביטול ההצטרפות המפורטים לעיל.
+            </li>
+            <li>
+              חסימת "מזהה פרסום" (advertising ID) בהגדרות שלכם במכשיר הנייד
+              ייתכן שההגדרות הקיימות במכשירכם הנייד מאפשרות לכם להגביל את השימוש
+              במזהה הפרסום (advertising ID) המקושר למכשירכם הנייד, המשמש למטרות
+              פרסום המבוסס על תחומי עניין.
+            </li>
+          </ul>
+
+          <p class="docs__p text-2">שינוי</p>
+          <p class="docs__p text-2">
+            הפרטים בדבר העוגיות המשמשות אותנו עשויים לעבור עדכון מעת לעת, ומשכך
+            מומלץ לבדוק באופן שגרתי אם חלו בהם שינויים.
+          </p>
+          <p class="docs__p text-2">שאלות</p>
+          <p class="docs__p text-2">
+            בכל שאלה בנושא הודעה זו בדבר עוגיות, אנא צרו עמנו קשר בדוא"ל שכתובתו
+            <a href="mailto:help@gigzy.net">help@gigzy.net</a>לקבלת מידע נוסף
+            בדבר האופן שבו אנו אוספים את המידע שלכם, משתמשים בו ומשתפים אותו,
+            אנא עיינו במדיניות הפרטיות שלנו בכתובת:
+            <a href="https://gigzy.net/privacy" target="_blank"
+              >https://gigzy.net/privacy</a
+            >.
+          </p>
+        </div>
+      </main>
+      <footer class="footer">
+        <div
+          class="footer__container container flex flex_justify-between flex_wrap"
+        >
+          <div class="footer__content gap-18 flex flex_column">
+            <div class="footer__columns gap-12 flex">
+              <div class="footer__column">
+                <p class="text text-1 semibold c-primary">Terms</p>
+                <div class="terms-column">
+                  <a
+                    href="policy.html"
+                    target="_blank"
+                    class="footer__text text c-primary"
+                    style="text-decoration: underline"
+                    >Policy</a
+                  >
+                  <a
+                    href="privacy.html"
+                    target="_blank"
+                    class="footer__text text c-primary"
+                    style="text-decoration: underline"
+                    >Privacy</a
+                  >
+                  <a
+                    href="cookies.html"
+                    target="_blank"
+                    class="footer__text text c-primary"
+                    style="text-decoration: underline"
+                    >Cookies</a
+                  >
+                </div>
+              </div>
+              <div class="footer__column">
+                <a
+                  href="mailto:support@gigzy.net"
+                  class="text text-1 semibold c-primary email-link"
+                  >support@gigzy.net</a
+                >
+                <p class="footer__text text c-primary">
+                  Contact us, if you have an question!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__download-buttons flex flex_column gap-10">
+            <a
+              href="https://apps.apple.com/ru/app/gigzy/id6443645741"
+              target="_blank"
+            >
+              <picture
+                ><source srcset="img/app-store.webp" type="image/webp" />
+                <img
+                  class="footer__download-button"
+                  src="img/app-store.png"
+                  alt="Gigzy in Apple Store "
+              /></picture>
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.gigzy.gigzyApp"
+              target="_blank"
+            >
+              <picture
+                ><source srcset="img/google-play.webp" type="image/webp" />
+                <img
+                  class="footer__download-button"
+                  src="img/google-play.png"
+                  alt="Gigzy in Google Play "
+              /></picture>
+            </a>
+          </div>
+        </div>
+      </footer>
+      <div class="modal flex flex_center">
+        <div class="modal__scroll">
+          <div class="modal__content">
+            <div class="close-wrapper" onclick="toggleModal()">
+              <picture
+                ><source
+                  srcset="img/icons/icons.svg#close-gray"
+                  type="image/webp" />
+                <img
+                  class="close"
+                  src="img/icons/icons.svg#close-gray"
+                  alt="close icon"
+              /></picture>
+            </div>
+            <form class="mdform flex flex_column">
+              <div class="flex flex_column gap-28">
+                <h1 class="p30 text-center" data-translate="modal_title"></h1>
+                <div class="flex flex_column gap-16">
+                  <div class="column-adaptive flex gap-16">
+                    <div class="field">
+                      <input
+                        class="input text text-1 c-primary"
+                        id="firstName"
+                        name="firstName"
+                        type="text"
+                      />
+                      <label for="firstName">
+                        <span class="caption caption-1 c-tertiary"
+                          ><span data-translate="form_name">Name</span>
+                          <span class="c-red-hover">*</span></span
+                        >
+                      </label>
+                    </div>
+                    <div class="field">
+                      <input
+                        class="input text text-1 c-primary"
+                        id="secondName"
+                        name="secondName"
+                        type="text"
+                      />
+                      <label for="secondName">
+                        <span class="caption caption-1 c-tertiary"
+                          ><span data-translate="form_surname">Surname</span>
+                          <span class="c-red-hover">*</span></span
+                        >
+                      </label>
+                    </div>
+                  </div>
+                  <div class="column-adaptive flex gap-16">
+                    <div class="field">
+                      <input
+                        class="input text text-1 c-primary"
+                        id="telephone"
+                        name="telephone"
+                        type="text"
+                      />
+                      <label for="telephone">
+                        <span class="caption caption-1 c-tertiary"
+                          ><span data-translate="form_phone">Phone</span>
+                          <span class="c-red-hover">*</span></span
+                        >
+                      </label>
+                      <div
+                        id="telephone-error"
+                        class="error-text is-hidden"
+                        data-translate="form_error_phone"
+                      >
+                        Please, input only numbers
+                      </div>
+                    </div>
+                    <div class="field">
+                      <input
+                        class="input text text-1 c-primary"
+                        id="email"
+                        name="email"
+                        type="email"
+                      />
+                      <label for="email">
+                        <span class="caption caption-1 c-tertiary"
+                          ><span data-translate="form_email">Email</span>
+                          <span class="c-red-hover">*</span></span
+                        >
+                      </label>
+                      <div
+                        id="email-error"
+                        class="error-text is-hidden"
+                        data-translate="form_error_email"
+                      >
+                        Please, input your Email
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column-adaptive flex gap-16">
+                    <div class="flex flex_grow flex_column gap-16">
+                      <p>
+                        <span
+                          class="text text-1 c-primary"
+                          data-translate="form_age"
+                          >Age</span
+                        >
+                        *
+                      </p>
+                      <div class="rdbts flex-il-adaptive flex gap-32 flex_wrap">
+                        <div class="form_radio">
+                          <input
+                            id="radio-1"
+                            type="radio"
+                            name="age"
+                            value="18-25"
+                          />
+                          <label for="radio-1">18-25</label>
+                        </div>
+                        <div class="form_radio">
+                          <input
+                            id="radio-2"
+                            type="radio"
+                            name="age"
+                            value="25-35"
+                          />
+                          <label for="radio-2">25-35</label>
+                        </div>
+                        <div class="form_radio">
+                          <input
+                            id="radio-3"
+                            type="radio"
+                            name="age"
+                            value="35-45"
+                          />
+                          <label for="radio-3">35-45</label>
+                        </div>
+                        <div class="form_radio">
+                          <input
+                            id="radio-4"
+                            type="radio"
+                            name="age"
+                            value="45+"
+                          />
+                          <label for="radio-4">45+</label>
+                        </div>
+                      </div>
+                      <div
+                        id="formAge-error"
+                        class="error-text is-hidden"
+                        data-translate="form_error_age"
+                      >
+                        Please, select your Age
+                      </div>
+                    </div>
+                    <div class="flex flex_grow flex_column gap-16">
+                      <p>
+                        <span
+                          class="text text-1 c-primary"
+                          data-translate="form_weekly_gigz"
+                          >How Many Weekly Gigz</span
+                        >
+                        *
+                      </p>
+                      <div class="rdbts flex-il-adaptive flex gap-32 flex_wrap">
+                        <div class="form_radio">
+                          <input
+                            id="radio-5"
+                            type="radio"
+                            name="weeklyContent"
+                            value="1-2"
+                          />
+                          <label for="radio-5">1-2</label>
+                        </div>
+                        <div class="form_radio">
+                          <input
+                            id="radio-6"
+                            type="radio"
+                            name="weeklyContent"
+                            value="3-4"
+                          />
+                          <label for="radio-6">3-4</label>
+                        </div>
+                        <div class="form_radio">
+                          <input
+                            id="radio-7"
+                            type="radio"
+                            name="weeklyContent"
+                            value="+5"
+                          />
+                          <label for="radio-7">+5</label>
+                        </div>
+                      </div>
+                      <div
+                        id="form_weeklyContent-error"
+                        class="error-text is-hidden"
+                        data-translate="form_error_weekly_gigz"
+                      >
+                        Please, select how many weekly Gigz do you want
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex_grow flex_column gap-16">
+                    <p>
+                      <span
+                        class="text text-1 c-primary"
+                        data-translate="form_self_employed"
+                        >Are you willing to be self employed?</span
+                      >
+                      *
+                    </p>
+                    <div class="rdbts flex-il-adaptive flex gap-32">
+                      <div class="form_radio">
+                        <input
+                          id="radio-8"
+                          type="radio"
+                          name="selfEmployed"
+                          value="Yes"
+                        />
+                        <label for="radio-8" data-translate="form_yes"
+                          >Yes</label
+                        >
+                      </div>
+                      <div class="form_radio">
+                        <input
+                          id="radio-9"
+                          type="radio"
+                          name="selfEmployed"
+                          value="No"
+                        />
+                        <label for="radio-9" data-translate="form_no">No</label>
+                      </div>
+                    </div>
+                    <div
+                      id="form_selfEmployed-error"
+                      class="error-text is-hidden"
+                      data-translate="form_error_self_employed"
+                    >
+                      Please, select it
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="form__button mw mt-46 button primary xl"
+                type="submit"
+              >
+                <span class="button-link c-white" data-translate="form_submit"
+                  >Submit form</span
+                >
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="successModal flex flex_center modal">
+        <div class="modal__scroll">
+          <div class="modal__content">
+            <div class="close-wrapper" onclick="toggleSuccessModal()">
+              <picture
+                ><source
+                  srcset="img/icons/icons.svg#close-gray"
+                  type="image/webp" />
+                <img
+                  class="close"
+                  src="img/icons/icons.svg#close-gray"
+                  alt="close icon"
+              /></picture>
+            </div>
+            <div class="flex flex_column">
+              <div class="flex flex_column gap-28">
+                <h1
+                  class="p30 text-center"
+                  data-translate="modal_success_title"
+                >
+                  Success
+                </h1>
+                <div class="flex flex_column gap-16">
+                  <p data-translate="modal_success_message">
+                    Thank you, we will contact you and notify you about the
+                    launch of the application
+                  </p>
+                </div>
+              </div>
+              <button
+                class="form__button mw mt-46 button primary xl"
+                type="button"
+                id="successCloseButton"
+              >
+                <span
+                  class="button-link c-white"
+                  data-translate="modal_success_ok"
+                  >Ok</span
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://rawgit.com/RobinHerbots/Inputmask/5.0.3/dist/inputmask.min.js"></script>
+    <script src="js/sha256.min.js"></script>
+    <script src="./js/cookies.js"></script>
+  </body>
+</html>
