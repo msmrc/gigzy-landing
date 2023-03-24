@@ -285,6 +285,7 @@ form.addEventListener('submit', async (e) => {
   e.preventDefault();
 
   const data = {
+    languageCode: localStorage.getItem('lang') ===  'il'  ?  'heb' : 'en',
     phoneNumber: telephone.value,
     email: email.value,
     firstName: name.value,
